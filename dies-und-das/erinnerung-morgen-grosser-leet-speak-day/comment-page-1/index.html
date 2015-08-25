@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-897">
 					<h2>Erinnerung: Morgen großer “LEET Speak Day”</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Nach wie vor steht der große "<a href="../../../neuigkeiten/leet-speak-day/">£337 $P34|{ Ð4¥</a>" an, wer mitmachen möchte sagt Bescheid und kommt auf die Teilnehmerliste.</p>
 <p><img src="../../../wp-content/uploads/2008/01/1337_banner.jpg" alt="Â£337 $P34|{ à4Â¥ aka LEET SPEAK DAY"></p>
 <p>Hier noch einmal der Codeschnippel für das Logo:</p>
 <div style="background: #EEE; padding: 5px; border: 1px solid #333; font-size: 11px; font-weight: bold;">&lt;a href="http://phase-5.github.io/neuigkeiten/leet-speak-day/" target="_blank"&gt;&lt;img src="http://phase-5.github.io/wp-content/uploads/2008/01/1337_banner.jpg" alt="LEET SPEAK DAY" border="none" /&gt;&lt;/a&gt;</div>
 <p>Über rege Teilnahme würde ich mich sehr freuen, immerhin kann man nie genug "L33T" schreiben.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -335,7 +313,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

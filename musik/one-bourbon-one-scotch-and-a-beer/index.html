@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2519">
 					<h2>One Bourbon, One Scotch and a beer…</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Dem umtriebigen Autor ist das wunderbare Last.fm über den Weg gelaufen. Samstag abend war Jahrgangstreffen im Haßberg'schen Hof zu Nienburg, das war an und für sich ganz amüsant aber unspektakulär. Das Bier war frei und die Musik miserabel, gegen Mitternacht leerte sich der Saal schlagartig, denn alle wollten auf die "20up"-Party. Das ist etwas bahnbrechend neues auf dem Lande, keiner unter 20 kommt rein (wenn ich das richtig interpretiert habe...).</p>
 <p>Also ab in die Bahn nach Hannover und noch mit dem Herschel und dem Schlomo ein bis fünf Absacker trinken. Auf dem Weg überkam es mich auf dem iPod Digitalism und Trentemøller anzuwerfen. An dieser Stelle sei bemerkt, dass ich eher dem Rock'n'Roll zugetan bin und mir meine eigenen musikalischen Ausflüchte in die elektronischen Gefilde nicht so recht erklären kann. Also Minimal auf die Ohren und ab dafür im Zug.</p>
 <p>Nach dem Aufwachen heut morgen überkam mich ein völlig anderer Musikwunsch – es verlangte nach Blues, schön alt und rotzig. Da die heimische Musiksammlung nur miserabel mit Blues, vor allem aus den 30er Jahren des letzten Jahrhunderts aus dem Mississippi-Delta, bestückt ist, hab ich mich endlich mal dazu durchgerungen, mich bei last.fm anzumelden.</p>
@@ -140,18 +129,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von TediousNilsen.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -303,7 +281,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

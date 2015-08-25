@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1312">
 					<h2>Topliste – Aufwachen mit dem Mac</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wozu ein Wecker mit 1,5 Volt Batterie, der einen unsanft aus dem Schlaf reißt, wenn man einen Macintosh besitzt, der volle 230 Volt aus der Steckdose saugt und einen wahlweise mit Fernsehen, oder seiner Lieblingsmusik weckt? Im folgenden kleinen Eintrag möchte ich dafür 3 Möglichkeiten vorstellen:</p>
 <h5>3. Platz Alarm Clock 2</h5>
 <p><a href="http://www.robbiehanson.com/alarmclock/index.html">Alarm Clock 2</a> ist ein Freeware Programm von Robbie Hanson, mit dem man sich zu den Klängen seiner Lieblingsmusik wecken lassen kann. Das Programm residiert nach dem Start im Menü und man kann mehrere Weckzeiten einstellen. Besonders schön finde ich das schlichte Interface in transparent/grau, wie bei viele neueren Programmen für den Mac. Toll ist auch der Soft-Alarm: Damit man nicht unsanft aus den Träumen gerissen wird, wird die Musik langsam lauter, bis sie nach einer eingestellten Zeit die volle Lautstärke erreicht. Langschläfer können die "Schlummern"-Funktion mittels Apple-Remote aktivieren.</p>
@@ -141,18 +130,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von <a href="http://web2.0du.de">Robert Curth</a>.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -285,7 +263,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

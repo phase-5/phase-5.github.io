@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-1040">
 					<h2>“Redneck-Computer” für echte Männer?!?</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/03/car-wreck_windows.jpg" alt="Car Wreck - Windows"></p>
 <p>Ein sehr interessanter Artikel, den <a href="http://www.spiegel.de/netzwelt/tech/0,1518,539314,00.html" target="_blank">SpOn</a> da zum Besten gibt. "Apple-Bashing" kommt ja mit schweinezyklischer Regelmäßigkeit und kann auch sehr unterhaltsam sein. Vorausgesetzt natürlich es ist gut gemacht.</p>
 <p>Im hier vorliegenden Artikel bemüht sich der Autor allerdings abseits ausgetretener Pfade mal nicht ausgelutschter Contra-Apple-Argumente, sondern greift sich munter die Aspekte, die bisher gemeinhin als Vorteile galten: (relativ) absturzsicher, virenfrei, etc. Diese werden als oma'esk diffamiert, und der Windows-PC gleichzeitig als richtiger Männer-Computer dargestellt.</p>
 <p>Nicht sonderlich einfallsreich, wie ich finde. Schließlich ist das "Nur was für richtige Männer"-Argument in den meisten Fällen ein kläglicher Versuch Unzulänglichkeiten und Schwächen zu kaschieren, und - mit etwas Glück - auf dem besten Wege als Anachronismus im Abseits zu landen.</p>
 <p>Außerdem darf man eines nicht vergessen: Windows PC-User basteln vielleicht mehr an der Hardware, während Apple-User mehr "Zeug mit Medien uns so..." machen. Aber schlussendlich handelt es sich bei der Bevölkerungsgruppe, um die es hier geht um Nerds. Und auch auf die Gefahr hin, dass ich mich jetzt überkommener Stereotype bediene - Nerdigkeit und Männlichkeit im traditionellen Sinne ist nicht vollkommen das geiche.</p>
 <p class="lizenz">Bild: <a href="http://flickr.com/photos/kapungo/1534550678/" target="_blank">Car Wreck</a> von <a href="http://flickr.com/photos/kapungo/" target="_blank">Kapungo</a> unter <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.en" target="_blank">CC</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -356,7 +334,16 @@ Leute, was macht ihr eigentlich so mit Windows-Computern um dann solche Symptome
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

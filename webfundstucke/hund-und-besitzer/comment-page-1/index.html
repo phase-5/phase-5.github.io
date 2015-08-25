@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1249">
 					<h2>Hund und Besitzer</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>In Anbetracht diverser Allergien, die ich hier nicht alle aufzählen will, bin ich leider mein Leben lang davon ausgeschlossen mir ein Haustier anzuschaffen, das stetig meine körperliche Nähe sucht und dazu noch mit Haaren bedeckt ist. Kleintiere sind davon ausgenommen, aber bei Vögeln, Hunden und Katzen hört der Spaß auf.</p>
 <p>Und das ist schade. Denn vor einiger Zeit sah ich einmal einen Bericht über eine englische Bulldogge, die leider falsch erzogen worden war, und daher gewisse Probleme hatte sich an Regeln zu halten. Anders als der geneigte konservative Leser vielleicht glauben möchte (Dogge, Kampfhund etc. blablabla) äusserten sich die Probleme mit diesem Hund jedoch nicht darin, dass er sonderlich agressiv gewesen wäre, sondern viel mehr darin, dass er ein kleiner launischer nähebedürftiger fauler Sack war, der sofort, wenn etwas von ihm verlangt wurde, das er so nicht gewohnt war, in lautes Gejaule und Gebelle verfiel. Stöckchenspiele waren ihm viel zu doof (kann ja jeder), stattdessen setzte er lieber einen satten Haufen in den Wald, als bescheuert durch die Flora&amp;Fauna zu hetzen.</p>
 <p>Und was soll ich sagen? Ich habe mich verliebt. Dieser Hund, das war ich. Es wurde mir spätestens in dem Moment klar, als ich sah wie der Kleine mit allen Beinen von sich gestreckt auf dem Bauch lag. Wie geil gemütlich ist das denn bitteschön?</p>
@@ -142,18 +131,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von Schlomo Mandel.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -324,7 +302,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

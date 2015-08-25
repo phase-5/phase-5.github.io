@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-971">
 					<h2>Hannover – Riot Downtown</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/02/polizei.jpg" alt="Polizei"></p>
 <p>Yeah, in Hannover ist immer was los. Wo sonst macht man sich die Mühe einen Überfall auf ein Juweliergeschäft vorzutäuschen, die Räuber mit 15(!) Geiseln in einer extra von den Verkehrsbetrieben zur Verfügung gestellten Straßenbahn durch die Stadt türmen zu lassen, um sie dann vor der Uni dingfest zu machen, mit vollem Polizeiaufgebot, SEK und postierten Scharfschützen?! Neben der Eilenriede ist es diese Spontaneität unserer Ordnungshüter, die mir diese Stadt so hat ans Herz wachsen lassen.</p>
 <p>Übrigens fand der Showdown am Königsworther Platz statt, einem der wichtigsten Einfalltore Hannovers. Es dürften also genügend Leute Zeugen dieses Spektakels geworden sein. Außerdem ist direkt gegenüber das Gewerkschaftsgebäude, so dass diese Übung wohl als der große "Shoot-Out at the IG B-C-E" in die Annalen der Stadt eingehen wird.</p>
 <p class="lizenz">Bild: <a href="http://flickr.com/photos/trenchfoot/74816956/" target="_blank">From The Mightiest Pharaoh to The Lowliest Peasant, Who Doesn't Enjoy a Good Sit?</a> von <a href="http://flickr.com/photos/trenchfoot/" target="_blank">Trenchfoot</a> unter <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC</a>-Lizenz | <a href="http://www.haz.de/newsroom/regional/art185,402422" target="_blank">Quelle</a></p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -439,7 +417,16 @@ Hannover ist fast tot..</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

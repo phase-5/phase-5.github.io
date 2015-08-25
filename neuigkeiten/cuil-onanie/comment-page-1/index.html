@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1540">
 					<h2>Cuil-Onanie</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/07/cuil_screenshot.png" alt="cuil - screenshot" title="cuil - screenshot" width="500" height="126" class="size-full wp-image-1541"></p>
 <p>Nun ist die nach eigenen Angaben größte Suchaschine der Welt gestartet - <a href="http://www.cuil.com">Cuil.com</a>. Und während eine kleine Gruppe sich noch fragt, wie man das ausspricht, macht sich der große Rest schon daran, die Cuil-Onanie zu testen und zu gucken, ob ihr Name bzw. ihre Homepage auch schön weit oben gelistet wird.</p>
 <p>Ich selbst bilde da natürlich keine Ausnahme, muss aber sagen, dass das Ergebnis eher unbefriedigend ist. Zumal die Seite etwas überlastet scheint und mitunter gar keine Treffer findet zu Suchanfragen, zu den ich händisch ohne Suchmaschine locker zehn Seiten aus dem Stegreif raussuchen könnte. Erzielt man dann ein paar Treffer, ist die Auflistung etwas gewöhnungsbedürftig. Einfach mal ausprobieren. Die Cuil-Menschen wollten sich wohl von der bisher bei Suchmaschinen gebräuchlichen Liste freimachen.</p>
 <p>Mal sehen wie sich das ganze entwickelt.</p>
 <p>(via <a href="http://www.golem.de/0807/61339.html">golem</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -375,7 +353,16 @@ hate it or love it.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

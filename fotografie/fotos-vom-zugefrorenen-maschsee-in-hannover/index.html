@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-2580">
 					<h2>Fotos vom zugefrorenen Maschsee in Hannover</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Trotz allgemeiner Klima-Erwärmung ist der Maschsee in Hannover mal wieder zugefroren. Diese Gelegenheit wollte ich mir nicht entgehen lassen, weshalb ich mir die Kamera schnappte und mich zum See begab. Allerdings war ich natürlich nicht der einzige, der diese Idee hatte - es war gefühlt ganz Hannover und Umland auf der Eisdecke des Maschsees unterwegs. Unglaublich, wie voll so ein See sein kann.</p>
 <p>Zum Glück war die Eisdecke aber nur 13cm dick. Das hat gereicht, um die Menschenmasse zu tragen, und auch nicht mehr. Ab 18cm scheint es nämlich die Erlaubnis zu geben, Bühnen auf dem Maschsee aufzubauen und die Leute mit schlechter Musik zu beschalllen. Das wäre wahrlich eine Schande gewesen. </p>
 <p>Und nun zu den Fotos: 25 Schwarz-Weiß-Bilder mit einer gesunden Körnung. Da Vielfalt/Redundanz alles ist, werde ich die Farbversionen gleich noch bei <a href="http://flickr.com/photos/herschel_r/sets/72157612357918697/">Flickr</a> hochladen. Ein Besuch lohnt sich, da ich die "Goldene Stunde" mitgenommen habe und offensiv am Sättigungs-Regler war.</p>
 
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -412,7 +390,16 @@ waren meine homies nicht am eishockey spielen? wobei das vielleicht unmöglich g
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

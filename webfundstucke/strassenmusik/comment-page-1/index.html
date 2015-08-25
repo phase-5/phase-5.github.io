@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-2183">
 					<h2>Straßenmusik</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wie die/der eifrige Phase 5-Leser/in vielleicht noch weiß, haben ich und einige andere Mitglieder des erlauchten Autoren-Teams den Sommer teilweise in Dänemark bei winterlicher Witterung verbracht. Dort ist der Seitenstreifen auf Straßen kein schnöder Streifen, wie in Deutschland, sondern eine Aneinanderreihung kleiner, schmaler Streifen. </p>
 <p>Fährt man nachts - vollgepumpt mit Crystal Meth und Fruchtsekt - nach hause und schlummert ein, weckt einen das fiese Geräusch, welches entsteht wenn man auf besagtem Seitenstreifen fährt. Äußerst praktisch auch für Trucker, die sich in der Thermoskanne verfangen haben und beim Befreien nicht auf den Verkehr achten können, da die Tageszeitung die Sicht versperrt.</p>
 <p>Als ich mit Tedious Nilsen dann auf der dänischen Autobahn unterwegs war und mal wieder den Seitenstreifen testete, kam mir die Idee, dass man eigentlich nur die Abstände der kleinen Streifen variieren müsste und schon könnte man Musik machen. Tedious meinte daraufhin, dass es das in einem Land gäbe und dort die Nationalhymne nach dem Passieren der Grenze durch Streifen auf der Straße gespielt würde. Leider fiel im nicht ein, in welchem Land das war.</p>
 <p>Macht aber nichts, denn ein Japaner hat ein Verfahren entwickelt um Rillen in Asphalt zu fräsen und Honda war sich nicht zu schade das PR-wirksam einzusetzen:</p>
 <p><embed src="http://s.wsj.net/media/swf/main.swf" bgcolor="#FFFFFF" flashvars="videoGUID=9FE08BBB-6748-4E61-9129-9CB25E5F3B65&amp;playerid=1000&amp;configURL=http://wsj.vo.llnwd.net/o28/players/&amp;autoStart=false” base=" rtmpt:="" wsj.fcod.llnwd.net="" a1318="" o28="" video"="" name="main" width="500" height="355" seamlesstabbing="false" type="application/x-shockwave-flash" swliveconnect="true" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></p>
 <p>(<a href="http://online.wsj.com/video/a-musical-road-trip/9FE08BBB-6748-4E61-9129-9CB25E5F3B65.html">direktAsphaltrillen</a> | via <a href="http://www.werbeblogger.de/2008/10/24/der-sound-des-asphaltes/">Werbeblogger</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -336,7 +314,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

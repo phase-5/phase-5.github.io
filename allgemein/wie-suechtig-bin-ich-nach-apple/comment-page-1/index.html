@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-1353">
 					<h2>Wie süchtig bin ich nach Apple?</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Ähm... <a href="http://www.surfgarden.de/blog/2007-11/how-addicted-to-apple-are-you/">Sorry</a>, <a href="http://512mb.net/2007/11/13/how-addicted-to-apple-are-you/">aber</a> <a href="http://www.apfelquak.de/2007/11/13/coldplay-suechtig/">mich</a> <a href="http://www.weblo.ch/addicted-to-apple/">interessiert</a> <a href="http://www.apfeltalk.de/forum/test-how-addicted-t107711-8.html">nicht</a>, <a href="http://jetzt.sueddeutsche.de/texte/anzeigen/407063">wie</a> <a href="http://www.free-mac-software.com/blog/2007/how-addicted-to-apple-are-you/">süchtig</a> <a href="http://www.macvillage.de/blog/2007/11/14/73-addicted-to-apple/">ihr</a> <a href="http://www.pimp-your-mac.de/50226711/90.php">nach</a> <a href="http://blog.eberon.de/2007/11/14/addicted-to-apple/">Apple</a> <a href="http://www.atlnet.de/2007/11/16/addicted-to-apple/">seid</a>! <a href="http://www.playboi.de/blog/addicted-to-apple">Ist</a> <a href="http://www.massenpublikum.de/blog/?p=298">das</a> <a href="http://blurblu.de/weblog/comments/how-addicted-to-apple-are-you/">die</a> <a href="http://www.ipernity.com/doc/15238/985274?lg=de">moderne</a> <a href="http://princo.wordpress.com/2007/11/14/apple-kann-mir-gestohlen-bleiben/">Form</a> <a href="http://www.blog.neimen.de/archives/639">des</a> <a href="http://codecandies.de/2007/11/15/addicted/">Schwanzvergleiches</a>?!
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von <a href="http://web2.0du.de">Robert Curth</a>.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -476,7 +454,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

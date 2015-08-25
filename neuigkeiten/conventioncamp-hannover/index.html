@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-1206">
 					<h2>ConventionCamp Hannover</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<h5>Die InternetKonferenz 2.0</h5>
 <p><img src="../../wp-content/uploads/2008/07/conventioncamp_hannover.png" alt="conventioncamp hannover - die internetkonferenz 2.0" title="conventioncamp hannover - die internetkonferenz 2.0" width="500" height="132" class="alignnone size-full wp-image-1971"></p>
 <p>Die Internetagentur W3Design veranstaltet (möglicherweise in Zusammenarbeit mit dem "Lehrstuhl für Marketing und Management" der Universität Hannover, wer weiß das schon so genau…) am <strong>2. Oktober 2008</strong> in den Räumen der Universität ein als "<a href="http://www.conventioncamp.de/">ConventionCamp</a>" betiteltes BarCamp. Eine prima Gelegenheit sich näher mit dem Thema Internet zu beschäftigen, wo ich es doch schon nicht gebacken gekriegt habe zum BarCamp am EXPO Plaza anfang des Jahres zu gehen.</p>
 <p>Außerdem kann ich nebenbei gleich etwas Universitätsluft schnuppern, bevor die Vorlesungszeit wieder losgeht. Wer studiert weiß, dass einem ein harter Einstieg nach 2 Monaten Sommerpause förmlich das Genick brechen kann.</p>
 <p>Naja, auf jeden Fall ist die Teilnehmerzahl auf 400 begrenzt, es gilt also sich zügig <a href="http://www.conventioncamp.de/anmeldung">anzumelden</a>, falls man Interesse hat. Dabei kann man gleich noch <em>en passant</em> einen Backlink mitnehmen, auch wenn ich massiv der Vermutung anhänge, dass dieser höchst temporär sein dürfte.</p>
 <p>So viel dazu. Mein Geschwafel ist übrigens nicht barrierefrei, wie ich heute lernen durfte. Mittelfristig werde ich mir da wohl etwas überlegen müssen.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -278,7 +256,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

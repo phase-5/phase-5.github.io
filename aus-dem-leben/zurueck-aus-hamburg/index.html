@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1093">
 					<h2>Zurück aus Hamburg</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/04/hamburg_hochbunker.jpg" alt="Hamburg" title="Hamburg"></p>
 <p><a href="../../musik/girls-in-hawaii-geben-konzert-in-hamburg/" target="_blank">Wie angekündigt</a> habe ich mich in die Hansestadt verdrückt und mir ein Konzert der belgischen Indie-Truppe "Girls in Hawaii" im "Übel&amp;Gefährlich" angeschaut. Mein Fazit: Prima Sache.</p>
 <p>Ich höre diese Band sowieso gerne, und da sie ihre Instrumente zu bedienen wissen und auch sonst sehr engagiert zu Werke gehen, kann ich nur jedem empfehlen mal ein Konzert der Jungs zu besuchen. Einziger Kritikpunkt ist ihr - fragwürdiger(?) - Drang, sich so nah wie möglich ans Album zu halten. Hin und wieder hätte ich mir schon gewünscht, dass sie ihre Lieder aus dem engen Korsett des Album-Arrangements herausholen und sich einfach mal gehen lassen und improvisieren.</p>
@@ -138,18 +127,7 @@
 <p>Eine Mitgliedschaft ist allerdings schnell beantragt, wobei mein Vertrag erst ab 01.02.3004 gültig wird. Das hat die gute Tine aber nicht davon abgehalten, mir schon mal einen Mitgliedsausweis auszuhändigen, was ich ihr hoch anrechne.</p>
 <p>Auf der S-Bahnfahrt zum Bahnhof, von wo aus ich die Heimreise ins idyllische Hannover angetreten habe, wurde ich übrigens nochmal kontrolliert. Sozusagen als hansestädtisches Abschiedsgeschenk. Und natürlich hatte ich mir keine Karte gekauft... Was den Kontrolleur dann allerdings dazu veranlasst hat, das Semesterticket der Universität Hannover als gültige Fahrerlaubnis zu akzeptieren, möchte ich eigentlich gar nicht wissen.</p>
 <p>Eins ist jedoch klar - Hamburg ist immer eine Reise wert.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -320,7 +298,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

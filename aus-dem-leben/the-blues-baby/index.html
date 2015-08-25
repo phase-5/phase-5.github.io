@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-729">
 					<h2>The Blues, Baby!</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2007/10/blues.jpg" alt="Blog Blues"></p>
 <p>Er geht rum, der Blues. Gemählich swingend, immer irgendwo zwischen der kleinen under großen Terz. Das kann einen schonmal fertig machen. Kein Wunder, dass einige ihren Blog <a href="http://www.julieparadise.de/" target="_blank">schließen</a>. Zweifel am eigenen <a href="http://www.nerdcore.de/wp/2007/10/16/mir-ist-grade-echt-alles-sowas-von-furchtbar-egal/" target="_blank">Schaffen</a> kommen ebenfalls auf.</p>
 <p>Das ist der Blues - wenn die Tage kürzer und die Nächte länger werden, sich das Laub auf der Straße sammelt, die Discounter das Ostersortiment auspacken, und die Marzipankartoffeln auf dem "Grabbeltisch" so unschlagbar günstig sind, dass man sich ernsthaft fragen muss, ob die Kinder, die selbige in 14 Stunden-Schichten ohne Licht, Nahrung und frische Luft herstellen, für diese Tätigkeit zahlen mussten.</p>
 <p>Am schlimmsten aber sind <a href="http://www.nasendackel.de/" target="_blank">jene</a>, die der Blues derart gepeinigt hat, dass sie ankündigen mit dem Bloggen aufzuhören, trotzdem weiter täglich einen Beitrag raushauen und nebenbei noch ihre Themes wechseln wie Mullah Omar seine Unterhosen. Da wünscht man sich als verwirrter Leser dann doch den Frühling herbei.</p>
 <p class="lizenz">Bild: <a href="http://flickr.com/photos/luchilu/677786684/" target="_blank">Noche de luna llena...Full moon night</a> von <a href="http://flickr.com/photos/luchilu/" target="_blank">*L*u*z*a* AWAY</a> unter <a href="http://creativecommons.org/licenses/by/2.0/deed.en" target="_blank">CC-</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -454,7 +432,16 @@ Aber müssen wir unbedingt den Kommunismus ausrufen? Wie wär es mit dem Kompost
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

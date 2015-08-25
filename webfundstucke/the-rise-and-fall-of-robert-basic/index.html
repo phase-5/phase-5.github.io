@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-2671">
 					<h2>The Rise and Fall of Robert Basic</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Der Verkauf des Basic Thinking-Blogs hat ja große Wellen geschlagen und den Namen Robert Basic auch außerhalb der Blogosphäre bekannt gemacht. Nun hat sich jemand respektive ein Kollektiv, welches sich im weitesten Sinne humoristisch mit audiovisuellen Medien befasst, seiner angenommen und seinen zukünftigen Weg in einem Video vorgezeichnet.</p>
 <p><object width="480" height="295"><param name="movie" value="http://www.youtube.com/v/-Pci-yfv8Kc&amp;hl=de&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/-Pci-yfv8Kc&amp;hl=de&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="295"></object></p>
 <p>(<a href="http://www.youtube.com/watch?v=-Pci-yfv8Kc">direktBasic</a>)</p>
 <p>Dagegen ist die Wienerwald-Story ein feuchter Schiss, wenn ich das mal so formulieren darf. Die Frage ist nur, vom wem stammt das Video? Ich persönlich würde ja auf Extra3 tippen, aber das ist nur eine Mutmaßung. Falls es jemand weiß, bitte einen Kommentar hinterlassen. </p>
 <p>Ach ja, falls sich jemand wundert, warum Phase zurzeit so videolastig ist: Videos sind 2009 neben <em>pr0n</em> das <em>next big thing</em>. Kein Scheiß!</p>
 <p>(<a href="http://www.werbeblogger.de/2009/01/16/danke-robert/">Werbeblogger</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -278,7 +256,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

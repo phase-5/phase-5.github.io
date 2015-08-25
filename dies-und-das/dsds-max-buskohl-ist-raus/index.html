@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-388">
 					<h2>DSDS: Max Buskohl ist raus</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Großer Schock für die DSDS-Fan-Gemeinde - Max Buskohl ist raus, weil er sich höchstwahrscheinlich mit den RTL-Verantwortlichen überworfen hat. Angeblich wollte er einen Plattenvertrag für seine Schülerband, und legte weniger Wert auf eine Solo-Karriere.</p>
 <p>Das ist natürlich tragisch. Andererseits aber auch ziemlich belanglos. Ich weiß nicht wieviele Blogger sich schon in ihrem Hass über diese Show ergangen haben, aber ich persönlich möchte es mir nicht nehmen lassen, mir auch noch einmal Luft zu machen.</p>
 <p><strong>DSDS ist eine entwürdigende, abgeschmackte, ausgelutschte, das Musikgeschäft verhöhnende, nervige Scheißsendung. Lieber lass ich mir Samstags abends von ein paar tollwütigen Makaken den Sack mit Sparschälern entlausen, als mich vor den Fernseher zu schnallen und RTL zu gucken.</strong></p>
 <p>Einen Aufruf zur Absetzung dieses televisionären Darmkrebsgeschwürs spare ich mir an dieser Stelle einmal, da ich bei aller Abscheu doch über ein gesundes Maß an Realismus verfüge.</p>
 <p><strong>Nachtrag:</strong></p>
 <p>Dass es eine DSDS-Staffel im Jahre 2008 gibt spricht nicht für unserer TV-Angebot.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -297,7 +275,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

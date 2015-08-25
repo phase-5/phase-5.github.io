@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1503">
 					<h2>CD-Dings</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Ich brauche etwas, von dem ich bis vor ein paar Tagen nicht wusste, wie es heißt. Es sind runde Schaumstoffnupsis (Moosgummi), die man irgendwo hin kleben kann um CD's drauf zu stülpen. (Unter so einer Beschreibung kann sich wirklich niemand etwas vorstellen, oder?)</p>
 <p>Jetzt habe ich erfahren: Die Teile heißen <em>CD-Rosetten</em>.</p>
 <p>Warum auch immer. Rosette ist ja ein Wort mit vielfältigen Bedeutungen, aber darauf wäre ich nicht gekommen. Man kann sie auch günstig <a href="http://www.karley.de/product_info.php/cPath/1733_1731/products_id/4726&amp;name=CD_Rosetten_Schaumst.htm">kaufen</a>, allerdings erst ab 300 Stück. Jedenfalls: Wenn da jemand 4 von über hätte, nur her damit! (Auch präzisere Beschreibungen der Funktionsweise würden bestimmt zu unserem Amusement beitragen, ebenso wie bessere Namen...)</p>
@@ -137,18 +126,7 @@ Liebe Co-Autoren, das war kein Aufruf jetzt die Rosetten-Themen-Tage zu starten.
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von Klaus.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -416,7 +394,16 @@ Liebe Co-Autoren, das war kein Aufruf jetzt die Rosetten-Themen-Tage zu starten.
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-1166">
 					<h2>The times, they are a'changin'</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wenn man langsam alt wird, die Neugierde auf Neues einer Angst vor Neuem weicht und man sich überdies noch einen leicht dumpfen Anti-Amerikanismus pflegt, kann es schonmal passieren, dass man <a href="http://craplog.de/tzwitter/">solche Sachen</a> schreibt.</p>
 <p>Dabei möchte ich gar nicht für Twitter in die Bresche springen, das Thema haben wir zur Genüge durch. Ich möchte auch nicht auf das Problem der mangelnden Sensibilität bezüglich Datenschutz im Web2.0 eingehen. Vielmehr wundert es mich, dass da von "Verkrüppelung der Sprache" gesprochen wird, wo ich eher eine Weiterentwicklung sehe. In Zeiten von Web2.0 und Instant Messaging schreiben Millionen Menschen im Internet, die dieselbe Zeit 20 Jahre früher noch fürs Fernsehen oder 8-Bit-Konsolengedaddele genutzt hätten.</p>
 <p>Stattdessen sind sie mehr oder minder kreativ, auf jeden Fall produktiv. Und wie das so ist, hat jeder seine persönlichen Talente. Manche können gut Fußball spielen, andere gut zeichnen, und ein Bruchteil der Millionen Menschen, die sich im Netz schreiberisch betätigen, können das auch. Der Rest holpert mehr oder weniger schön nebenher. Verbieten möchte ich das nicht, und ein Problem sehe ich darin auch nicht.</p>
 <p>Außerdem passt sich die Sprache dem jeweiligen Medium an. Das ist kein Verfall oder eine Verkrüppelung, sondern Evolution. Das mag teilweise befremdlich wirken, auch für mich, muss aber deswegen noch lange nichts schlechtes sein. Denn wenn ich aufhöre offen für neue Entwicklungen aus welchem Bereich auch immer zu sein, kann ich mich auch gleich in meinen Ohrensessel setzen, die Lodendecke über die Beine ziehen, mir meine Pfeife bringen lassen, davon schwärmen wie gut die Welt früher noch war/wie schlecht die Welt heute ist, und gemütlich auf den Tod warten.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -374,7 +352,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

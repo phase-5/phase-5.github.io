@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1755">
 					<h2>Helloween: I want out</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Nachdem Herschel gestern <a href="http://twitter.com/Herschel_R/statuses/905598454">twitter</a>te: "Sieben AutorInnen und keiner bloggt", hat die liebe Klausa den Bann gebrochen. Ich hatte aber schon das folgende Video in der Pipeline, welches mir mein Cousin sandte.</p>
 <p><a title="Helloween auf Last.fm" href="http://www.last.fm/music/Helloween" target="_blank">Helloween</a> waren, ich muss es zugeben, eine Band, die mein 13-jähriges comicverseuchtes Gehirn ansprach. Seitdem ich kürzlich dieses Video sah, habe ich aber erst den ganzen Tiefgang dieser Gruppe schätzen gelernt. Wenn man auf das Jahr (1988) guckt, dann bekommt man eine Ahnung, welcher Soundtrack damals die Brüder und Schwestern in Mitteldeutschland dazu rief, <a title="DDR-Massenflucht im dt. hist. Museum" href="http://www.dhm.de/lemo/html/DieDeutscheEinheit/WandelImOsten/ausreisewelle.html" target="_blank">die sog. DDR zu verlassen</a> und in den freien Westen zu kommen.</p>
 <p>Achso, auch ehrgeizige Videocutter können sich hier eine Scheibe abschneiden. Selten hat ein Musikvideo so stringent eine einheitliche Linie verfolgt, um einfach die Story eines Songs zu erzählen.</p>
@@ -137,18 +126,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von J.K. Simpson.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -377,7 +355,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

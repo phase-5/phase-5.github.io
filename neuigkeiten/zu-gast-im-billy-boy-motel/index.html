@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-2105">
 					<h2>Zu Gast im BILLY BOY-Motel</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/10/billy-boy-motel.png" alt="BILLY BOY-Motel" title="BILLY BOY-Motel" width="500" height="188" class="alignnone size-full wp-image-2106"></p>
 <p><a href="../../aus-dem-leben/nen-bisschen-praxis-und-so/">Wie schon erwähnt</a> mache ich zurzeit ein Praktikum bei der <a href="http://www.bluhouse.de/">bluhouse GmbH</a> in Hannover. Dort beschäftige ich mich hauptsächlich mit einem interessanten inHouse-Projekt: Dem <a href="http://www.bb-motel.de/">BILLY BOY-Motel</a>.</p>
 <p>Das ist eine Mischung aus Online-Game, Flirt-Community und Social Network. Man bezieht sein karges Motelzimmer, kann es gegen Bezahlung nach Belieben einrichten, wie ein läufiger Bulle in der Gegend rumbaggern und andere Nutzer kennenlernen. Bezahlt wird übrigens mit Blinks, so heißt die offizielle Währung. Und es gibt einige Möglichkeiten, sich diese zu verdienen.</p>
 <p>Wer also noch mehr Herschel erleben möchte, guckt einfach im Motel vorbei. Übrigens sind gerade Tell-A-Friend-Wochen und man bekommt für jeden eingeladenen Nutzer Blinks gut geschrieben. In Anbetracht der Tatsache, dass mein Motelzimmer ebenso wie mein Kontostand relativ mau ist, bietet sich folgendes Vorgehen an:</p>
 <p>Ihr schreibt in euren Kommentar zu diesem Beitrag "Bring mich ins Motel!", und ich schicke die Einladung an die im Kommentar angegebene eMail-Adresse. Dann seid ihr fett dabei und ich bin wieder liquide. Leider gibt es noch keine Schenkungs- oder Kreditfunktion, aber noch sind wir ja im BETA-Stadium - es kann also noch einiges kommen.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -337,7 +315,16 @@ immer her damit</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

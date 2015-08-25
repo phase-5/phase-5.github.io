@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-492">
 					<h2>Umweltschutz</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wie wir bereits wissen, fängt Umweltschutz beim Einzelnen an. Man kann nicht auf das Chemie-Werk nebenan schimpfen, wenn man selbst jede noch so kurze Strecke mit dem Auto zurücklegt, und nach einem ausgiebigen Grillreigen im Park seinen Müll in den nächstbesten Busch respektive Kindergarten wirft - während zu hause das Bier unterm laufenden Wasserhahn im Waschbecken liegt, und darauf wartet, für den Abend adäquat gekühlt zu sein.</p>
 <p>Nein, jeder muss für sich selbst überlegen, wo er etwas tun kann.</p>
 <p>Andere haben das schon längst erkannt. Zum Beispiel die <a href="http://www.klimaschuetzer.de" target="_blank">Klimaschützer</a> - ihre einfache, wie geniale Erkenntnis: Atomkraftwerke stoßen kein CO2 aus. Also gefährden sie auch nicht die Umwelt. Man muss nur aufpassen, dass sie nicht außerplanmäßig kaputt gehen, und den radioaktiven Müll nach dem AKW-Rückbau fachgerecht verbuddeln.</p>
@@ -135,18 +124,7 @@
 <p>Auch die NPD hat sich zwischen Naziaufmarsch, Volksfest und Bücherverbrennung die Zeit genommen, über Mutter Natur nachzudenken. So ist es ihnen wie Schuppen von den Augen gefallen, dass der Mensch ja in der Natur lebt. Ergo ist die Umwelt ja so etwas wie eine Mitwelt, wie sie uns auf ihrer Homepage - die ich aus Sparsamkeitsgründen einmal nicht verlinken will - mitteilen. Und Mitwelten gilt es besonders zu schützen.</p>
 <p>Dann müssen nur noch die leidigen Ausländer raus, bzw. alle, die dunklere Haare haben als Holger Apfel, und schon können wir hier glücklich bis ans Ende unserer Tage mit der Natur leben.</p>
 <p>Man sieht also, es geht voran. Das ist außerordentlich schön...</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -279,7 +257,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

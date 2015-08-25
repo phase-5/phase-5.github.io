@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1349">
 					<h2>Wenn 1und1 nicht 2 ergibt.</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Ach, was sollte das heute für ein herrlicher Tag werden: Das heiß ersehnte DSL 16000 wurde freigeschaltet. Bereits um 08:00Uhr riss mich der vorbildliche Telekomtechniker aus meinen Träumen und wenige Sekunden später leuchtete auch schon das Lämpchen am DSL-Modem. Eine neue Ära der Telekommunikation sollte beginnen.</p>
 <p>Hocherfreut packte ich mein gutes altes ISDN-Telefon aus meinem Umzugskarton, um ernüchtert festzustellen, dass meiner Fritzbox komischerweise der passende Steckplatz zu fehlen schien. Ein entsetzter Blick auf die Unterseite des Gerätes veriet mir den Grund: Man hatte mir das falsche Modell geliefert. Nicht etwa das Flagschiff der Serie 7170, sondern ein weitaus billigeres Model, an das man nur analoge Telefone anschließen kann.</p>
 <p>Erschrocken schaute ich auf die Rechnung, stellte aber fest, dass ich bei der Bestellung offensichtlich doch alles so angegeben hatte wie es mir beliebt. In Ermangelung eine Telefones und eines Interetzugangs beschloss ich also in purer Verzweifelung die kostengünstige 0900-Nummer von 1&amp;1 per Handy anzurufen. Lediglich 79 Cent pro Minute sollte mich der Anruf kosten.</p>
@@ -139,18 +128,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von <a href="http://web2.0du.de">Robert Curth</a>.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -446,7 +424,16 @@ Toll oder? So werden Tag für Tag Leute verar***t .</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-689">
 					<h2>Der Weihnachts-Gulag</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Heute möchte ich ein etwas ernsteres Thema anschneiden. Es geht um die Weihnachtsfabrik am Nordpol. Viele Menschen - und vor allem Kinder - glauben, die Weihnachtsfabrik sei ein lustiger Ort, gemanagt vom Weihnachtsmann und Arbeitsplatz vieler Wichtel.</p>
 <p>Zu 66% stimmt die Vorstellung, nur ist die Weihnachtsfabrik in der Realität alles andere als ein lustiger Ort. Vielmehr kann von einem Ausbeuterbetrieb gesprochen werden, wie er selbst für chinesische Verhältnisse unhaltbar ist; die Wichtel arbeiten durchschnittlich 15 Stunden am Tag, ihre Schlafstätten befinden sich direkt neben der Fabrik. Da die Tore ständig verschlossen bleiben, kommen sie faktisch nie raus.</p>
 <p>Die Krankenversorgung ist unzureichend, ähnlich wie die Verpflegung. Meistens gibt es trockenes Brot und eine dünne Suppe. Da der Weihnachtsmann ein perfides Denunziantensystem etabliert hat, ist ein Aufbegehren so gut wie unmöglich, und jede Anstrengung in diese Richtung wird im Keim erstickt.</p>
@@ -135,18 +124,7 @@
 <p>Bisher befindet sich Betram mit seinen Bemühungen noch ganz am Anfang, da er der einzige ist, dem bisher die Flucht gelang. Auch auf die Hilfe der UNO konnte er bislang nicht bauen. Seine Bestrebungen, die Regierungen der Welt auf die Missstände am Nordpol aufmerksam zu machen scheiterten bisher an der Tatsache, dass es ihm nicht gelang, sie von der Existenz des Weihnachtsmanns und seines wichtelverachtenden Arbeitslagers zu überzeugen.</p>
 <p>Sein Geld verdient Bertram bisher an der medizinischen Fakultät Harvards, als Proband für ein Wachstumsmittel.</p>
 <p>Wir von Phase 5 machen hiermit auf die Wichtelrechtsverletzungen aufmerksam, die sich tagtäglich am Nordpol abspielen. Wir rufen dazu auf sofort etwas zu unternehmen, und nicht darauf zu warten, dass das Klima die Sache schon regelt, indem es den Pol abtauen lässt.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -441,7 +419,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

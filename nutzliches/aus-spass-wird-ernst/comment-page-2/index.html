@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-848">
 					<h2>Aus Spaß wird Ernst</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2007/12/latex.jpg" alt="Latex meets Leopard"></p>
 <p>Da macht man noch lockere Scherze, dass man anstatt seine Hausarbeit fertigzuschreiben doch einfach eine kaputte pdf-Datei bei <a href="http://www.xnet.se/fd/" target="_blank">File Destructor 2.0</a> generieren und abgeben könnte.</p>
 <p>Und schon lässt sich die Arbei nicht mehr ausdrucken. Der Zufall mag kein Gedächtnis haben, ist ansonsten aber ein fieses Arschloch.</p>
 <p>Nun gut, das Problem war folgendes: Die Hausarbeit habe ich mit LaTeX auf einem Apple-Computer unter OS X 10.5.1 (das ist dieses Scheißbetriebssystem, welches mir von Anfang an nur Ärger beschert hat) geschrieben. OS X 10.5.1 <em>bugt</em> aber, wenn es ums Ausdrucken in TeXShop oder der Vorschau geht. Die Lösung ist, sich den Adobe Reader runterzuladen und damit auszudrucken.</p>
 <p>Klingt einfach, ist aber überflüssig und kann für einige Minuten blutdrucksteigernd wirken.</p>
 <p class="lizenz">Bild zusammengebastelt aus <a href="http://flickr.com/photos/peterjbaer/1582313672/" target="_blank">Snow Leopard</a> von <a href="http://flickr.com/photos/peterjbaer/" target="_blank">Pete Baer</a> unter <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC</a>-Lizenz und <a href="http://flickr.com/photos/bjornb/293632129/" target="_blank">LaTeX</a> von <a href="http://flickr.com/photos/bjornb/" target="_blank">iBjorn</a> unter <a href="http://creativecommons.org/licenses/by-sa/2.0/deed.en" target="_blank">CC</a>-Lizenz </p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -331,7 +309,16 @@ Apple kann halt auch nur... mit Wasser kochen.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

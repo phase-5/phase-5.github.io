@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-1939">
 					<h2>500GODZ.com – StreetArt-Shirts</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/09/500godz.jpg" alt="" title="500godz" width="500" height="375" class="alignnone size-full wp-image-1940"></p>
 <p>Heute habe ich ein T-Shirt von <a href="http://www.500godz.com/shop/">500GODZ</a> im Briefkasten gehabt. Dies ist ein neuer Online-Shop, der T-Shirts mit StreetArt-Motiven von bspw. ALIAS und WOW bedruckt und verkauft. Dabei wird darauf geachtet, dass die Shirts fair hergestellt und gehandelt, sowie umweltfreundlich bedruckt wurden. Das schlägt sich natürlich im Preis nieder, aber für 2 Euro Kinderarbeit bei Kik zu unterstützen kann ja auch jeder.</p>
 <p>Obiges Motiv, welches ich mit vor Aufregung hart gewordenen Nippeln in die <em>Photobooth</em> strecke, ist übrigens von Lidl Shidbrad. Ein StreetArt-Künstler aus Buxtehude, der zwar noch nicht so bekannt ist, in der Szene aber als Geheimtip gehandelt, und mitunter liebevoll als "Friesen-Banksy" bezeichnet wird. Zurecht, wie ich finde.</p>
 <p>Man darf also in jeder Hinsicht gespannt sein, was da noch alles kommt.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -317,7 +295,16 @@ wenn das mal nix ist...</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

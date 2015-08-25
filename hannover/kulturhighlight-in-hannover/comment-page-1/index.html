@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2649">
 					<h2>Kulturhighlight in Hannover ?!</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>In der <a href="http://www.kestner.org/">Kestner-Gesellschaft</a> in Hannover läuft gerade eine hoch interessante (so vermute ich, da gewesen bin ich allerdings noch nicht) Ausstellung namens<strong> <a href="http://bookmarks2009.de/">Bookmarks</a> - Wissenswelten von der Keilschrift bis YouTube</strong>. Es geht darum, wie das Internet den Umgang mit Wissen verändert und stellt YouTube diverse ältere Wissensspeicher gegenüber. Daneben gibt es eine Reihe interessanter <a href="http://bookmarks2009.de/veranstaltungen/">Veranstaltungen</a> mit Vorträgen rund ums Thema, u.a. "Urheberrechte" und "Wissensvermittlung oder Exhibitionismus".</p>
 <p>Aber damit nicht genug, besonders spannend finde ich den Aufruf zu Führungen durch YouTube: YouTube User und Ausstellungsbesucher_innen sind aufgefordert, Touren durch Youtube zu erstellen und diese in einer Playlist zusammen zu stellen. Bislang gibt es noch nicht so viele Touren, aber z.B. schon eine zu "Hai Attacken" oder "Senioren auf YouTube". Diese finden sich dann auf dem <a href="http://de.youtube.com/profile?user=bookmarks2009&amp;view=playlists">Bookmarks-Channel</a>. Die Playlist "YouTube Klassiker" ist schon da, aber sicherlich streitbar:</p>
 <p><object width="480" height="385" data="http://www.youtube.com/p/81E2592887A9A583" type="application/x-shockwave-flash"><param name="src" value="http://www.youtube.com/p/81E2592887A9A583"></object></p>
@@ -136,18 +125,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von Klaus.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -339,7 +317,16 @@ Da gibt es also Veranstaltungen die sehr interessant klingen! Aber wo sind die d
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

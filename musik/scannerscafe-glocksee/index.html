@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1458">
 					<h2>Scanners@Cafe Glocksee</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img class="alignnone" style="border: 1px solid black;" src="http://farm1.static.flickr.com/105/291175714_c1df4262af.jpg" alt="scanners bei flickr"></p>
 <p class="lizenz"><a title="Scanners bei Wikipedia." href="http://en.wikipedia.org/wiki/Scanners_(musical_group)">Scanners</a> by <a title="bob sanderson on flickr" href="http://www.flickr.com/people/bsanderson/" target="_blank">bob sanderson</a> unter <a title="Fair Use" href="http://de.wikipedia.org/wiki/Fair_Use" target="_blank">Fair Use</a></p>
 <p>Der Booker vom <a title="Café Glocksee" href="http://www.cafe-glocksee.de/index.php3" target="_self">Cafe Glocksee</a> ist ein Genie. Dienstag für Dienstag (naja, manchmal ist <a title="Was Karaoke is." href="http://de.wikipedia.org/wiki/Karaoke" target="_blank">Karaoke</a>) gelingt es ihm, großartige Bands in die <a title="Calenberger Neustadt mit Glocksee bei Googlemaps" href="http://www.google.de/maps?f=q&amp;hl=de&amp;geocode=&amp;q=glockseestrasse,+hannover&amp;sll=51.151786,10.415039&amp;sspn=10.948952,29.794922&amp;ie=UTF8&amp;ll=52.371276,9.724338&amp;spn=0.005201,0.014548&amp;z=16&amp;iwloc=addr" target="_blank">Calenberger Neustadt</a> zu locken. Außerdem bezahlt das Publikum dafür nix - außer für Bier. Und das gerne. Am letzten Dienstag waren die <a title="Scanners bei Myspace" href="http://www.myspace.com/scanners" target="_blank">Scanners</a> dran.</p>
@@ -136,18 +125,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von J.K. Simpson.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -280,7 +258,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

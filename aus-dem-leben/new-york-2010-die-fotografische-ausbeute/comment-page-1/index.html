@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-3527">
 					<h2>New York 2010: Die fotografische Ausbeute</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Seit einiger Zeit schon habe ich mir überlegt, dass man eigentlich mal nach New York City fliegen müsste. Die Stadt angucken, auf sich wirken lassen und natürlich auch fleißig fotografieren. Als ich in den letzten Semesterferien dann zu hause saß, habe ich mir außerdem überlegt, dass es eigentlich nicht sein könne, dass man in den Semesterferien nicht wegfährt.</p>
 <p>Also habe ich kurzerhand Flug und Hotel gebucht - sechs Tage New York, von Ende Mai bis Anfang Juni. Untergekommen bin ich im Hotel Riverside Studios, einer ranzigen Absteige in der Upper West Side. Allerdings liegt das Hotel sehr schön nahe dem Central Park, weshalb ich mich nicht beschweren möchte.</p>
 <p>In den sechs Tage in New York bin ich dann in erster Linie gelaufen, weshalb schon am zweiten Tag meine Füße geschmerzt haben. Des weiteren habe ich aufgrund der recht sommerlichen Temperaturen um die 30°C in nicht unerheblichem Maße transpiriert. Da ich außerdem sehr sparsam Klamotten mitgenommen habe, musste ich mir ab dem dritten Tag überlegen, was ich mit meiner Kleidung anstelle, um nicht stinkend wie ein Penner durch die Stadt zu laufen.</p>
@@ -160,18 +149,7 @@
 <p><a href="http://www.flickr.com/photos/herschel_r/sets/72157624240331020/"><img src="../../../wp-content/uploads/2010/06/nyc-misc.jpg" alt="New York City - Misc" title="New York City - Misc" width="622" height="243" class="aligncenter size-full wp-image-3537"></a></p>
 <p>Zum Abschluss noch ein ganzer Haufen Fotos, die ich nicht mehr so richtig zuordnen kann bzw. die In Stadtteilen wie Chelsea und SoHo entstanden sind, wo ich nicht in dem Maße aktiv war, als dass es sich gelohnt hätte, ein eigenes Set dafür aufzumachen. <a href="http://www.flickr.com/photos/herschel_r/sets/72157624240331020/">Zum Set →</a></p>
 <p>So, das war es auch schon. Ich gebe zu, es sind viele Fotos und alle anzugucken dürfte etwas Zeit erfordern. Aber mal reingucken lohnt sich auf jeden Fall. Übrigens kann ich auch Flickrs Slideshow-Funktion empfehlen. Dafür in den Sets oben rechts auf den entsprechenden Button klicken, zurücklehnen und gucken.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -381,7 +359,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-584">
 					<h2>NES spielen auf dem Mac</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Nachdem ich <a href="http://hermsfarm.de/blog/index.php?blog=6&amp;title=badabababab&amp;more=1&amp;c=1&amp;tb=1&amp;pb=1" target="_blank">hier</a> gestern die Sounds des guten alten Super Mario Bros. gehört habe, musste ich sofort eine Runde spielen - aus Nostalgiegründen.</p>
 <p>Das hat auch sehr gut funktioniert, und wird deshalb von mir hier einmal näher beleuchtet:</p>
 <p>Sollte man es sehr eilig haben, ist man mit <a href="http://www.virtualnes.com/" target="_blank">vNES</a>, der nach eigenem Bekunden größten Nintendo Entertainment System-Emulation im Netz, gut bedient. Das ganze wurde mit Java realisiert, so dass man eine Menge Spiele direkt im Browser zocken kann.</p>
@@ -141,18 +130,7 @@
 <p><object width="425" height="353"><param name="movie" value="http://www.youtube.com/v/NPjsBsz4trk"><param name="wmode" value="transparent"><embed src="http://www.youtube.com/v/NPjsBsz4trk" type="application/x-shockwave-flash" wmode="transparent" width="425" height="353"></object></p>
 <p>(<a href="http://www.youtube.com/watch?v=NPjsBsz4trk" target="_blank">youMarioBros</a>)</p>
 <p>PS: Für die geschätzten Linux- und Windows-User scheint es auch NES-Emulatoren zu geben, allerdings bin ich dem nicht weiter nachgegangen.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -324,7 +302,16 @@ Was ist aus dem Blog geworden?</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

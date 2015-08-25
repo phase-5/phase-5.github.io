@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1508">
 					<h2>Erfolg und Niederlage</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>...liegen dicht beieinander. 1000 Einträge sind natürlich super. Zeitgleich veröffentlicht das <a href="http://www.zeit.de/leben/leben-magazin/index">Zeit-Magazin-Lebe</a>n heute eine <a href="http://www.zeit.de/2008/25/Karte-25">Karte</a> mit den 100 erfolgreichsten Blogs Deutschlands. Und, man braucht nicht lange fackeln, Phase-5 ist leider nicht dabei. Aber wenn ich mir die Karte so anschaue, ist es zumindest denkbar, dass wir in Hannover vorne mit dabei sind!? Aber, Herschel und ich sprachen da neulich erst drüber, wenn man so einen erfolgreichen Blog betreibt kostet das ja auch Geld, und überhaupt, wir wollen den Scheiß-Ruhm und die Scheiß-Ehre gar nicht, <span style="font-size: xx-small;">und ihr könnt euch eure Drecks-Karte sonst wo hinstecken</span><span style="font-size: xx-small;">, und dann leihen wir uns eure Mütter aus und gehen zum Fasching als Hurensöhne, und wenn ich noch ein Mal "Birne Helene" höre werfe ich mich hier auf den Fußboden und beiße in die Auslegeware...</span></p>
 <p style="text-align: center;"><a href="http://www.zeit.de/2008/25/Karte-25"><img class="size-medium wp-image-1808 aligncenter" title="blogs1" src="../../../wp-content/uploads/2008/06/blogs1-354x300.jpg" alt="100 blogs" width="354" height="300"></a></p>
 <div class="author_info">
 <p>Dies ist ein Gastbeitrag von Klaus.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -479,7 +457,16 @@ Wächst nicht vielmehr im Leben jedes wirklich erfolgreichen Menschen täglich d
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

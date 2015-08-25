@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1992">
 					<h2>Höhere Gewalt vom Bloggott</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Es ist ja nun nicht so, dass ich gestern keine Zeit gehabt hätte einen feinen Artikel hier zu bloggen, und angesichts der verstrichenen Zeit seit meinem letzten Beitrag hielt ich es auch für angemessen einen solchen mal wieder zu verfassen. Als ich aber anfangen wollte, fiel mir auf, dass ich mein Passwort vergessen und meine Email-Adresse offensichtlich falsch angegeben habe, und mir deshalb kein neues zuschicken lassen konnte.</p>
 <p>Also habe ich dem lieben Herschel mein Leid geklagt und seinen Vorschlag, doch die Passwortfunktion des Firefoxes zu benutzen, dankbar angenommen. Allerdings gestaltet es sich schwierig solche Funktionen zu nutzen, wenn man in regelmäßigen 2-Wochenabständen sein System zerschießt. Aber sei es drum. Kaum war dieses Problem behoben, da schleuderte der Herr schon den nächsten Blitz herunter, in Form einer anstrengenden neuen Mieterin im Hinterhaus, die die drollige Idee hatte einen meiner zwei Dachbodenräume komplett auszuräumen und mit einem Schloss zu versehen.</p>
 <p>Also war ich die nächsten drei Stunden damit beschäftigt oben Klarschiff zu machen. Und ich muss schon sagen: Es ist erstaunlich, was an Müll anfällt wenn man mal ordentlich aufräumt. Konnte ich vorher keinen der zwei Räume mehr betreten, so ist es mir jetzt möglich in dem verbliebenen ein Tanzcafe zu eröffnen. Auch schön. Der Sperrmüll und eBay werden es mir danken. Nebenbei: Hört noch irgendwer CDs? Ich hätte eine ganze Einkaufstüte anzubieten für schlappe 10 € gefüllt mit den unterschiedlichsten Spielen und Musik-CDs.</p>
@@ -135,18 +124,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von Schlomo Mandel.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -279,7 +257,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

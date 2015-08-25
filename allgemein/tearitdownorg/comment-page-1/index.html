@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-580">
 					<h2>tearitdown.org</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Amnesty International ruft zur Schließung von Guantanamo Bay auf.</p>
 <p><img src="../../../wp-content/uploads/2007/08/tearitdownorg.jpg" alt="tearitdown.org"></p>
 <p>Genauer gesagt geht es um die sich dort befindliche Verwahrungsanstalt von sogenannten "feindlichen Kombattanten", die dort unter äußerst kargen Bedingungen ohne rechtlichen Beistand seit Jahren festgehalten werden. Zwar ist der internationale Terrorismus auch völkerrechtlich eine große Herausforderung, aber von der selbsternannten "Speerspitze der Demokratie" - USA - erwartet man eigentlich, dass sie sich um eine rechtliche Einordnung von Terroristen bemüht, anstatt munter in das "regellose Spiel" mit einzusteigen und von der Möglichkeit die Menschenrechte mit Füßen zu treten dankbar Gebrauch zu machen.</p>
 <p>Der Ansatz, den Amnesty International verfolgt, ist von der "Million Dollar Homepage" bekannt - die 500.000 Pixel eines - ich sage mal - sachbezogenen Bildes dienen jedes für sich als eine Stimme gegen Guantanamo. Wer sich auf der Seite einträgt, reklamiert damit ein Pixel für sich und gibt seine Stimme ab. Ein interessanter Ansatz, wie ich finde. Man bekommt sein Quäntchen Öffentlichkeit und befindet sich im meinungskonformen Kollektiv - so, wie es sich in den Zeiten von Web2.0 gehört.</p>
 <p><a href="http://www.tearitdown.org/" target="_blank">Jetzt Stimme abgeben.</a></p>
 <p>(<a href="http://hermsfarm.de/blog/index.php?blog=6&amp;title=tear_it_down&amp;more=1&amp;c=1&amp;tb=1&amp;pb=1" target="_blank">via</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -354,7 +332,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

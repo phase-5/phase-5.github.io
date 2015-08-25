@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-495">
 					<h2>Die perfekte Runde vs. WriteRoom</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Man kennt sie aus dem Bowling, doch auch beim <a href="../../../aus-dem-leben/tablequiz/" target="_blank">Table Quiz</a> kann man alles "abräumen", was es abzuräumen gibt.</p>
 <p>Derlei gelang am gestrigen Abend unserem Team - "Pizza Pollo". 20 von 20 möglichen Punkten erreicht, und das gleich in der ersten von vier Runden. Was kann man größeres leisten?! Die Freude darüber war so groß, dass wir direkt danach anfingen den Sieg im großen Stile zu begießen. Dies kann denn wohl auch mit der daraufhin abnehmenden Quizleistung unsererseits in einen kausalen Zusammenhang gebracht werden.</p>
 <p>Alles Kalkül natürlich. Selbstverständlich wollten wir uns nicht siegestrunken dem Übermut hingeben, und riskieren, dass sich unsere desavouierten Gegenspieler im Angesicht derartiger Schande etwas antun. So hatten wir den Triumph, einen lustigen Abend, und der restliche Ratepöbel zumindest teilweise das Gefühl, auch seine Daseinsberechtigung zu haben.</p>
@@ -135,18 +124,7 @@
 <p>Hauptthema dieses Posts ist das Textprogramm "<a href="http://www.hogbaysoftware.com/projects/writeroom" target="_blank">WriteRoom</a>", welches ich euch vorstellen möchte. Ein niedlicher, kleiner Full-Screen-TextEditor für den Mac. Hier ist der Schreibspaß garantiert. Prädikat: Sehr empfehlenswert!</p>
 <p><img src="../../../wp-content/uploads/2007/07/writeroom.jpg" alt="writeroom"></p>
 <p>PS: Ich habe WriteRoom weder runtergeladen, noch getestet. Also heult mich bitte nicht voll, falls es nichts taugt. Danke.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -355,7 +333,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

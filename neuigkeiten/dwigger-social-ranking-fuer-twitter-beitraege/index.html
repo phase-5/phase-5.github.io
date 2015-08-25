@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1881">
 					<h2>Dwigger: Social Ranking für Twitter-Beiträge</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/09/dwigger.png" alt="dwigger" title="dwigger" width="500" height="99" class="alignnone size-full wp-image-1882"></p>
 <p>Dass Twitter-Beiträge, in der Szene auch <em>Tweets</em> genannt, trotz ihrer Begrenzung auf 140 Zeichen eine nicht zu verachtende Relevanz aufweisen können, ist nicht von der Hand zu weisen. Gerade wenn es darum geht bspw. eine neue interessante Internet-Seite anzupreisen, braucht es keinen ellenlangen Blog-Beitrag wie diesen hier.</p>
 <p>Allerdings werden auch viele Belanglosigkeiten über den Twitter-Kanal gejagt. Um die Perlen rauszusuchen, wurde nun das Mash-Up <a href="http://dwigger.com">Dwigger</a> aufgemacht, die Verschmelzung von <a href="http://www.digg.com/">Digg</a> und <a href="http://twitter.com/">Twitter</a>. Dort kann man seine Tweets einstellen (bzw. direkt in Dwigger schreiben) und sie zur Bewertung stellen. Trifft ein Tweet auf Wohlwollen, wird für ihn abgestimmt, d.h. er kriegt einen Punkt. Hat er genug Punkte kommt er auf die Startseite und kriegt entsprechend Publicity.</p>
 <p>Insgesamt eine witzige Idee, wie ich finde. Ob ich mich näher mit diesem Service auseinandersetzen werde, kann ich jedoch nicht genau sagen. Allerdings könnte die Bewertungsfunktion Dwigger zu einem besseren <a href="http://summize.com/">Summize</a> machen, einzig die Möglichkeit den Search Tag-Feed zu abonnieren fehlt. Man wird sehen…</p>
 <p>(via <a href="http://mashable.com/2008/09/13/dwigger/">Mashable</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -335,7 +313,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

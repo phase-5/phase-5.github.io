@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-2299">
 					<h2>Bring deine Freunde…</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/11/eisenhauer_bring_deine_freunde.jpg" alt="eisenhauer - bring deine freunde" title="eisenhauer - bring deine freunde" width="500" height="206" class="alignnone size-full wp-image-2300"></p>
 <p>Seit einiger Zeit rackere ich mich regelmäßig bei Eisenhauer - einer recht bekannten Mucki-Buden-Kette - ab, um fit und gesund zu bleiben. Das ist soweit auch in Ordnung, nur der Umstand, dass seit ein paar Tagen eine Kleiderstange mit billigsten Merchandise-Klamotten im Eingangsbereich steht, irritierte mich dann doch ein wenig.</p>
 <p>Das ganze gehört zur Kampagne "Bring deine Freunde…", Eisenhauers Versuch, die Scheiße Word-of-Mouth-marketingtechnisch mal so richtig zu rocken. Man muss nur ein paar Freunde überreden, bei Eisenhauer anzufangen, schon hat man die Auswahl zwischen einer Weste, einer Fleece-Jacke und einer Sporttasche. Alles aus edelstem Vollplastik. Vermutlich Restbestände aus den berüchtigten Plaste&amp;Elaste-Fabriken in Buna und Leuna.</p>
 <p>Zu allem Überfluss prangt auf jedem dieser Kunststoffschmuckstücke dick und bräsig das Eisenhauer-Logo, was die Teile im Endeffekt zu billigen Werbeartikeln macht. Und zwar solche, die man auf Messen ständig hinterher geworfen bekommt und jedes mal dankend ablehnt. Für so einen Schund verschachert man seine Freunde doch nicht an eine Mucki-Bude. Mal ehrlich!</p>
 <p>Der Gedanke, diesen Artikel zu verfassen, kam mir übrigens als ich nach dem Training bei Eisenhauer in den Seilen hing und von den herumhängenden Plaste-Westen visuell belästigt wurde. Als kleine Motivationshilfe kam dann gestern noch oben abgebildeter Brief ins Haus geflattert. Da hat man fast das Gefühl, man soll für dumm verkauft werden. Aber nur fast.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -277,7 +255,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

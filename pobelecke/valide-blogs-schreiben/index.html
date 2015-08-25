@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-992">
 					<h2>Valide Blogs schreiben?</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Hin und wieder sieht man Blogs, die die - zugegebenermaßen recht schmucklosen - W3C-Badges in ihrer Sidebar sitzen haben, und einem damit vermitteln wollen, sie seien valide geschrieben. Schon möglich...</p>
 <p><a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional" height="31" width="88"></a></p>
 <p>Ich behaupte mal, einen Blog bzw. ein Blog-Theme valide zu schreiben ist nicht unbedingt schwer. Aber einen Blog im laufenden Betrieb valide zu halten dafür schon mehr. Schließlich kommt im Idealfall täglich neuer (X)HTML-Code hinzu, welcher einem die geliebte Validität ganz schnell versauen kann. Ganz groß dabei sind YouTube-Videos, die mit ihrem &lt;embed&gt;-Tag jeden Validator aus der Fassung bringen.</p>
 <p>Wer sich übrigens dem nimmer endenen Spiel "Ich halte meinen Blog valide" aussetzen will, dem empfehle ich <a href="http://www.seitwert.de/" target="_blank">Seitwert</a>. Dort gibt es nämlich für W3C-Konformität ein paar satte Punkte für den aufstrebenden Blogger abzustauben. Außerdem sensibilisiert es einen für die ganzen non-validen Code-Schnipsel, die hie und da zum Einbinden in den Blog angeboten werden.</p>
 <p>Nachdem ich angefangen habe mich an den Seitwert zu verhuren, habe ich erstmal eine Menge Schlacke aus der Badge-Farm geworfen. Alles nicht valide, und die externen JavaScripts bremsen sowieso.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -277,7 +255,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

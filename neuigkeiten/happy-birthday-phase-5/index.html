@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1082">
 					<h2>Happy Birthday, Phase 5</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Unglaublich, "Phase 5" wird ein Jahr alt. Tusch!</p>
 <p><img src="../../wp-content/uploads/2008/04/birthday_cake.png" title="Geburtstagskuchen" alt="Geburtstagskuchen"></p>
 <p>Mit diesem tollen <a href="../../neuigkeiten/hardcore-pron-oder-wie-man-mit-geschickt-gesetzten-rechtschreibfehlern-kommentare-generiert/" target="_blank">Hardcore Pron-Artikel</a> verließ ich vor genau einem Jahr die Gefilde von <a href="http://herschel.wordpress.com/" target="_blank">WordPress.com</a> und hostete meinen Blog unter der WWW-Adresse (toller Begriff) Phase-5.net selbst.</p>
@@ -138,18 +127,7 @@
 <p>In diesem Sinne: Alles für die Leser, alles für den Blog!</p>
 <p>Euer Herschel <em>Arrrrr</em>.</p>
 <p class="lizenz">Bild: <a href="http://flickr.com/photos/donsolo/2234406328/" target="_blank">Best. Cake. Evar.</a> von <a href="http://flickr.com/photos/donsolo/" target="_blank">Don Solo</a> unter <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -439,7 +417,16 @@ Ja natürlich auch von mir meine herzlichsten glückwunsche zum einjährigen.</p
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

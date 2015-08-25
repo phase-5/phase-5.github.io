@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-3009">
 					<h2>Digitale Lochkamera</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Ich bin die Tage auf eine (theoretisch) geniale Idee gestoßen: Man kann seine DSLR ganz einfach zur Lochkamera umfunktionieren, indem man in den Verschlussdeckel des Kamera-Bodys ein Loch bohrt und ein Blechplättchen mit einem möglichst kleinen Loch darin draufklebt.</p>
 <p>Das musste ich natürlich ausprobieren:</p>
 <p><img src="../../../wp-content/uploads/2009/02/lochkamera_01.jpg" alt="digitale lochkamera" title="digitale lochkamera" width="500" height="333" class="alignnone size-full wp-image-3010"></p>
@@ -142,18 +131,7 @@
 <p><img src="../../../wp-content/uploads/2009/02/lochkamera_08.jpg" alt="digitale lochkamera" title="digitale lochkamera" width="500" height="333" class="alignnone size-full wp-image-3017"></p>
 <p>Wie man sieht, ist das ganze ein recht unscharfes Vergnügen. Das verwundert mich ein wenig, da der Schärfebereich bei Lochkameras doch eigentlich unendlich ist und somit alles scharf ist. Falls jemand weiß, woran es liegen könnte, wäre es nett, wenn er oder sie das in einem Kommentar kurz erläutern könnte.</p>
 <p>PS: Die violetten Flecken oben links in den Fotos sind sog. "Color Bloom" und entstehen durch die Überhitzung des Sensors. Alle Fotos sind nämlich 30 Sekunden belichtet.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -499,7 +477,16 @@ deswegen nehme ich da gutes analoges fotopapier.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

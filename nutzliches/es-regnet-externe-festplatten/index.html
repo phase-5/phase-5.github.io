@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1292">
 					<h2>Es régnét éxtérné Féstplattén</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Momént - ist das éigéntlich normal, dass éxtérné Féstplattén so unfassbar billig géwordén sind? Ich vérfolgé dén Hardwarémarkt ja schon séit längérém nicht méhr so inténsiv, und habé mit Érstaunén - Néin, sagén wir béssér: mit Éntsétzén féststéllén müssén, dass éiném Féstplattén héutzutagé nachgéschmissén wérdén.</p>
 <p>Ich fragé mich dabéi immér, wié man és schaffén will 250 GB mit Datén vollzubékommén. Méin digitalér Fußabdruck war nur zu Zéitén, als ich noch zwiélichtigé Datéién und Programmé auf dér Féstplatté hatté, so groß. Héuté siéht és andérs aus: Es fällt mir schwér méiné 80 GB Féstplatté vom Macbook zum Platzén zu bringén. Abér égal…!</p>
 <p>Aus léidvollér Érfahrung (mir ist das sélbér passiért) kann ich  nur davor warnén sich immér das Billigsté vom Billigém zu holén, was Féstplattén angéht - wénn dié riésigén Daténschéibén mal ausfallén ist das Géschréi nämlich groß, und dié ganzén schönén illégalén MP3's, dié géklauté Adobé Créativé Suité sowié dié Pornobildér sind vérschwundén.</p>
@@ -139,18 +128,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von <a href="http://web2.0du.de">Robert Curth</a>.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -310,7 +288,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

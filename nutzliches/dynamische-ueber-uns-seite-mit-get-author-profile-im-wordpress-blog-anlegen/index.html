@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-927">
 					<h2>Dynamische “Über Uns”-Seite mit “Get Author Profile” im WordPress Blog anlegen</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wenn man einen kollaborativen Blog mit mehreren Autoren betreibt, ist eine "Über Uns"-Seite immer nett. So weiß der Leser, mit wem er es zu tun hat. Solch eine Seite kann man entweder statisch anlegen, oder - was die Sache etwas komfortabler macht - dynamisch, wobei die Informationen direkt aus den Profilen der Autoren kommen.</p>
 <p>Dies ist jedoch nicht so ohne weiteres möglich. Zwar bietet WordPress bestimmte Template Tags um Autoreninformationen anzuzeigen, doch funktionieren die nur innerhalb des <a href="http://codex.wordpress.org/The_Loop" target="_blank">Loop</a>, und zeigen die Informationen des Autors, der den Betrag geschrieben hat. Man kann also innerhalb des Loop mit den gegebenen Tags nicht Informationen aus mehreren Autorenprofilen abrufen.</p>
 <p>An dieser Stelle kommt das PlugIn "<a href="http://guff.szub.net/2005/01/31/get-author-profile/" target="_blank">Get Author Profile</a>" ins Spiel. Dies bietet die Möglichkeit unter Angabe der der entsprechenden Autoren-ID alle Informationen unabhängig vom Loop abzurufen. Im Folgenden möchte ich kurz erläutern, wie man sich eine "Über Uns"-Seite im Stile von Phase 5 baut:</p>
@@ -157,18 +146,7 @@ Template Name: Über Uns<br>
 <li>Die Autoren müssen die entsprechenden Felder, die angezeigt werden sollen, in ihrem Profil ausfüllen. Besonders bei der Beschreibung kann das etwas länger dauern.</li>
 <li>Es können im Profil keine Bilder angegeben werden. Wenn man also wie auf Phase 5 Fotos der Autoren anzeigen will, muss man diese direkt in der <em>ueber_uns.php</em> einfügen. Dynamisch ist das nicht unbedingt.</li>
 </ol>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -339,7 +317,16 @@ Template Name: Über Uns<br>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

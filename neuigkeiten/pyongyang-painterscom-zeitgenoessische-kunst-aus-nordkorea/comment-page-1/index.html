@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-2602">
 					<h2>Pyongyang-Painters.com – Zeitgenössische Kunst aus Nordkorea</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://pyongyang-painters.com/pos/top_slideshow/call/main_picdetail/do/showpicdetailwithkind/picid/229/kindid/2" title="pyongyang painters - north korea"><img src="../../../wp-content/uploads/2009/01/pyongyang_painters-north_korea.png" alt="pyongyang painters - north korea" title="pyongyang painters - north korea" width="500" height="267" class="alignnone size-full wp-image-2603"></a></p>
 <p>Nordkorea ist schon ein faszinierendes Land. Weitgehend isoliert vom Rest der Welt regiert der sogenannte "Steinzeit-Kommunismus" und Menschen werden unterdrückt, während sich die Nomenklatura diverse Privilegien gönnt. Dazu gibts den obligatorischen Personenkult und das stete Bedürfnis dem Rest der Welt die eigene (nicht vorhandene) Großartigkeit demonstrieren zu müssen, z.B. indem man sich anschickt das höchste Hotel der Welt zu errichten und den schmucklosen Betonrohbau dann im Herzen der Hauptstadt verrotten lässt.</p>
 <p>Doch so ganz lässt sich der Fortschritt auch aus Nordkorea nicht raushalten. So gibt es nun einen Online-Shop für zeitgenössische nordkoreanische Kunst: <a href="http://pyongyang-painters.com/">Pyongyang Painters</a>. Ich war sogar drauf und dran mir oben abgebildetes Bild zu bestellen. Allerdings ist die Sache doch etwas undurchsichtig. Im Bestellformular sind nur Name, eMail und Adresse als "required" gekennzeichnet, die Stadt hingegen nicht und ein Feld für die Postleitzahl gibt es gar nicht.</p>
 <p>Dafür wird mit den günstigen Preisen und der sehr wahrscheinlichen und enormen Wertsteigerung der Werke geworben. Keine Ahnung, was ich davon halten soll. Ich denke, ich beobachte das ganze noch eine Weile. Schließlich sind die Bilder im großen und ganzen so harmlos, wie man es von einem repressiven System erwartet. Also insgesamt nicht wirklich fesselnd.</p>
 <p>(via <a href="http://www.marketing-blog.biz/blog/archives/2809-Online-Shopping-in-Nordkorea-die-zweite.html">Besserwerberblog</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -381,7 +359,16 @@ Pyongyang-painters.com</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

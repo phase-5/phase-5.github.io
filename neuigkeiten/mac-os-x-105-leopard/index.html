@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-822">
 					<h2>Mac OS X 10.5 “Leopard”</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>So, endlich habe ich auch das neue Betriebssystem. Leider verlief das Update nicht ganz ohne Schwierigkeiten, so dass ich gerade dabei bin meinen Computer wieder in einen Zustand zu versetzen, in dem es sich mit ihm arbeiten lässt.</p>
 <p>Deshalb mein Tip an alle, die vom wirklich großrtigen 10.4.11 auf die Rotze, die sich 10.5 nennt, wechseln wollen: Sichert eure Festplatte und spielt komplett neu auf. Eine bloße Aktualisierung geht sicher schief, und dann sollte man einen Kollegen mit einer mittelgroßen Festplatte im Bekanntenkreis haben. Danke an dieser Stelle nochmal an Robert.</p>
 <p>Ich für meinen Teil war drauf und dran mein Konto zu räumen, nach Cupertino zu fliegen und Steve Jobs einen glühenden Pfahl ins Rektum zu treiben. Und was habe ich daraus gelernt? OS X-Updates sollte man nicht auf die leichte Schulter nehmen.</p>
 <p>Übrigens empfiehlt es sich sofort auf 10.5.1 zu aktualisieren, ansonsten wird es schwierig virtuelle Datenträger auszuwerfen. Ich liebe OS X!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -454,7 +432,16 @@ Aber ein ist sicher - ein Windose kommt mir nimmer ins Haus</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1473">
 					<h2>Badmülleimer</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>...die waren hier ja schon mal Thema, und fielen mir gestern wieder auf.<br>
 Die Bibliothek am Königsworther Platz hat nämlich, so der Aufkleber,"<em>Feuerfeste Mülleimer mit verzinktem Einsatz</em>" auf den Damentoiletten. Ganz hervorragend, sollte die Bibliothek also mal mit all ihren Millionen von Rechts-, Wirtschafts- und Erziehungswissenschaftenbüchern abbrennen bleibt zumindest das Biotop der Badmülleimer für die Nachwelt erhalten. Ich überlege, mir jetzt auch einen für meine wichtigen Dokumente anzuschaffen. Sie stellen eine kostengünstige Alternative zum feuerfesten Tresor dar, und da Einbrecher und Diebe ja grundsätzlich über einen Penis verfügen, und Männer da nicht dran gehen (wie man <a href="../../aus-dem-leben/der-badmuelleimer-eine-existenz-am-rande-der-gesellschaft/index.html">hier</a> noch nachlesen kann), dürften das auch sicher sein...</p>
 <p>Dass die Dinger auch was Gutes an sich haben, stellte übrigens auch <a href="http://www.goetzwidmann.de/">Götz Widmann</a> schon fest, in dem er die Erinnerung als Therapie gegen Liebeskummer nutzte:</p>
@@ -140,18 +129,7 @@ Ich denk', so oft ich kann, an ihren Badmülleimer"</em></p>
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von Klaus.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -384,7 +362,16 @@ ein grundsätzliches desinteresse an (bad)mülleimern würde ich auch frauen unt
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

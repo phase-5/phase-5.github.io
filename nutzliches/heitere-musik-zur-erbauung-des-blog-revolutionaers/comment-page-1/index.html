@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-949">
 					<h2>Heitere Musik zur Erbauung des Blog-Revolutionärs</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wie jeder weiß, steckt die Blog-Revolution noch in den Kinderschuhen, so dass kämpferische Musik zur Erbauung rar ist. Macht aber nichts, schließlich ist die Blog-Revolution nicht die erste Revolution in der Geschichte der Menschheit. Für den Anfang reicht Musik aus den Zeiten der chinesischen Kulturrevolution. Hauptsache der Spirit stimmt.</p>
 <p><a href="http://flickr.com/photos/oldtasty/sets/72057594071629322/" target="_blank"><img src="../../../wp-content/uploads/2008/01/china_musik_collage.jpg" alt="China - Collage - Musik aus der Kulturrevolution"></a></p>
 <p>Deshalb als Hausaufgabe an alle Blog-RevolutionärInnen: Die gezeigten Platten besorgen und intensiv hören und verinnerlichen. Wenn das geschafft ist, sind wir bereit für den ersten großen Einsatz. Am Samstag, den 02.02.2008 treffen wir uns um Punkt Fünfzehnhundert im Georgengarten.</p>
 <p>Jede/r Blog-RevolutionärIn ist bitte mit zwei Topfdeckeln bewaffnet, oder anderen Gerätschaften, mit denen sich veritabler Krach veranstalten lässt. Dann laufen wir gemeinam lärmend durch den Park und holen die verfluchten Vögel vom Himmel, die uns das knappe Essen stibitzen und so die Moral der Gruppe bzw. der Bevölkerung schwächen.</p>
 <p>Die Blog-Revolution wird siegen!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -418,7 +396,16 @@ Auf Auf zum Kampf...</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

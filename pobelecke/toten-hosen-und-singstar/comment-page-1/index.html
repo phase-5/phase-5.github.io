@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-633">
 					<h2>Toten Hosen und Singstar</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wie die <a href="http://www.sueddeutsche.de/computer/special/51/82968/index.html/app/computer/teleschau/spieledatenbank/index.php?action=artikel_spiel&amp;id=190279" target="_blank">Süddeutsche</a> meldet, bekommen die Toten Hosen von Sony eine exklusive Singstar-Version, auf der nur Lieder von ihnen sind. Damit sind sie die erste Band, der eine solche Ehre zuteil wird. Anlass ist unter anderem wohl ihr 25-jähriges Bandbestehen - ich bin gerührt.</p>
 <p><img src="../../../wp-content/uploads/2007/09/singstar.jpg" alt="singstar - toten hosen"></p>
 <p>Damit die relevante Käuferschicht auch mitbekommt, dass dieses Spiel existiert und richtig Spaß macht, hat man gleich noch eine viral-kompatible <a href="http://www.youtube.com/watch?v=aQEBCmEamuc" target="_blank">YouTube-Farce</a> inszeniert und ins Rennen geschickt.</p>
 <p>Kleine Punker sind die Hosen ja seit Jahren nicht mehr, und auch kommerziell nehmen sie seit langem schon einiges mit, was sich bietet. Von daher würde ich den Knaben daraus keinen Strick drehen wollen. Problematisch ist, dass ich die Toten Hosen nicht mag, und auch noch nie mochte. Aber ich mag Singstar. Warum also verschwendet man eine neue Version dieses Spiels, auf der so viel gute Musik hätte sein können, für die Altpunker aus Düsseldorf...oder war es Köln?? Ich glaub sie kommen aus Köln <img src="../../../wp-includes/images/smilies/icon_biggrin.gif" alt=":D" class="wp-smiley"> </p>
 <p>Ich hoffe Sony kommt zur Besinnung und bedient das nächste mal wieder ein breiteres Geschmacksfeld. Sich auf ein Genre festzulegen ist ja schön und gut, aber interpretentechnisch kann man es ruhig etwas auffächern.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -374,7 +352,16 @@ Mir ist schlecht!</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

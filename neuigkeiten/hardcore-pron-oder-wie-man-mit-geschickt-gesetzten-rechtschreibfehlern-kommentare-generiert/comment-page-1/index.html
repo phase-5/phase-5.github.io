@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-377">
 					<h2>Hardcore Pron (oder wie man mit geschickt gesetzten Rechtschreibfehlern Kommentare generiert)</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Das Streben nach Quantität ist eines der Grundlaster unserer Gesellschaft. Deshalb lautet mein Motto: "Qualität um jeden Preis". So habe ich es denn auch billigend in Kauf genommen, meine treue Leserschaft - habe ich so etwas?? - mit einem vierteljahrwährenden Aktualisierungsstop möglicherweise zu vergraulen.</p>
 <p>Aber nur so lässt sich ein Qualitätsniveau erreichen, dass es wert ist im weltweiten Netz veröffentlicht zu werden. Außerdem schlägt man mit der Klappe gleich noch eine zweite Fliege: Gehetzte der Quantität, die einen Qualitätsblog - auf dem zuweilen schon mal drei Monate lang kreative tote Hose herrscht - nicht zu schätzen wissen, stören nicht mehr mit ihrer virtuellen Anwesenheit.</p>
 <p>Stellt sich nur noch die Frage, wie ich zu der vermessenen Einschätzung komme, jenes Kleinod blogtechnischen Mittelmaßes, welches ich meine 'Homepage' heiße, könnte auch nur im Entferntesten so etwas wie einen "Qualitätsstandard" für sich beanspruchen? Tja, schwer zu sagen - ich denke, man muss einfach große Töne anschlagen, um in den Wirren des Netzes gehört zu werden.</p>
 <p>Andererseits nützt es natürlich nichts Leute anzulocken und mit einem Mangel an Inhalten zu nerven. Aber darüber mehr im nächsten Eintrag über "Das Denken in der langen Frist, und die Gehetzten des kurzfristigen Erfolges".</p>
 <p>Jedenfalls ist meine Web-Repräsentanz wieder erreichbar, nunmehr unter dem illustren Namen "Phase 5". Geboten werden pseudo-philosophische Ergüsse und allerlei Pöbeleien.</p>
 <p>In diesem Sinne viel Spaß auf dem "Phase 5"-Blog.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -298,7 +276,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

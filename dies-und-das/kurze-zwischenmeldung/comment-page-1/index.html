@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-2797">
 					<h2>Kurze Zwischenmeldung</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2009/01/schreibtisch.jpg" alt="schreibtisch" title="schreibtisch" width="500" height="178" class="alignnone size-full wp-image-2798"></p>
 <p><strong>Phase 5</strong> ist ja ein lustiger kleiner Blog aus Hannover, der sich mit allem möglichen beschäftigt, allerdings weniger mit TechNews und StartUps. Ich habe persönlich auch nicht die Zeit gefunden, zur <a href="http://www.dld-conference.com/">DLD Conference</a> nach München zu fahren, geschweige denn dort zu referieren. Folglich konnte ich mich dort auch nicht anspucken lassen.</p>
 <p>Überdies ist mir nicht bekannt, dass es schon einmal Morddrohungen gegen einzelne AutorInnen bzw. das Team insgesamt gegeben hätte. Ich befand mich also zu keiner Zeit in der unkomfortablen Situation, wieder bei meiner Mutter einziehen zu müssen, sondern konnte die ganze Zeit in der <em>Hood</em> bzw. <em>true stayen</em> und repräsentieren. Soweit also der Stand der Dinge.</p>
 <p>Und der langen Rede kurzer Sinn: Ich bin auch im Februar voll für euch da. Wenn das keine schönen Neuigkeiten sind! <img src="../../../wp-includes/images/smilies/icon_mrgreen.gif" alt=":mrgreen:" class="wp-smiley"> </p>
 <p class="lizenz">Bild: <a href="http://flickr.com/photos/stitch/74282942/">a mi casa</a> von <a href="http://flickr.com/photos/stitch/">Stitch</a> unter <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en">CC</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -374,7 +352,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

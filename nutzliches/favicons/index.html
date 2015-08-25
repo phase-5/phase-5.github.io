@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-582">
 					<h2>Favicons</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Da ich als Besitzstandswahrer und Anhänger des statischen Seins natürlich noch nicht geschafft habe mir einen FeedReader für die tägliche Bloglektüre einzurichten, grase ich die Seiten über meine Bookmarks im Firefox ab.</p>
 <p>Dabei fällt jedes mal massiv auf, welche Seite ein Favicon hat, und welche nicht. Das sind die quadratischen, für die Website charakteristischen Bildchen, die links neben dem Seitenamen sitzen - sowohl im Lesezeichenmenü, als auch im Eingabefeld. So ein Favicon ist schnell gemacht, und es sorgt für einen guten Eindruck bei den Besuchern.</p>
 <p>Man kann entweder selbst ein quadratisches Bild auf 36x36 Pixel skalieren, und es als "favicon.ico" abspeichern, oder man bedient sich eines <a href="http://www.favicon.cc/" target="_blank">Online-Generators</a>. Hat man ein fertiges Icon, speichert man es auf seinem Webspace im gleichen Verzeichnis wie die Index-Seite seiner Hompage/seines Blogs ab.</p>
 <p>Nun muss man es nur noch einbinden, indem man folgende Zeile in den Kopfbereich des Quelltextes seiner Seite kopiert:</p>
 <p><code>&lt;link rel="shortcut icon" href="favicon.ico" &gt;</code></p>
 <p>Violà&nbsp;, schon wird man im Browser auch außerhalb des Fensters adäquat repräsentiert. Außerdem bietet das Favicon noch einen anderen Vorteil: Man kann seinen Blog beim Projekt "<a href="http://www.internetnotizen.de/blogosphaere/" taget="_blank">Blogosphäre in Icons</a>" anmelden.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -278,7 +256,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-392">
 					<h2>Blogger des Monats</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Da dieser Blog von nun in einer Gemeinschaftsarbeit von Schlomo und mir gepflegt wird, habe ich es mir nicht nehmen lasssen, ein kleines Instrument zu installieren, das den Wettbewerb am köcheln halten soll - den "Blogger des Monats" nebst Portrait des selbigen.</p>
 <p>Genau genommen ist der "Blogger des Monats" nur eine plakative Bezeichnung für einen komplizierten Alghoritmus, welcher anhand von Beitragsanzahl, empfangener Kommentare, Verweildauer auf den Beiträgen, etc. die Beliebtheit des jeweiligen Bloggers im Minutentakt errechnet, und den Gewinner direkt auf der Hauptseite anzeigt.</p>
 <p>Persönliche Präferenzen der Besucher können dem natürlich zuwider laufen. Aber eine interessante Hilfestellung beim Erwählen des persönlichen Lieblings ist es auf jeden Fall.</p>
 <p>Also, wer ist der beliebteste Blogger? Schlomo oder Herschel? Mehr erfährt ihr in Kürze hier - auf Phase 5!</p>
 <p><strong>Nachtrag:</strong> Okay, den Blogger des Monats gibt es nicht. Ich finde, wir leisten alle gute Arbeit *sülz*.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -334,7 +312,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

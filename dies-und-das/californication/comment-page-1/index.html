@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-2065">
 					<h2>Californication</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/10/californication.png" alt="californication" title="californication" width="500" height="313" class="alignnone size-full wp-image-2066"></p>
 <p>Hank Moody ist der neue Dude. Er raucht und trinkt und genauso wie Lebowsky nimmt er das Leben, wie es kommt, mit stoischer Gelassenheit. Allerdings hat er etwas mehr Geld als der Dude und garantiert mehr Sex. Nachdem er in New York einen Bestseller geschrieben hat, ging er mit seiner Freundin und seiner Tochter nach L.A. um das Buch zu verfilmen. </p>
 <p>Der Film wurde in seinen Augen scheiße, dafür hat ihn seine Freundin verlassen und zu allem Überfluss leidet er seit dem Wechsel an die Westküste unter einer Schreibblockade. So gesehen geht es in Californication also darum, dass Hank versucht seine große Liebe zurück zu erobern und neue Inspiration zum Schreiben zu finden. Allerdings steht ihm seine Promiskuität etwas im Weg.</p>
 <p>Die Serie, die ich unter Umständen, auf die hier nicht näher eingehen möchte, innerhalb von drei Tagen auf Englisch gucken konnte, ist großartig. Auch wenn ich dem Originalton aufgrund meiner miserablen Englischkenntnisse nicht alles entlocken konnte, wurde ich doch trotzdem außerordentlich gut unterhalten. Zum Glück bin ich zur Zeit allein in der Wohnung, so dass ich auch nach 20Uhr noch laut und garstig lachen konnte.</p>
 <p>Zum Beispiel, wenn Hanks Agent Kojak jr. von Lady Tyson während eines ziemlich grotesken Dreiers vollgesquirtet wird, während seine Frau und Hanks Verflossene in der Tür stehen und lange Gesichter machen, wo sie doch nur vorbei gekommen waren um ein kühles Bier in netter Atmosphäre zu trinken. Oder wenn dem selben Agenten während eines anderen grotesken Dreiers der rechte Nippel von der eigenen Frau abgerissen wird, und diese darüber die Anziehungskraft des eigenen Geschlechts auf sich selbst entdeckt.</p>
 <p>Holy Fuck, diese Serie ist echt schräg. Und wenn am Wochenende nicht die verdammte Welt untergeht, werde ich anfang nächster Woche die zweite Staffel unter mysteriösen Umständen in Rekordzeit gucken.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -454,7 +432,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

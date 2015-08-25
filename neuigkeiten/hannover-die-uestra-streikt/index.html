@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1009">
 					<h2>Hannover – Die ÜSTRA streikt</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/02/streik.jpg" alt="Streik"></p>
 <p>Jetzt ist es passiert, die lokalen öffentlichen Verkehrsbetriebe rüsten sich zum Arbeitskampf. Heute fährt kein Bus und keine Bahn. Die perfekte Gelegenheit mal zu hause zu bleiben und sich die Eier(-stöcke) zu kraulen.</p>
 <p>Wer allerdings doch irgendwo hin muss, hat zwei einfache Alternativen zum teueren Taxi und zum anstrengenden Fahrrad:</p>
@@ -146,18 +135,7 @@
 </ol>
 <p>Mit diesen beiden pfiffigen Methoden, sollte man trotz Streik eigentlich überall hinkommen. In diesem Sinne, ein schönes Wochenende.</p>
 <p class="lizenz">Bild: <a href="http://flickr.com/photos/e2/126372199/" target="_blank">demonstration #8</a> von <a href="http://flickr.com/photos/e2/" target="_blank">eisenrah</a> unter <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -390,7 +368,16 @@ kerzen sind auch rar.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

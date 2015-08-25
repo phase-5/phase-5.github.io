@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-911">
 					<h2>I Am Legend: Besinnliches Kinovergnügen für entspannte Abende</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://wwws.warnerbros.de/iamlegend/" target="_blank"><img src="../../wp-content/uploads/2008/01/i_am_legend-screenshot.png" alt="â€œI Am Legendâ€ Screenshot deutsche Homepage"></a></p>
 <p>Gestern habe ich mir "I Am Legend" im Kino angesehen und war etwas zwiegespalten, nachdem das Licht im Saal wieder anging. Weder war ich begeistert, wie man es nach guten Filmen landläufig ist, noch hatte ich das Gefühl meine Zeit für ein billiges Machwerk verschwendet zu haben. Objektiv betrachtet ist der Film gut, es gab keinen Punkt, an dem ich mich über irgend etwas hätte aufregen oder lustig machen müssen.</p>
 <p>Trotzdem dieses merkwürdige Gefühl nicht das bekommen zu haben, was man erwartet hatte. Deshalb der Hinweis an alle, die den Film noch nicht gesehen haben und dies tun wollen: Die Story lässt einen an "28 Days Later" denken, was wiederum zum Zombie-Genre im Allgemeinen führt.</p>
 <p>"I Am Legend" jedoch ist kein Zombie-Slasher im herkömmlichen Sinne. Vielmehr zeigt es die innere Zerissenheit eines Mannes, der scheinbar allein auf der Welt ist getrieben von dem Gedanken endlich ein Gegenmittel gegen das K-Virus zu finden, um die "Nachtsucher" (so heißen die Zombies) heilen und in Menschen zurück verwandeln zu können. Abgesehen von ein paar Szenen, bei denen man im Kinosessel zusammenzuckt, ist der Film relativ ruhig. Auch das Ende stimmt optimistisch, verfällt aber keinem furiosen "Wir zeigens der Zombie-Brut"-Gemetzel.</p>
 <p>Ich selbst werde mir den Film in etwa einem Jahr noch einmal angucken und bin gespannt, wie er dann auf mich wirkt.</p>
 <p>Übrigens: Der von Will Smith gespielte Robert Neville hat über seinem Kamin die "Sternennacht" von Vincent Van Gogh hängen. Und wie ich so übelege, ob dass das Original ist, und - falls ja - das selbst für einen hohen Armeeangehörigen doch recht überzogen ist, fällt mir ein, dass der Bengel doch alleine in New York ist und nur zur verdammten MoMA rüberfahren muss, um es sich dort zu holen. Schön, wenn der Groschen cent-weise fällt!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -412,7 +390,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

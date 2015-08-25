@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-1059">
 					<h2>Das Manager Magazin und seine Bilder</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Das Manager Magazin präsentiert heute einen <a href="http://www.manager-magazin.de/koepfe/karrierecheck/0,2828,520615,00.html" target="_blank">Mobbing Test</a>, und garniert diesen mit einem Bild von <a href="http://german.imdb.com/title/tt0110912/" target="_blank">Vincent Vega und Jules Winnfield</a>.</p>
 <p>Dazu gibt es folgende Bildunterschrift:</p>
 <blockquote><p><strong>Reale Bedrohung:</strong> Gemobbt wird zwar nicht mit Waffen, wie im Film "Pulp Fiction", aber Mobbing kann Ihre Existenz gefährden</p></blockquote>
 <p>Interessant, so kann man das auch sehen. Ich würde allerdings behaupten, dass es <a href="http://de.wikipedia.org/wiki/Mobbing" target="_blank">Mobbing</a> wäre, wenn sich die  <em>Greenhorns</em> über die beiden Protagonisten lustig gemacht hätten. Wenn sie Jules wegen seiner hübschen Minipli und Vincent wegen seiner Zivimatte verarscht hätten.</p>
 <p>Aber so war das nicht. Vielmehr geht es an dieser Stelle von Pulp Fiction um kaltblütigen Mord. Ich habe auch noch nie gehört, dass jemand, dem ins Gesicht geschossen wurde, Schlaf- und Essstörungen bekommt und über kurz oder lang seinen Job kündigt.</p>
 <p>Der langen Rede kurzer Sinn: Immer mit Bedacht bebildern.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -317,7 +295,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

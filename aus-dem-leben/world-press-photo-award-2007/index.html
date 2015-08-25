@@ -116,34 +116,12 @@
 	<div id="right">
 									<div class="single_post" id="post-407">
 					<h2>World Press Photo Award 2007</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://www.flickr.com/photo.gne?id=488548386" title="WorldPressPhoto"><img src="http://static.flickr.com/206/488548386_e815d19f04_m.jpg" title="WorldPressPhoto" alt="WorldPressPhoto" width="240" height="196" style="float: left; margin: 10px 15px 10px 0px"></a></p>
 <p>Wie die dünnpfeifende Rachel schon in einem vorhergehenden Beitrag erwähnte, weilte die Phase 5-Elite in den letzten Tagen in Amsterdam. Dort setzte sie sich intensiv mit billiger Pornographie und weichen Drogen auseinander, besuchte jedoch auch zur Zerstreuung die Ausstellung des <a href="http://www.worldpressphoto.com" target="_blank">"World Press Photo Award 2007"</a> in der "Oude Kerk".</p>
 <p>Dies ist eine sehr empfehlenswerte Sammlung prämierter Pressefotos aus dem Jahr 2006, welche sich einerseits mit teils ergreifenden, teils verstörenden Thematiken des Weltgeschehens auseinandersetzt, aber andererseits auch künstlerisch sehr ansprechend ist.</p>
 <p>Die Fotos absolvieren in den nächsten Wochen noch eine weltweite Big City-Tour, und wer sie sehen und gleichzeitig seinen CO<sup>2</sup>-Fußabdruck klein halten will, bekommt in Hamburg und Berlin die Gelegenheit für einen Besuch.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -314,7 +292,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

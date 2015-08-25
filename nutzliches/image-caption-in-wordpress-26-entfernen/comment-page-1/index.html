@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1562">
 					<h2>Image-Caption in WordPress 2.6 entfernen</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Seit der WordPress-Version 2.6 werden hochgeladene Bilder von einer/m(?) Caption umschlossen. Das ist eine praktische Sache und kann mit der richtigen CSS-Formatierung sehr hübsch aussehen. Allerdings besteht die Möglichkeit, dass man keine Lust auf diesen Kappes hat. Das geht mir so.</p>
 <p>Nur wie wird man das Caption-Dings los, wo man es in den Einstellungen leider nicht deaktivieren kann? Entweder man löscht es händisch aus dem Quelltext, indem man den WYSIWYG-Editor auf HTML-Ansicht umschaltet, oder man macht Nägel mit Köpfen:</p>
 <p>Einfach im Theme-Ordner eine Datei functions.php anlegen (falls noch nicht vorhanden) und folgenden Code reinkopieren:</p>
@@ -139,18 +128,7 @@ add_filter('img_caption_shortcode', 'no_caption', 10, 3);<br>
 <p>Schon sollte Schluss mit dem Caption-Spaß sein. Die functions.php regelt übrigens auch noch andere Dinge, wie zum Beispiel die Fähigkeit eures Themes mit Sidebar-Widgets zu arbeiten. Sollte also schon eine functions.php existieren, könnt ihr diesen Code-Schnippel einfach unter den bereits vorhandenen Code packen. Das ist kein Problem.</p>
 <p>(via <a href="http://katzwebdesign.wordpress.com/2008/07/21/how-to-turn-off-captions-in-wordpress-26/">KatzWebDesign</a>)</p>
 <p><strong>Edit</strong>: Wer das Caption-Feature sinnvoll und spannend findet und von Berührungsängsten geplagt wird, findet drüben bei <a href="http://www.drweb.de/weblog/weblog/?p=1258">Dr. Web</a> eine kleine Beschreibung.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -439,7 +417,16 @@ Hat jemand eine Idee?</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

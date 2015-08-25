@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-840">
 					<h2>Das große Stromsparen</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wie der eine oder die andere vielleicht weiß, findet morgen am 8.12. das große "5 Minuten Licht aus" für das Klima und so statt.</p>
 <p>Da mag mancher vielleicht denken, dass 5 Minuten doch gar nichts bringen. Aber weit gefehlt: Wenn sich nur genügend Leute beteiligen, führt der damit verbundene plötzliche Spannungsabfall zu einer Überlastung des Systems und damit zu einem europaweiten Blackout.</p>
 <p>Das ist die einmalige Chance Strom in Mengen zu sparen, wie schon seit über 100 Jahren nicht mehr. Ich hoffe, ihr seid alle mit dabei. Übrigens rate ich der Konsequenz halber von der Benutzung von Taschenlampen, Kerzen und Öllampen ab. Für deren Produktion wurde auch Strom verschwendet, so dass ihr euch trotz aller hehren Ziele doch die Hände schmutzig machen würdet.</p>
 <p>Mein Tip: Schlachtet eine Kuh, pökelt das Fleisch und lagert es ein. Benutzt die Haut um ein Ruderboot zu basteln. Damit fahrt ihr raus aufs Meer und erlegt einen Wal. Das Fleisch pökelt ihr und lagert es ein. Mit dem Tran befüllt ihr Öllampen, die ihr zuvor selbst aus Ton geformt und im Lehmofen im Schrebergarten gebrannt habt. Vergesst auch nicht euch  selbst einen Löffel Tran zu geben - das gibt Kraft für den Blackout.</p>
 <p>Wenn ihr alle Ratschläge befolgt, solltet ihr für den großen Blackout optimal gewappnet sein. Es bleibt dann nur noch zu hoffen, dass die Kollegen an den Herz-Lungen-Maschinen einen kräftigen Generator in der Hinterhand haben. Und falls nicht, gilt der alte Grundsatz:</p>
 <p>Schwund ist überall!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -404,7 +382,16 @@ Persönlicher Blackout klingt gut.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

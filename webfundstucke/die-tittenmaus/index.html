@@ -116,34 +116,12 @@
 	<div id="right">
 									<div class="single_post" id="post-717">
 					<h2>Die Tittenmaus</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2007/10/tittenmaus.png" alt="Tittenmaus"></p>
 <p>Die <a href="http://www.neckermann.de/produkt/produkt_detail.mb1?mb_f020_id=krAUU0k6lb_43g3Qo6XWg-DzWjsDjLj9&amp;produkt_id=464029&amp;nav_id=11277879&amp;alle_produkte_auf_einen_blick=1&amp;suchparam=358c510a80201044efb227d028a9f102fd157480b0b0581012b320c2bb67417fc39b37632071ef50a0855db481b441819b2172f82a294027ef3cb1e37891cea4040d6dd78fb389c66deb61492786fc17f96c0d87f7f6956b901442358daab295d203&amp;wmnr=84&amp;nummer=6&amp;mb_v301_s=1" target="_blank">Tittenmaus</a> mit fortschrittlichem PS/2-Anschluss. Die wohl beliebteste Maus bei Geeks und gestressten FreeLancern, welche sogar von den Ärzten mit einem eigenen Song bedacht wurde:</p>
 <p><embed src="http://www.seeqpod.net/cache/seeqpodSlimlineEmbed.swf" wmode="transparent" width="300" height="80" type="application/x-shockwave-flash" flashvars="playlistXMLPath=http://www.seeqpod.net/api/music/getPlaylist?playlist_id=941ce08e05"><img src="http://pixel.quantserve.com/pixel/p-caFB2qWKw6vJs.gif" style="display:none" height="1" width="1" alt="Quantcast"></p>
 <p>(<a href="http://www.seeqpod.com/music/?plid=941ce08e05" target="_blank">direktTittenmaus</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -317,7 +295,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

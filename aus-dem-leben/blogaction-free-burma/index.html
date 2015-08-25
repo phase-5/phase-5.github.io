@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-696">
 					<h2>Blogaction: Free Burma??</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><!-- Free Burma! Image --><br>
 <a href="http://www.free-burma.org" target="_blank"><img src="http://freeburma.s3.amazonaws.com/free_burma_05.gif" alt="Free Burma!" width="500" height="150" border="0"></a><br>
 <!-- End Free Burma! Image --></p>
 <p>Ich wünsche mir, dass die Militär-Junta in Burma endlich Druck von außen - seitens China oder Indien - bekommt, und gezwungen ist einzulenken und Schritte in Richtung Demokratie in die Wege zu leiten. Dass es soweit kommt ist im Moment leider nicht sehr wahrscheinlich, und so werde ich von Mitteleuropa aus weiter zugucken müssen, wie Menschenrechte mit Füßen getreten werden. Nicht nur in Burma.</p>
 <p>Was allerdings ein Tag Schreibverweigerung bringen soll, will mir nicht ganz in den Kopf. Blogs haben ihre einzige Stärke da, wo sie etwas sagen. Und zwar so, dass es aus der Blogosphäre hinaus dringt und in einen größeren Wahrnehmungsbereich tritt. Nun will ich nicht abstreiten, dass aktive Passivität auch ein zuweilen recht wirksames Mittel ist, aber in diesem Fall bin ich der Meinung, dass - so trivial es klingt - einen Tag lang die Schnauze zu halten nicht gehört wird.</p>
 <p>Trotzdem füge ich den Banner ein, weil das Ziel ein gutes ist und die Aktion generell niemandem weh tut. Aber nichtsdestotrotz haftet dem Blogactionday der Charme einer Alibiveranstaltung zur Gewissensreinigung an, so dass man sich nicht mehr fragen muss was man selbst unternommen hat, wenn abends in den Nachrichten die Bilder erschlagener Mönche auftauchen.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -479,7 +457,16 @@ die laufkundschaft aber, die über suchmaschinen auf die blogs gerät und das gr
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

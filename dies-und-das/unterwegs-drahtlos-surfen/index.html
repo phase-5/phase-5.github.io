@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1280">
 					<h2>Unterwegs drahtlos surfen</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Es ist eine der schönsten Errungenschaften der modernen Technik, unterwegs drahtlos auf die unendlichen Weiten des Mediums Internet zugreifen zu können. Die meisten Leute beschränken sich dabei auf die so genannten Hot Spots (Areale mit WLAN-Abdeckung). Die Bahn hat die Zeichen der Zeit erkannt und bietet jetzt WLAN am Bahnhof an, bei dem man zwischen 4 verschiedenen Anbietern wählen kann.  Wer dann aber im Zug drahtlos online gehen will, ist auf einige wenige ICE-Züge angewiesen, die WLAN bieten - es sei denn, er hat ein Bluetooth-fähiges Handy.</p>
 <p>Ich selbst benutze schon seit längerer Zeit mein Handy um ins Internet gehen zu können. Als Datentarif habe ich die UMTS-Flatrate von BASE, die mich vor jeglichen Unkosten bewahrt. Mit 25 € zusätzlich zu seiner BASE-Handyflatrate ist man dabei. Inzwischen dürften aber auch einige andere Anbieter vergleichbares offerieren.</p>
 <p>Als schwierig stellt sich dann aber in Mac OS X die Einrichtung einiger Handys heraus. Zumeist müssen Modem-Skripte heruntergeladen und in die richtigen Ordner gezogen werden.  Insgesamt muss ich sagen, dass selbst auf meinem Pocket PC mit Windows-Mobile die Einrichtung einer Internetverbindung einfacher war. Ich habe damals verzweifelt aufgegeben und mir die Software Launch2Net geholt, die die komplette Konfiguration vollautomatisch übernimmt.</p>
@@ -137,18 +126,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von <a href="http://web2.0du.de">Robert Curth</a>.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -338,7 +316,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

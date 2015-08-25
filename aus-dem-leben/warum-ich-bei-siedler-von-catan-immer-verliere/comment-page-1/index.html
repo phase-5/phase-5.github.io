@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2722">
 					<h2>Warum ich bei “Siedler von Catan” immer verliere.</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://flickr.com/photos/ginnerobot/2571261975/sizes/m/"><img title="Siedler von Catan" src="http://farm4.static.flickr.com/3118/2571261975_6fe2177638.jpg" alt="Siedler von Catan" width="500" height="333"></a></p>
 <p class="lizenz"><a href="http://flickr.com/photos/ginnerobot/2571261975/">Settlers of Catan</a> von <a href="http://flickr.com/photos/ginnerobot/">Ginnerobot</a></p>
 <p>"<a title="Offizieller Siedler von Catan-Seite" href="http://www.siedeln.de/" target="_blank">Siedler von Catan</a>" war nicht nur <a title="Spiel des Jahres, offizielle Seite" href="http://www.spiel-des-jahres.org/cms/front_content.php" target="_blank">Spiel des Jahres</a> 1995, es hat darüber hinaus in viele WG-Wohnküchen Einzug gefunden, so dass das Verb "Siedlern" (süddeutsch wohl auch "Siedeln") als Bezeichnung für einen unterhaltsamen Abend im Kreise der Mitbewohnlinge geprägt wurde. Es folgten dann auch etliche Erweiterungen und Abwandlungen, wie die Erweiterung für 5-6 Spieler (bei Besuch bzw. Groß-WGs), die Seefahrer, Städte &amp; Ritter, Händler &amp; Barbaren, die historischen Szenarien, das Kartenspiel für zwei Personen und schließlich: Die Sternenfahrer von Catan (Prädikat: Plastikkitsch).</p>
@@ -147,18 +136,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von J.K. Simpson.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -351,7 +329,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

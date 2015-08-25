@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1207">
 					<h2>Frischkäse-Erfahrungen</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/07/frischkaese.jpg" alt="frischkäse" title="frischkäse" width="500" height="231" class="alignnone size-full wp-image-1973"></p>
 <p>Ich weiß, Phase 5 ist nicht die Stiftung Warentest, und ob ich die werte Leserschaft mit Produktrezensionen heimischer Milchprodukte nerven sollte, ist auch mehr als fraglich. Allerdings ernähre ich mich zurzeit in nicht unerheblichem Maße von Frischkäse, und bin an neuen, leckeren Sorten natürlich immer interessiert.</p>
 <p>So habe ich mich denn auch gefreut wie ein Schulkind, als ich im örtlichen Supermarkt die beiden oben abgebildeten Frischkäse-Spezialitäten fand: Philadelphia "Rote Chili" und Buko "Thai". Letzterer ist sogar "Buko des Jahres", was auch immer das bedeuten mag. Ich schnappte mir also schnell jeweils eine Packung, versteckte sie in meinem <a href="http://de.wikipedia.org/wiki/Wams">Wams</a> und verschwand hastig gen Kasse.</p>
 <p>Am abend toastete ich mir dann zwei bekömmliche Finn Brøds, verteilte großzügig den neu erworbenen Frischkäse darauf und fiel darüber her. Doch welch herbe Enttäuschung eröffnete sich mir. Diese Scheißdinger schmeckten nach nichts. Das heißt fast, ein Restgeschmack war identifizierbar. Nur war dies kein guter. Des weiteren waren sie lasch. Und das ist jetzt kein Geschwafel à&nbsp; la "Ich bin so hart! Scharf nenn' ich was anderes!" - nein, diese beiden Frischkäse-Enttäuschungen waren nicht scharf, noch pikant, ja nicht einmal würzig.</p>
 <p>Dabei sollte man doch sowohl von einem Chili- als auch einem Thai-Frischkäse erwarten, dass er sich irgendwie am Gaumen bemerkbar macht. Deshalb rate ich: Vorsicht im Umgang mit diesen Frischkäses (ist das der korrekte Plural??), ein Geschmackserlebnis wird sich sehr wahrscheinlich nicht einstellen. Ich persönlich bleibe denn auch lieber bei Buko "Mexicana". Der ist zwar auch nicht scharf, schmeckt aber wenigstens lecker nach Chili con Carne. Das ist viel wert.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -309,7 +287,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

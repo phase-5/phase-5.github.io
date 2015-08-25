@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1470">
 					<h2>Fantasy für Kids</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Als ich zu pubertieren begann, habe ich phantastische Literatur verschlungen. Heute ist meine Nichte in diesem Alter, auch sie hängt glücklicherweise nicht nur vor der Playstation, sondern frisst sich durch Bücher. Auf diese Weise kommt ein innerfamiliärer schöngeistiger Austausch zustande, was ja erstmal ganz nett ist.</p>
 <p>Wenn man aber mal in eine - oder mehrere - Buchhandlungen guckt, was so an Fantasy für Jugendliche geboten wird, kann man nur feststellen: Der Markt ist hochgradig konzentriert.</p>
 <p>Da gibt's den unvermeidlichen <a title="Harry Potter, deutsche Wikipedia" href="http://de.wikipedia.org/wiki/Harry_Potter" target="_blank">Harry Potter</a> (mehrbändige Geschichten über einen jugendlichen Zauberlehrling), den postmodernen <a title="Artemis Fowl, deutsche Wikipedia" href="http://de.wikipedia.org/wiki/Artemis_Fowl" target="_blank">Artemis Fowl</a> (mehrbändige Geschichten über einen jugendlichen Meisterdieb), die <a title="Tintenwelt in der deutschen Wikipedia" href="http://de.wikipedia.org/wiki/Tintenwelt" target="_blank">Tintenwelt</a>-Romane von Cornelia Funke (Trilogie über ein junges Mädchen und die Liebe zum Lesen), <a title="Twilight-Trilogie in deutscher Wikipedia" href="http://de.wikipedia.org/wiki/Biss_zum_Morgengrauen" target="_blank">"Bis(s) zum Morgengrauen"</a> etc. (Trilogie über ein junges Mädchen, dass sich in einen Vampir verliebt), und <a title="His Dark Materials, deutsche Wikipedia" href="http://de.wikipedia.org/wiki/His_Dark_Materials">Der Goldene Kompass etc.</a> (Trilogie über ein junges Mädchen und die Unterdrückung durch die Kirche). Daneben finden sich in den Regalen noch zwei- bis drei andere mehrbändige Geschichten über jugendliche Identitätsfiguren, die irgendwas tun.</p>
@@ -139,18 +128,7 @@
 <div class="author_info">
 <p>Dies ist ein Gastbeitrag von J.K. Simpson.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -379,7 +357,16 @@ Das wäre doch mal ein Charakter mit dem man Geschichte(n) schreiben könnte.</p
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

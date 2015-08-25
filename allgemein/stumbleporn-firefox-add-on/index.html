@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1404">
 					<h2>Stumbleporn – Wie ein Firefox Add-on zum Hauptgesprächsthema in der Schule wird</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://www.stumbleporn.com/" target="_blank"><img src="../../wp-content/uploads/2008/04/stumbleporn_screenshot.png" alt="Stumbleporn Screenshot" title="Stumbleporn Screenshot"></a></p>
 <p>Wie durch FFF000 und evtl. auch hier bekannt, befinde ich mich gerade in der spannenden Endphase vor meinen schriftlichen Abiturprüfungen. Am 17.4. schreib ich die erste und am 5.5.08 bin ich dann auch mündlich durch.</p>
 <p>Neben all dem Gerede, das man so auf dem Flur aufschnappt, wie: "Hast du gestern auch die und die Matheaufgabe gerechnet?", oder "Mist, ey! Am Samstag schreiben wir schon Deutsch-LK.", habe ich heute auf dem Jungenklo beim Händewaschen ein anderes Thema mitbekommen. Dieses klang ganz und gar nicht nach abirelevanten Dingen bzw. zur Gewohnheit gewordenen Saufstories vom vergangenen Wochenende.</p>
@@ -142,18 +131,7 @@ Erinnerte ich mich denn nicht mehr an die verkorksten Sonntage, an denen ich auf
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von jasper.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -365,7 +343,16 @@ Und danach endgültig hinüber wie es sich für einen rechtschaffenen Phase-5 Re
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

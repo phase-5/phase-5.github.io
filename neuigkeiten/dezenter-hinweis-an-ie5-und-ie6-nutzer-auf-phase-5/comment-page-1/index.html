@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-2717">
 					<h2>Dezenter Hinweis an IE5- und IE6-Nutzer auf Phase 5</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2009/01/internet_explorer_hinweis.jpg" alt="internet explorer - hinweis auf phase 5" title="internet explorer - hinweis auf phase 5" width="500" height="126" class="alignnone size-full wp-image-2718"></p>
 <p>Vorgestern musste ich mich mit einem zerschossenen Layout rumplagen. Das Problem trat nur im Internet Explorer 6 auf und war wirklich gravierend. Es wurden ganze HTML-Elemente verschluckt. Ich habe ewig lange nach dem Problem gesucht und nebenbei eine äußert beschissene Laune bekommen, da ich den Fehler einfach nicht finden konnte.</p>
 <p>Am Ende hat sich herausgestellt, dass ein falsch dargestellter Umlaut in einem Alt-Attribut die Wurzel allen Übels war. Ein kurzer Eingriff in die Datenbank und alles war wieder in Ordnung. Unfassbar, der verfickte Internet Explorer zerschießt ein ganzes Layout wegen eines Umlauts, den er nicht darstellen kann. Wie kann man so einen bekackten Browser entwickeln?</p>
 <p>Der langen Rede kurzer Sinn: Wer mit dem Internet Explorer 6 (oder noch schlimmer, Internet Explorer 5) auf Phase 5 surft, bekommt von nun an einen Hinweis ganz oben eingeblendet, dass ein Umstieg auf einen zeitgemäßen Browser, wie Firefox, Opera, Flock, Safari oder Chrome ratsam ist.</p>
 <p>Ein paar Worte der Anteilnahme noch an alle, die vom Arbeitsplatz aus surfen und gezwungen sind, den Internet Explorer 6 zu nutzen: Ihr habt mein Mitgefühl. Aber der Hinweis muss sein.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -375,7 +353,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

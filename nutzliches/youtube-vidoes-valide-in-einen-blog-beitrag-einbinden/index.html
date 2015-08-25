@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-916">
 					<h2>YouTube-Videos valide in einen Blog-Beitrag einbinden</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Ohne YouTube lässt sich heutzutage kein anständiger Blog mehr betreiben, schließlich lauert die Schreibblockade an jeder Ecke. Wenn man es dann nicht einfach flimmern lassen kann, bis die Ideen wiederkommen, ist man aufgeschmissen. Obendrein sind einige YouTube-Videos auch noch unterhaltsam. Andere sind eklig, manche traurig und viele stinklangweilig.</p>
 <p>Eines sind sie aber alle nicht: Valide. Der Embed-Code, wie er von YouTube angeboten wird, schlägt dem W3C-Validator mächtig auf den Magen. Will man jedoch satte 100% bei den "Technischen Details" von <a href="http://www.seitwert.de/" target="_blank">Seitwert</a> abstauben, kann man sich solche Schnitzer im Quelltext nicht erlauben. Deshalb habe ich eine prima Methode gefunden YouTube-Videos valide einzubinden.</p>
 <p>Als erstes der herkömmliche Embed-Code:</p>
@@ -137,18 +126,7 @@
 <p style="background: #F3F3F3; color: #666; padding: 10px; margin: 10px 0px; border: 1px solid #333;">&lt;object type="application/x-shockwave-flash" data="<strong>[Video_URL]</strong>" height="335" width="425"&gt;&lt;param name="movie" value="<strong>[Video_URL]</strong>"&gt;&lt;/param&gt;&lt;param name="quality" value="high"&gt;&lt;/param&gt;&lt;/object&gt;</p>
 <p>Die &lt;embed&gt;-Tags wurden rausgeschmissen, und schon ist der Spaß valide. Die Frage ist jedoch, ob das Video nun auch auf dem Internet Explorer unter Windows läuft. Eine sehr gute Frage, die ich bisher leider noch nicht beantworten konnte. Deshalb eine Frage an alle Windows-User unter den Phase 5-Lesern:</p>
 <p>Könnt ihr den "MacHEADS-Trailer" im vorherigen Beitrag sehen?</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -436,7 +414,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

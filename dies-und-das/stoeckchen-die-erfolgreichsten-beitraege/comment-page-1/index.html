@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-494">
 					<h2>Stöckchen: Die erfolgreichsten Beiträge</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Es ist passiert, uns wurde vom Schafredakteur des <a href="http://u9tupfing.blogspot.com/" target="_blank">Unterneuntupfing Aktuell</a>-Blogs ein <a href="http://u9tupfing.blogspot.com/2007/07/nordic-blogging.html" target="_blank">Stöckchen</a> zugeworfen. Wie es sich für einen anständigen Phase 5-Blogger gehört, stürze ich auf der Stelle geifernd los, und apportiere brav.</p>
 <p>Genau genommen geht es - wie die Überschrift vorsichtig suggeriert - um unsere erfolgreichsten Beiträge. Phase 5 danach zu fragen ist in etwa so, als würde man im Leichtathletikverein zum kleinen dicken Jungen gehen, der neu ist, und ihn nach seinen größten Lauferfolgen fragen. Er würde einem für diese Frage eigentlich eine schallern - wenn er nur dick wäre. Aber er ist auch noch klein, und so bleibt ihm nichts anderes übrig, als... Ach, Kinder können so grausam sein.</p>
 <p>Nun gut, zurück zum Thema:</p>
@@ -136,18 +125,7 @@
 <p>Ebenfalls beliebt ist der <a href="../../../links/phase-5-der-html-editor/index.html" target="_blank">Phase 5 - HTML-Editor</a>. Es ist beinahe tragisch, dass der scheinbar fündig gewordene Google-Nomade zwar erfährt, dass der HTML-Editor Namenspate dieses Blogs ist, aber ansonsten mit allgemeiner Nichtbeachtung gestraft wird.</p>
 <p>Aber mal ehrlich - wer braucht schon einen HTML-Editor, wenn er einen richtigen TextEditor haben kann?!!</p>
 <p>So, das Stöckchen wäre verarbeitet. Da mir spontan niemand einfällt, den ich mit diesem Thema behelligen könnte, endet das Vergnügen hier leider. Zum Glück haben die Kollegen von U9Tupfing das Stöckchen in weiser Voraussicht fachmännisch zersplittert, und über ganz Süddeutschland - und darüber hinaus - verteilt.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -383,7 +361,16 @@ Ohne funktionierts prima, habe ich gerade mittels NetVibes getestet. Ab sofort s
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

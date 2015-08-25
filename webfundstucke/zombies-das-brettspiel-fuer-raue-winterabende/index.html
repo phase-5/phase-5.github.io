@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1056">
 					<h2>Zombies!: Das Brettspiel für raue Winterabende</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/03/zombies_brettspiel.png" alt="Zombies! - Brettspiel" style="float: left; margin: 0px 10px 15px 0px;"></p>
 <p>Kritiker könnten jetzt natürlich einwerfen, dass der Frühling vor der Tür steht und raue Winterabende alles andere als in greifbarer Nähe sind. Aber das ist egal, die Überschrift ist sowieso nur eine hohle Phrase. Abgesehen von <a href="http://www.pegasus.de/zombies.html" target="_blank">Zombies!</a>, welches mir ein lustiges Spiel zu sein scheint.</p>
 <p>Wer also genug davon hat, sich immer nur von Zombiefilmen berieseln zu lassen und selbst zur Tat schreiten will, hat hier die Gelegenheit. Spielziel ist es - gegen eine Übermacht von Zombies kämpfend - einen Hubschrauberlandeplatz zu erreichen und so zu fliehen. Alternativ kann man auch einfach durch die Gegend laufen und <em>slashen</em>.</p>
 <p>Da es das Spiel nicht erst seit gestern gibt, sind schon fünf Erweiterungen auf dem Markt. Der Spielspaß sollte also eine Weile aufrecht erhalten werden können. Übrigens kommt dieser Spaß von <a href="http://www.pegasus.de" target="_blank">Pegasus</a>, die auch andere Knaller im Programm haben, wie "Junta" oder "Chez Geek".</p>
 <p>Na gut, ich werde jetzt mal in meinem Bekanntenkreis ausloten, wer Lust hat sich ein Zombie-Brettspiel zu kaufen *muaharharrr*</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -392,7 +370,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

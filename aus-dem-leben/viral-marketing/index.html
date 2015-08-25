@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-434">
 					<h2>Viral Marketing</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Vor nicht allzu langer Zeit berichtete ich - wie so viele - über den <a href="../../2007/05/14/feister-diebstahl/index.html">dreisten Fotoklau bei Rebekka</a>. Schon damals hat sie mit ihrem Flickr-Eintrag eine unglaubliche Resonanz gefunden, bis Flickr dem Treiben ein Ende setzte, da vereinzelte Kommentare zu Racheaktionen gegen die Druckerei "only-dreemin.com" aufriefen.</p>
 <p>Solche Kommentare könnte man löschen, oder - wie Flickr es löste - den "Vorschlaghammer rausholen", und das Bild von Rebekka komplett mit allen Kommentaren aus dem Verkehr ziehen. Allerdings hatte sich - und nun kommen wir zum Titel dieses Beitrags - die ganze Geschichte da schon längst verselbstständigt.</p>
 <p>Anfangs aufgenommen von der Blogger-Szene, hielt das Thema schließlich sogar Einzug bei <a href="http://www.spiegel.de/netzwelt/web/0,1518,484148,00.html" target="_blank">Spiegel ONLINE</a>.</p>
 <p><a href="http://www.spiegel.de" target="_blank"><img src="../../wp-content/uploads/2007/05/spiegel_flickr.png" alt="spiegel" border="0"></a></p>
 <p>Und was lernen wir daraus? Flickr schlägt zurzeit einen merkwürdgigen Weg ein, und das Internet kann einen herabfallenden Kieselstein in einen Steinschlag verwandeln, falls mir die Metapher erlaubt ist.</p>
 <p>Ach ja, mein Mitleid mit Rebekka hat deutlich abgenommen. PR-technisch hat sich die ganze Sache für sie nämlich mehr als gelohnt, was ich ihr aber gönne. Da bin ich ja nicht so.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -278,7 +256,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

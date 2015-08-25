@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1111">
 					<h2>Schon wieder Geburtstag</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2007/05/party2-0.png" alt="party2.0" title="party2.0"></p>
 <p>Es ist mal wieder soweit, mein Wiegenfest steht ins Haus. Und wie schon im letzten Jahr gratuliere ich mir wieder selbst:</p>
 <p>Herzlichen Glückwunsch, Herschel.</p>
@@ -139,18 +128,7 @@
 <p>Einfach einen hübsch freundlichen oder extrem gehässigen Glückwunschartikel auf eurem Blog schreiben und hierher verlinken. Falls der Pingback nicht ankommt einfach den Link <em>händisch</em> (tolles Wort) in einem Kommentar zu diesem Beitrag unterbringen.</p>
 <p>Ich werde bis Dienstag abend in der Weltgeschichte rumtingeln. Bis dahin ist Zeit. Mittwoch um 12Uhr <em>High Noon</em> schnappe ich mir alle Teilnehmer und lose den Gewinner aus. Das wird über alle Maßen fair ablaufen. Vielleicht kann mir Klaus sogar assistieren und ein Auge darauf haben, dass hier alles seine Richtigkeit hat. Die oder der Gewinner/in wird dann von mir benachrichtigt.</p>
 <p>Ansonsten ist der Rechtsweg natürlich ausgeschlossen. Ich gebe außerdem keine Gewähr. Viel Spaß!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -386,7 +364,16 @@ Das kann natürlich jetzt sowohl hübsch freundlich, als auch extrem gehässig g
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-2794">
 					<h2>Lycos Mail verabschiedet sich</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Kann mir einer sagen, warum Lycos sich aus dem E-Mail Geschäft verabschiedet und was Lycos ohne Mail noch zu bieten hat? Nicht, dass mir Lycos sonderlich am Herzen liegt, aber wie soll man denn bitte überall seine E-Mailadresse ändern?</p>
 <p>Auf gleicher Weise bin ich vor einigen Jahren überhaupt erst zu Lycos gekommen. Damals war ich noch Kunde bei E-Post und hatte meine 'Adresse für ein ganzes Leben'.&nbsp; Da E-Post wenigstens einen bequemen Umzugsservice zu Lycos angeboten hat, habe ich das Angebot seinerzeit angenommen. Nun werde ich jedoch allein gelassen und muss mich selbst um einen neuen Anbieter bemühen.</p>
 <p>Aber was nehmen? Da gOOgle und MicrOsOft für mich nicht in Frage kommen, Web.de nur 12 MB Speicher stellt und ich auch keinen Provider möchte, ist die Auswahl eigentlich ziemlich klein. Hat noch jemand einen Geheimtipp für mich?
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von Daki.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -473,7 +451,16 @@ Smart-Mail.de</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

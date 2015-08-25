@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1448">
 					<h2>Trinkhallen…</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/07/trinkhalle_hannover.jpg" alt="trinkhalle hannover" title="trinkhalle hannover" width="500" height="207" class="alignnone size-full wp-image-1996"></p>
 <p>Als Trinker, Faulenzer und Verpeiler bin ich öfter als mir lieb ist auf die gute alte Trinkhalle angewiesen. Herschel brachte mich mit seinem Beitrag mit den Fotos aus Berlin darauf, doch mal auf den entsprechenden <a href="http://de.wikipedia.org/wiki/Trinkhalle_(Verkaufsstelle)">Wikipedia-Artikel</a> zu klicken... Er ist relativ belanglos, viel spannender ist die <a href="http://www.fb4.fh-frankfurt.de/offline/diplomarbeiten/trinkhalle.pdf">verlinkte Diplomarbeit</a> zum Thema "Gesellschaftliche Funktion der Trinkhallen". Liest sich, wie sich gerade herausstellt, sehr lustig und bringt Licht in ungeklärte Tatsachen der Mystik, die die Trinkhallen umgibt.</p>
 <p>Hier in Hannover gibt es verschiedene Theorien über das Fortbestehen der Kioske und Trinkhallen: Gesponsert von der türkischen Mafia zum Geld waschen (was machen sie nur mit dem ganzen Gemüse?!), erfolgreiche Familienunternehmen mit einer wahren Trinkhallen-Kette, doch der gute alte Metro-Mengenrabatt auf gewerblich Eingekauftes?! Vermutlich ist alles falsch (wobei ich die Sache mit der Geldwäscherei als durchaus vielversprechend erachte).</p>
@@ -139,18 +128,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von TediousNilsen.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -417,7 +395,16 @@ Die Läden dienen als getarnte Verkaufsstellen der Pornoindustrie</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1169">
 					<h2>Vom "Kunden" als solchen</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Vor vielen Jahren habe ich den weisen Entschluss gefasst dem vaterländischen Unrechtssystem den Rücken zu kehren, und in den Goldenen Westen "rüberzumachen". Ich begab mich also auf den beschwerlichen Weg, kroch bäuchlings über den Minengürtel, biss ein paar sadistischen Grenzern die Kehle durch, schlug mit bloßen Händen ein Loch in den Eisernen Vorhang, und verschwand gen Westen in den Sonnenaufgang (damals ging das noch). Das war 1991, und ich zarte Neun Jahre alt.</p>
 <p>Geschadet hat es jedoch nichts, denn von da an konnte ich die saubere hochdeutsche Sprache aufsaugen wie ein Schwamm. Trotzdem habe ich mich von der ur-heimatlichen Mund-Art nie ganz abgewandt und immer mal wieder geschaut, was da so los ist, jenseits des Zonen-Gürtels.</p>
 <p>Und es war einiges los: Bald begann mein Cousin nicht mehr wie ich von "dem Typen" oder "diesem Kollegen" zu sprechen, sondern nur noch von "dem Kunden". "Kam so ein Kunde an und reißt das Maul auf. Hätte ich dem Kunden fast eine gegeben." (Das hat mein Cousin in der Form nie gesagt.)</p>
@@ -137,18 +126,7 @@
 <p>Doch weit gefehlt, "Kunde" ist jeder. Ganz ohne Hintergedanken.</p>
 <p>Zu guter letzt holte mich das Wort dann selbst ein, als ich mich von einem Verkaufsfernsehsender, dessen Namen ich nur zu gerne nennen würde, ausbeuten ließ. Ich hatte nämlich einen netten Kollegen an der Seite, der sich ebenfalls ausbeuten ließ. Dieser konnte mit seinem sächsisch gefärbten Hochdeutsch herrliche Anekdoten über alle möglichen "Kunden" erzählen.</p>
 <p>Tja, so ist das, ihr "Kunden". Eigentlich ein prima Wort. Ich bin noch nicht ganz schlüssig, aber ich stehe kurz davor diesen Ausdruck hier auch zu etablieren. Hat einfach eine gewisse Lässigkeit, und ist schon etwas freundlicher, als über "diesen Spacken" oder "den Schmock" zu reden.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -339,7 +317,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

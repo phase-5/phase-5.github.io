@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-488">
 					<h2>Insomnie Bluetoothia</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Zwar genieße ich es mein MacBook liebevoll zu streicheln und zu liebkosen, aber ständig auf dem Touchpad rumzueiern geht über das erträgliche Maß an Zärtlichkeiten hinaus. Also habe ich mich in Unkosten gestürzt, und eine Bluetoothmaus beim Apple-Händler um die Ecke erworben.</p>
 <p>Diese bereitet mir auch viel Vergnügen, und entlastet sowohl Touchpad als auch Ctrl-Taste. Allerdings hat sie einen Makel: Sie hält mein MacBook ständig auf Trab.</p>
 <p><img src="../../../wp-content/uploads/2007/07/bluetoothmaus.jpg" alt="bluetoothmaus"></p>
 <p>Klappe ich es zu und wähne es im Ruhezustand, wird es tatsächlich aber mit schöner Regelmäßigkeit von der Maus geweckt. In geschlossenem Zustand wohlgemerkt. Wenn ich es dann aufklappe, kann es durchaus schonmal vorkommen, dass es mir nur noch einen schwarzen Bildschirm präsentiert. Und das ist eindeutig zu wenig.</p>
 <p>Also, wer mit dem Gedanken spielt sein MacBook um eine Bluetoothmaus zu erweitern - nur zu. Aber nicht vergessen: Vor dem Ruhezustand die Maus ausschalten. Sonst wird das Laptop öfter aus dem Schlaf gerissen, als ein 70-jähriger auf Granufink-Entzug.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -357,7 +335,16 @@ ist aber schon gut.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

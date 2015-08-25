@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-534">
 					<h2>Der Lude und sein Advokat</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wer kennt nicht Karl-Heinz Schwensen?! Sicher können die wenigsten etwas mit dem Namen anfangen, deshalb sei an dieser Stelle noch einmal Wikipedia zitiert:</p>
 <p><a href="http://de.wikipedia.org/wiki/Karl-Heinz_Schwensen" target="_blank"><em>"Karl-Heinz Schwensen war früher unter seinem Kiez-Namen Neger-Kalle bekannt und wurde auch in verschiedenen Medienberichten so bezeichnet. Aufgrund der rassistischen und diskriminierenden Konnotation der Bezeichnung verwahrt sich Schwensen inzwischen gegen diesen Spitznamen."</em></a></p>
 <p>Na, dämmerts? Den kennt man doch aus einem '5 Sterne Deluxe'-Video, und von zahlreichen Hamburger Promi-Veranstaltungen. Was allerdings nur wenige wissen ist, dass sich Karl-Heinz von seinem NK-Pseudonym distanziert hat. <del datetime="2007-07-27T13:49:37+00:00">Auch sein unter diesem Namen geführtes MySpace-Profil hat er gelöscht.</del> Zwar gibt es noch ein <a href="http://myspace.com/negerkalle" target="_blank">MySpace-Profil</a> unter seinem Kosenamen, aber inwiefern das wirklich von ihm ist, oder einfach nur von einem treuen Fan/Spaßvogel erstellt wurde, lässt sich natürlich schwer sagen.</p>
@@ -138,18 +127,7 @@
 <p><a href="http://stefan-niggemeier.de/blog/wissenswertes-ueber-kalle-schwensen/" target="_blank">Stefan Niggemeier</a> hat die Causa Kalle hier sehr schön beschrieben, und <a href="http://www.whudat.de/?p=996#comment-272847" target="_blank">Herr Schwensen</a> selbst hat sich auf dem Blog von MC Winkel zu Wort gemeldet.</p>
 <p>Bleibt schlussendlich nur zu sagen, dass das Thema in den letzten Tagen sehr hochgekocht wurde, und eigentlich viel differenzierter und sachlicher behandelt werden sollte. Herr Schwensen hat ein Recht darauf nicht als "Neger" bezeichnet zu werden, unbhängig von der gängigen Abmahnpraxis. Des weiteren scheint er kein Geld daran zu verdienen, aber lest am besten selbst seinen Kommentar bei MC Winkel.</p>
 <p>Notiz an mich selbst: Nicht sofort auf jeden Zug aufspringen, und kühlen Kopf bewahren!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -341,7 +319,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

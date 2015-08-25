@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-935">
 					<h2>Lang lebe LEGO – Nieder mit Playmobil</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>LEGO hat Geburtstag und wird heute 50! Herzlichen Glückwunsch an eines der besten Spielzeuge der Welt.</p>
 <p><a href="http://gizmodo.com/349509/lego-brick-timeline-50-years-of-building-frenzy-and-curiosities" target="_blank"><img src="../../wp-content/uploads/2008/01/lego_timeline.jpg" alt="Gizmodo - LEGO Timeline"></a></p>
 <p>Ich habe in meiner Kindheit ein wenig Playmobil und viel LEGO besessen. Das Playmobil ist in der Ecke verstaubt, weil man damit einfach nichts anfangen kann. Mit LEGO könnte ich mir heute noch die Zeit vertreiben.</p>
 <p>Übrigens möchte ich darauf hinweisen, dass LEGO 2007 auf Platz Eins der 200 "Most Respected Companies" stand. Zurecht wie ich finde. Herausgefunden hat das übrigens <a href="http://www.reputationinstitute.com/reptrakpulse" target="_blank">RepTrak</a>. Danke dafür.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -464,7 +442,16 @@ Meine Schwester hat da übrigens eine Theorie über Lego und Playmobil. Aber die
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

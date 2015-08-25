@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1798">
 					<h2>Adult/Mature Content</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Heute morgen erzählt mir Klaus, dass sie was total witziges gefunden hat: Alte, groteske Playgirl-Bilder, und fragt mich, ob ich sie gerne angucken möchte. Ich habe höflich verneint und darauf hingewiesen, dass sie sie trotzdem gerne hier posten kann, solange kein Schlong auf der Startseite ist.</p>
 <p>Vor ein paar Minuten kriege ich die Quittung dafür, eine Mail von WordPress, wo ich ein Theme hochgeladen habe. Beim Durchsehen des selbigen ist ihnen folgendes aufgefallen:</p>
 <p>→ <strong>Credit link (http://phase-5.github.io/) has adult/mature content.</strong></p>
 <p>Soll ich den Playgirl-Scheiß also entfernen nur um in das offizielle Theme-Verzeichnis zu kommen? Ich denke nicht. Vielmehr verzichte ich auf das Verzeichnis. Vielleicht warte ich aber auch einfach einen Monat und lade mein Theme dann nochmal hoch. Bis dahin hat sich der Artikel möglicherweise versendet.</p>
 <p>Und wenn alle Stricke reißen mache ich mein eigenes Theme-Verzeichnis unter der Adresse <strong>www.wpthemevz.de</strong> auf. Die darauf folgende Abmahnung von StudiVZ dürfte auf jeden Fall ein bißchen PR bringen.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -356,7 +334,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

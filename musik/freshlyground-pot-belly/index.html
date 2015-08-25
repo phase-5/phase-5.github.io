@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1410">
 					<h2>Freshlyground – Pot Belly</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Mir wurde da neulich was von einem sehr guten Freund zugespielt, der einen 6.000 km (!) Roadtrip in Südafrika hinter sich hat. Die südafrikanische Afro-Fusion-Band <a href="http://en.wikipedia.org/wiki/Freshlyground">Freshlyground</a> ist schon seit 2002 aktiv und hat auch mehrere renommierte Awards eingeheimst, jedoch war sie mir bis dato unbekannt. Seit mehreren Jahren höre ich nämlich kaum noch akustische Musik in Richtung Reggae, World-Music oder ähnlichem à&nbsp; la <em>Patrice</em> und <em>Manu Chao</em>.</p>
 <p>Dieses Lied sagt mir dennoch sehr zu und auch das Video ist supergut produziert und hat eine ordentliche <em>Message </em>, wie man es aus dem, durch die jahrzehntelange Apartheit zerrüttetem, Südafrika mittlerweile erwarten sollte. Also schaut euch dieses Augenschmankerl an und ich denke die Botschaft für eine heterogene Welt kommt von ganz allein rüber...</p>
 <p><object type="application/x-shockwave-flash" data="http://www.youtube.com/v/4XPl6Pb8K4I&amp;hl=en" height="326" width="400"><param name="movie" value="http://www.youtube.com/v/4XPl6Pb8K4I&amp;hl=en"><param name="quality" value="high"></object></p>
@@ -136,18 +125,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von jasper.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -299,7 +277,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

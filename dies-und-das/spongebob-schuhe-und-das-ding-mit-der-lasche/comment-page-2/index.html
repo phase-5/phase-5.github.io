@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1026">
 					<h2>SpongeBob-Schuhe (und das Ding mit der Lasche)</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/02/spongebob_shoes.jpg" alt="Spongebob Shoes"></p>
 <p>Sehr schöne Schuhe. Okay, ich selbst würde sie nicht anziehen, aber dennoch: Sehr schöne Schuhe.</p>
 <p>Nur was geht mit der Lasche? Was bringt Menschen dazu, die so hochzuklappen? Das sah anfang der 90er schon scheiße aus, und hat in über 10 Jahren nicht viel an Ästhetik hinzugewonnen. Deshalb mein Tip an alle, die viel klauen oder öfters Opfer gewalttätiger Übergriffe werden: Lasst diesen Spaß mit der Lasche, sonst wird das mit dem Weglaufen nichts.</p>
 <p>Aber vielleicht ist diese Modeerscheinung auch nur Ausdruck einer Generation, die des Weglaufens müde ist und sich ihrem Gegner stellt. Ob das nun eine widrige politische/wirtschaftliche Situation, eine Horde fieser Hooligans, die 10m-Schlange vor der Toilette oder einfach nur der nächste Kasten Bier ist, sei einmal dahingestellt.</p>
 <p class="lizenz">Bild: <a href="http://flickr.com/photos/larimdame/4709213/" target="_blank">Steel Dust: SpongeBob ShoePants</a> von <a href="http://flickr.com/photos/larimdame/" target="_blank">LarimdaME</a> unter <a href="http://creativecommons.org/licenses/by-nc/2.0/deed.en" target="_blank">CC</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -285,7 +263,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

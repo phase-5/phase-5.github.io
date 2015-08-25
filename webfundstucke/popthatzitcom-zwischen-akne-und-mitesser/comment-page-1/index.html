@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1096">
 					<h2>PopThatZit.Com – Zwischen Akne und Mitesser</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://www.popthatzit.com/"><img src="../../../wp-content/uploads/2008/04/pop_that_zit_screenshot.png" alt="PopThatZit.com" title="PopThatZit.com"></a></p>
 <p><em>PopThatZit.com</em> ist - wenn ich meine bescheidenen Kenntnisse bemühen darf - englisch und bedeutet übersetzt soviel wie " Lass den Pickel knallen". Die unverhohlene Aufforderung also sich den Eiter aus dem/r Pickel/Mitesser/Aknepustel zu drücken.</p>
 <p>Ich hatte anfangs noch mit dem Gedanken gespielt hier umfangreiches Bild- und Videomaterial von dieser Seite zu präsentieren, bin aber schnell davon abgerückt, nachdem ich mich mit den Inhalten oberflächlich beschäftigt hatte. Es ist wirklich widerlich, was einem da geboten wird, und ich selbst werde mir die Seite nicht näher anschauen.</p>
 <p>Allerdings blogge ich der Vollständigkeit trotzdem darüber, denn wer sich zufällig gerade im Rahmen einer wissenschaftlichen Arbeit mit Pickeln beschäftigt, oder sich privat schon immer für Akne interessierte, wird dort sicher das eine oder andere interessante Bild bzw. Video finden.</p>
 <p>Viel Spaß dabei.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -337,7 +315,16 @@ Hätt ichs mal lieber gelassen.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

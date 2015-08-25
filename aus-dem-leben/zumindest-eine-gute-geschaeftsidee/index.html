@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1528">
 					<h2>Zumindest eine gute Geschäftsidee</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Neulich stolperte ich über <a href="http://www.telebid.de/">Telebid.de </a>. Versprochen werden sehr viel günstigere Preise bei diversem Konsum-SchnickSchnack. Das Prinzip ist einfach: Sagen wir, es wird eine Wii 12 Stunden lang ab 0€ angeboten. Jedes mal, wenn jemand bietet, erhöht sich der Preis um 10 Cent und die Auktion verlängert sich um 10 Sekunden. "Kurz vor Schluss" bieten gibt's also nicht. Dabei kostet jedes Gebot 50 Cent. Und am Ende geht die Wii für 128,20€ weg, der Kundes spart 82€. Tolles Ding.</p>
 <p>Nochmal nach gerechntet: Es wird in 10 Cent-Schritten geboten. Das macht für 128,20€ 1282 Gebote. Jedes Gebot kostet 50 Cent. Also verdient der Mensch dahinter 641€ an den Geboten. Plus den Preis macht das ca. 769,20€ (alle Angaben natürlich ohne Gewähr).</p>
 <p>Netter Versuch.</p>
@@ -136,18 +125,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von Klaus.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -417,7 +395,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

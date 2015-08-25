@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-446">
 					<h2>Tofi vs. Tifo vs. Fifo vs. Tito</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wie der <a href="http://www.spiegel.de" target="_blank">Spiegel</a> in seiner neuesten, gedruckten Ausgabe berichtet, geht ein erhöhtes Gesundheitsrisiko von Herz, Leber, Magen etc. umschließendes Eingeweidefett - so genanntes viszerales Fett - aus.</p>
 <p>Selbst Menschen die äußerlich schlank erscheinen und einen gesunden BMI (Body Mass Index) haben, können innerlich übergewichtig und damit einem erhöhten kardiovaskulären Risiko ausgesetzt sein. D. h., dass die Gefahr von Arterienverkalkung, Herzinfarkt und Schlaganfall gesteigert ist, da viszerales Fett mehr gefährliche Hormone und entzündungsförderne Stoffe bildet, als das äußerliche, subkutane Fettgewebe. Man spricht in diesem Fall von sog. "Tofi's" â€” thin outside - fat inside.</p>
 <p>Diese Erkenntnis ist allerdings nicht ganz neu, schon im März 2005 berichtete die <a href="http://www.aerztezeitung.de/docs/2005/03/10/044a1001.asp?cat=/medizin/adipositas" target="_blank">Ärzte Zeitung</a> in ihrer Online-Ausgabe von den vom Eingeweidefett ausgehenden Gefahren für die Gesundheit.</p>
@@ -139,18 +128,7 @@
 <li>Wir können uns nicht auf unserem schlanken Bauch ausruhen. </li>
 <li>Wenn man als Übergewichtiger gehänselt wird, kann man sich von nun an damit trösten, dass das hänselnde Gegenüber wahrscheinlich innerlich vollkommen verfettet ist.</li>
 </ol>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -283,7 +261,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

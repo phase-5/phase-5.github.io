@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2954">
 					<h2>Aktion: Stoppt die Schallschutzwände!</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2009/02/stoppt_die_schallschutzwaende.jpg" alt="Stoppt die Schallschutzwände! - Für bessere Aussichten während der Zugfahrt" title="Stoppt die Schallschutzwände! - Für bessere Aussichten während der Zugfahrt" width="500" height="261" class="alignnone size-full wp-image-2955"></p>
 <p>Es geht ein Gespenst um in Deutschland, schon seit Jahren: Schallschutzwände.</p>
 <p>Entlang jeder Bahnstrecke werden sie gebaut, angeblich um Mensch und Tier vor Lärm zu schützen. Doch was ist mit den Tausenden Menschen in den Zügen? Diesen wird die Aussicht verbaut. Anstatt sich zurück zu lehnen und die Landschaft zu genießen, müssen sie sich nun inakzeptablen Ersatzhandlungen hingeben, wie Filme auf ihren MP3-Playern gucken oder stundenlang das Muster der Kopflehne vor ihnen anstarren.</p>
@@ -136,18 +125,7 @@
 <p><strong>Stoppt die Schallschutzwände!</strong><br>
 Für bessere Aussichten während der Zugfahrt.</p>
 <p>Wenn ihr es auch satt habt, ständig gelangweilt im Zug zu sitzen ohne zu wissen, was ihr mit euch anfangen sollt, und endlich wieder aus dem Fenster gucken wollt, dann gebt der Aktion "Stoppt die Schallschutzwände!" eure Stimme. Gemeinsam sorgen wir für einen freien Blick ins Land, so wie er jedem Menschen per Grundgesetz zusteht.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -438,7 +416,16 @@ Wo kann ich Unterschreiben  <img src="../../../wp-includes/images/smilies/icon_t
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

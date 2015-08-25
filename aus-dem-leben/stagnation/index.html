@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-1189">
 					<h2>Stagnation</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/07/change_or_die.jpg" alt="Change  Or Die" title="Change  Or Die" width="500" height="137" class="alignnone size-full wp-image-1924"></p>
 <p><strong>Phase 5</strong> stagniert, läuft auf der Stelle, kommt nicht voran. Wir dümpeln - abgesehen von temporären Ausreißern - bei 200 Besuchern am Tag, und im Schnitt 80 Feed-Lesern. Seit einer gefühlten Ewigkeit. Änderung nicht in Sicht.</p>
 <p>Nun habe ich keinen 5-Jahres-Plan aufgestellt <strong>Phase 5</strong> an die Spitze der Blog-Charts zu bringen, und den Stress einen sogenannten A-Blog zu haben muss ich mir sicherlich auch nicht geben. Aber zu sehen, dass sich der Blog unter der täglichen "Pflege" weiterentwickelt wäre schon schön. Wobei das viele Faktoren sein können, nicht nur die Besucherzahl.</p>
 <p>Möglicherweise bin ich aber auch zu ungeduldig. Und irgendwie fühle ich mich jetzt auch wieder besser, wo ich das mal losgeworden bin. Nur wenn sich auch weiterhin nichts tut, werde ich in spätestens 3 Monaten wieder losheulen. Also stellt euch schonmal darauf ein, oder gebt konstruktive Vorschläge, wie man den Blog aus dem "Schlamm ziehen kann".</p>
 <p>Letzteres wird von mir natürlich bevorzugt und mit tief empfundener Dankbarkeit quittiert.</p>
 <p class="lizenz">(Bild: <a href="http://flickr.com/photos/73416633@N00/391474781/">Change or Die</a> von <a href="http://flickr.com/photos/73416633@N00/391474781/">colros</a> unter <a href="http://creativecommons.org/licenses/by/2.0/deed.en">CC</a>-Lizenz)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -416,7 +394,16 @@ Ich werde Systemadministrator, aber bitte nur mit Windowssystem und Notrufhotlin
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

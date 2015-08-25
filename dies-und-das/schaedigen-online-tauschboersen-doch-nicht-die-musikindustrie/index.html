@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2630">
 					<h2>Schädigen Online-Tauschbörsen doch nicht die Musikindustrie?</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2009/01/cassette.jpg" alt="cassette" title="cassette" width="500" height="366" class="alignnone size-full wp-image-2631"></p>
 <p><a href="http://www.heise.de/newsticker/Tauschboersen-nicht-fuer-Verluste-verantwortlich--/meldung/121875/" title="&quot;Tauschbörsen nicht für Verluste verantwortlich&quot;">Laut Heise Online</a> ist der Richter James P. Jones aus Virginia (USA) zu dem Schluss gekommen, dass nicht allein Online-Tauschbörsen für den Umsatzrückgang verantwortlich gemacht werden können, sondern vielmehr die Preispolitik der Musikkonzerne selbst.</p>
 <p>Ich persönlich lade ja keine Musik runter, da es illegal ist und ich mich von solchen Machenschaften ausdrücklich distanziere. Ich benutze auch Toilettenpapier beidseitig, um die Umwelt zu schützen…</p>
@@ -138,18 +127,7 @@
 <p>Es ist also aufgrund des illegalen Downloads mehr Geld geflossen als ohne. Ein Umstand, den man ganz gut unter den Tisch fallen lassen kann, wenn man als unfähiger Musikmanager den Wandel der Zeit verpennt und einen Sündenbock braucht. </p>
 <p>Das alles wurde sicherlich schon oft genug im Internet geschrieben, aber nachdem ich die Meldung auf Heise gelesen habe, musste ich es einfach mal loswerden. Auch wenn ich mich ganz entschieden und inständig von illegalen Musikdownloads distanziere…</p>
 <p>PS: Das Foto da oben ist übrigens ziemlich geil, heißt <a href="http://flickr.com/photos/statusfrustration/142686368/">TDK C90</a> und wurde von <a href="http://flickr.com/photos/statusfrustration/">Status Frustration</a> unter <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en">CC</a>-Lizenz veröffentlicht.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -320,7 +298,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

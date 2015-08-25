@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2706">
 					<h2>WhiteHouse.Gov und das Browser-Problem</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Seit gestern heißt der US-Präsident ja Barack Obama, und mit ihm kommt eine neugestaltete Homepage des <a href="http://www.whitehouse.gov/">Weißen Haus</a>, welche den Dialog mit den Bürgern verstärken soll. Die sieht so weit auch ganz schick aus (siehe auch <a href="http://www.designtagebuch.de/whitehouse-gov-relaunch/">DesignTagebuch</a>), nur ein kleiner Makel tut sich auf, wenn man nicht mit Browsern aus dem Hause Microsoft auf die Seite geht.</p>
 <p><strong>Internet Explorer 6</strong></p>
 <p><img src="../../../wp-content/uploads/2009/01/ie6_white-house.jpg" alt="internet explorer 6 white-house" title="ie6_white-house" width="300" height="130" style="border: 1px solid #999"></p>
@@ -141,18 +130,7 @@
 <p><img src="../../../wp-content/uploads/2009/01/safari_white-house.jpg" alt="safari white-house" title="safari white-house" width="300" height="130" style="border: 1px solid #999"></p>
 <p>Das passt nicht ganz so gut. Ich will ja hier nicht erbsenzählen, bzw. den Querulanten 2.0 raushängen lassen, aber eine Seite, die so in der Öffentlichkeit steht, wie die des Weißen Haus, sollte ohne solche Patzer auskommen.</p>
 <p>So ist das!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -344,7 +322,16 @@ Warscheinlich waren sie noch beim FTPen beim Screeshoot machen <img src="../../.
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

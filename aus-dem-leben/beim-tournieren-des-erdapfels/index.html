@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-820">
 					<h2>Beim Tournieren des Erdapfels</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2007/11/kartoffeln.jpg" alt="Kartoffeln schneiden"></p>
 <p>Ich liebe Kartoffeln. Sicher, ich verschmähe nicht Reis noch Nudeln, oder anderen kochenswerten Beilegerich wie Grünkern, Maniok und Sorghum. Doch am liebsten sind mir Kartoffeln.</p>
 <p>Ich mag sie mehlig und fest, gekocht und gebraten, gestampft als Püree, oder zur Pommes frittiert. Ich mag sie aus dem Ofen mit Sour Creme, oder mit Sahne zum Gratin gebacken. Ich esse sie als Salat, mit Mayo- oder Essig/Öl-Dressing. Auch gerieben und zum Puffer gebraten ist sie ein Gedicht.</p>
 <p>Warum ich so gerne Kartoffeln esse ist schwer zu sagen. Ich vermute, dass es mit meiner Zeit als Pimpf zusammenhängt. Damals in der HJ haben wir sehr viel Kartoffeln gegessen, denn die Zeiten waren hart. In jenen Tagen habe ich meine Liebe zum Erdapfel entdeckt, welche bis heute nicht abgeklungen ist.</p>
 <p>Versucht sie doch selbst einmal, die Kartoffel!</p>
 <p class="lizenz"><a href="http://flickr.com/photos/petitecorneille/295733346/" target="_blank">day ninetyone: gratin dauphinois</a> von <a href="http://flickr.com/photos/petitecorneille/" target="_blank">petite corneille</a> unter <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -278,7 +256,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

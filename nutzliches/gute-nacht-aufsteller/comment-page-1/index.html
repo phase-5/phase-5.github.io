@@ -116,34 +116,12 @@
 	<div id="right">
 									<div class="single_post" id="post-643">
 					<h2>“Gute Nacht”-Aufsteller</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Jeder, der in einer WG wohnt, kennt das sicher: Man muss morgens früh raus, legt sich dementsprechend zeitig hin, und dann fängt die/der MitbewohnerIn mit dem Liebesspiel an. Im besten Falle haut dabei das wackelige Bettgestell im geschmeidigen <em>Alabrève</em> bei 110Bpm monoton gegen die Wand, aber Gott weiß - geräuschkulissentechnisch sind da noch ganz andere Sachen möglich.</p>
 <p>Nun gönnt man ihnen zwar den Spaß und möchte auch kein Spielverderber sein, der das Vergnügen mittendrin stört und Momente allgemeiner Betretenheit provoziert, aber ein bißchen mehr Ruhe wünscht man sich schon. Für diese Fälle gibt es nun den praktischen "Gute Nacht"-Aufsteller:</p>
 <p><img src="../../../wp-content/uploads/2007/09/aufsteller.jpg" alt="good night-display / gute nacht-aufsteller"></p>
 <p>Einfach, wenn dringend Schlaf vonnöten ist, vor die Zimmertür stellen, und die restlichen KommunardInnen wissen Bescheid, dass sie sich heute nicht in orgiastischen Coitalschreiorgien ergehen sollten, die Einladung zum Dreier ausnahmsweise nicht erwünscht ist, und auch der <em>Daily Porn</em> besser über Kopfhörer zu sich genommen wird. Aber immer dran denken: Nur aufstellen, wenn wirklich Schlaf benötigt wird, da bei inflationärem Gebrauch die Wirkung verfliegt.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -374,7 +352,16 @@ hm.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

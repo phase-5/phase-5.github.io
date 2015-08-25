@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-783">
 					<h2>Der ultimative Zombie-Cyborg-Nationalismus-Clash</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Was soll man von einem Film halten, der Zombies und Cyborgs thematisiert, ein geschätztes Budget von 63,48Yen hatte, Patriotismus predigt, und zu Beginn einen Prolog bereit hält über die Größe und Herrlichkeit Japans gestern und heute, gesprochen vom gleichen Synchronmenschen, der auch für Sponge Bob und das Lebkuchenmännchen zuständig ist?</p>
 <p><img src="../../../wp-content/uploads/2007/11/zombie.jpg" alt="Zombie Self Defense Force"></p>
 <p>Schwer zu sagen. Aber wer sich für Zombie-D-Movies begeistern kann, kommt um <a href="http://german.imdb.com/title/tt0879265/" target="_blank">Zombie Self Defense Force</a> nicht herum. Das Budget war so niedrig, dass sie teilweise auf Kunstblut verzichtet, und stattdessen auf computergenerierte Blutspritzer zurückgegriffen haben. Außerdem hatten die Sounddesigner für Schusswaffen aller Couleur nur zwei Sounds: Den Schuss selbst, und das charakteristische Klacken, wenn das Magazin leer ist und der Bolzen ins Leere haut. Allerdings haben sie es ganz geschickt gelöst. Bei einem Schuss kam - oh Wunder - der Schusssound, beim Aufnehmen bzw. wild Herumfuchteln mit einer Waffe kam das Klacken, und wenn das Magazin alle war ein doppeltes Klacken. Chapeau!</p>
 <p>Letztlich kann man sagen, dass dies der billigste Film seit "Ich pisse auf deinen Kadaver" ist, den ich gesehen habe. Nichtsdestotrotz habe ich mich ausgezeichnet unterhalten gefühlt.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -435,7 +413,16 @@ Gut, ich war auch als Student arm. Aber bei der Freizeitvergnügung durfte trotz
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

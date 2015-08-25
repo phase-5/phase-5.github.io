@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2162">
 					<h2>Poladroid — die Polaroid-Knipse für den Mac</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/10/poladroid.png" alt="poladroid - polaroid" title="poladroid - polaroid" width="500" height="164" class="alignnone size-full wp-image-2163"></p>
 <p>Polaroids kennt sicher jeder - Fotos knipsen und direkt in der Hand halten. Und wenn man sie zerschneidet, läuft giftige Flüssigkeit raus. In Zeiten digitaler Fotografie und portabler Thermo(?)-Drucker interessiert das allerdings keinen mehr. Polaroids sind nur noch wegen ihrer Ästhetik interessant, und die kann man nun mehr oder minder auf seinen Mac holen: Mit <a href="http://www.poladroid.net/">Poladroid</a>.</p>
 <p>Ist das Programm gestartet, schwebt eine Polaroid-Kamera über dem Desktop, ähnlich einem Widget, auf welche man das zu poladroisierende Foto <em>draggt</em>. Daraufhin beginnt die Verwandlung. Diese dauert ewig, wohl eine Reminiszenz an die Entwicklungszeit realer Polaroids. Was als pfiffiges/originelles/witziges Feature gedacht war, nervt wie Sau. Wir steuern direkt auf die Rezession zu, das Finanzsystem liegt am Boden und Poladroid möchte am liebsten 10 Minuten und mehr vom krisengeschüttelten Computer-Nutzer. </p>
@@ -137,18 +126,7 @@
 <p><img src="../../../wp-content/uploads/2008/10/herschel_zombie_infra-rot_poladroid.jpg" alt="herschel - zombie - infra-rot - poladroid" title="herschel - zombie - infra-rot - poladroid" width="500" height="608" class="alignnone size-full wp-image-2164"></p>
 <p>Krasser Scheiß, hein?! </p>
 <p>(via <a href="http://www.aptgetupdate.de/2008/10/22/retro-feeling-mit-poladroid/">aptgetupdate.de</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -482,7 +460,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

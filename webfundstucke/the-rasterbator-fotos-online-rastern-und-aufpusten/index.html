@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-957">
 					<h2>The Rasterbator – Fotos online rastern und aufpusten</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Oftmals braucht man sein Foto nicht in Top-Qualität, sondern gerastert, wie in Tageszeitungen. Warum sei einmal dahin gestellt. Man braucht es einfach, doch wie bekommt man es? Eine Möglichkeit ist der "<a href="http://homokaasu.org/rasterbator/wizard.gas?Phase=1" target="_blank">Rasterbator</a>". Man lädt ein Foto hoch, bzw. gibt den Pfad eines sich im Internet befindlichen Fotos ein, gibt an wie groß es werden soll und lässt rastern. Das Ergebnis kann als PDF runtergeladen werden.</p>
 <p><a href="http://flickr.com/photos/herschel_r/2181508154/" target="_blank"><img src="../../wp-content/uploads/2008/02/herschel_rubinstein_rasterbator.jpg" alt="Herschel Rubinstein - Rasterbator"></a></p>
 <p>Hier habe ich ein Beispiel. Zum Original kommt man, wenn man draufklickt. Sehr grob, aber das liegt auch daran, dass ich als Ausgabegröße DIN A4 gewählt habe. Es ist jedoch problemlos möglich ein Foto auf 36-faches DIN A4 und mehr zu rastern. Das PDF enthält dann die DIN A4-Seiten mit den Bildausschnitten, sowie freien Rändern, um den Spaß zu einen Poster zusammen kleben zu können.</p>
@@ -137,18 +126,7 @@
 <p>Eine Lösung wäre das Foto richtig aufzupusten, die einzelnen Seiten des PDFs zu extrahieren, sie in Photoshop (oder einer adäquaten Alternative) zusammenzusetzen und auf die gewünschte Größe zu skalieren. Dies ist jedoch ein Scheißjob.</p>
 <p>Übrigrens: Windows-User können sich "Rasterbator" auch als Programm runterladen und dann offline skalieren, bis die Schwarte kracht. Oder so ähnlich...</p>
 <p>(<a href="http://www.bittbox.com/illustrator/bb-special-3-ways-vector-halftones-from-raster-images/" target="_blank">via</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -376,7 +354,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

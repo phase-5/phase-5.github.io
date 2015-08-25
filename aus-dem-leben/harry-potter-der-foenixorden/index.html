@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-595">
 					<h2>Harry Potter: Der Fönixorden</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Endlich war ich auch da, bei Harry Potter. Fast ganz vorne, dritte Reihe - das Gedränge war unbeschreiblich. Trotzdem ein eimaliges Erlebnis.</p>
 <p><a href="http://www.harrypotterorderofthephoenix.com/" target="_blank"><img src="../../wp-content/uploads/2007/08/harry_potter.jpg" alt="harry potter - der orden des phönix"></a></p>
 <p>...obwohl, bevor der Zauberreigen begann wurde ich von einer Reihe Werbungen seelisch penetriert. Unvorstellbare Pein, verursacht vor allem durch AXE, die mein solides Nervenkostüm mit ihrem bekackten "Bom Chicka Wah Wah" gleich zweimal aufs grausamste strapazierten. Noch während ich im Kino saß, spielte ich mit dem Gedanken den Strick oder wenigstens ein Berufsverbot für die Macher dieser völlig verblödeten, hirnverbrannten Kampagne zu fordern.</p>
@@ -135,18 +124,7 @@
 <p>Irgendwann ging dann aber der Film los, und es wurde direkt spannend. Ich fieberte mit den drei Helden - Hermine, Harry und Ron -, schob Hass auf die ganze rassistisch-faschistische Wannabe-Zaubererelite, und schmunzelte hin und wieder, wenn ein besorgtes Mädchen inbrünstig "Harry" rief - irgendwie klingt das immer nach "Hairy". Vielen Dank dafür, liebe Pornoindustrie.</p>
 <p>Am Ende noch ein fulminantes Finale mit einen genialen Albus Dumbledore, der einen geschätzten Zentner Glasscherben in Quarzsand zurück verwandelt, und ein Harry Potter, der ganz im Stile großer Klassiker wie Der Exzorzist, Der Exzorzist 2 und Der Exzorzist 3 seinen inneren Schweinehund überwindet.</p>
 <p>Großes Kino, ich freue mich schon auf den nächsten Teil.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -394,7 +372,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

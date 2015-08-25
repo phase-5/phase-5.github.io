@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-723">
 					<h2>Robert Long</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<blockquote><p>...sagte immer Mama - Komisch</p></blockquote>
 <p><img src="../../../wp-content/uploads/2007/10/robert_long.jpg" alt="Robert Long - Single"></p>
 <p>Gestern nacht habe ich eine <a href="http://de.wikipedia.org/wiki/Robert_Long" target="_blank">Robert Long</a>-Single auf meinem Gepäckträger gefunden. Da scheint ein äußerst gutherziger und generöser Mensch an meinem <a href="../../../flickr/damenrad-herrenrad/index.html" target="_blank">modernen Herrenrad</a> vorbei gekommen zu sein, es fälschlicherweise für ein Damenrad gehalten und sich gedacht haben: Der Dame tue ich etwas Gutes.</p>
 <p>Nun bin ich im Besitz einer echten Robert Long-Vinyl-Single. Da mein Plattenspieler leider nicht mit nach Hannover gezogen ist, werde ich die wohl mit einem trichterförmig gedrehten DIN A4-Blatt und einer Nähnadel Probe hören müssen.</p>
 <p>Wer übrigens mit dem Musikbiz liebäugelt und noch einen ähnlich feschen Namen wie der Robert braucht, kann sich <a href="http://nvmodules.typhon.net/maurice/uwa-pornname/" target="_blank">hier</a> beraten lassen.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -378,7 +356,16 @@ Scheisse, ist das lange her!!!!!!!!</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

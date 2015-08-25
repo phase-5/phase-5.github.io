@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-860">
 					<h2>Verkehrte Welt</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Als ich heuten meinen schwarz gewandeten mobilen Rechner aus dem Hause Apple startete, begrüßten mich die aktivierte Caps Lock- und F6-Taste. Höchst merkwürdig, dachte ich bei mir, und deaktivierte sie.</p>
 <p>Es stellte sich jedoch schnell heraus, dass ich nur die Lämpchen unter den Tasten ausgeschaltet hatte. Systemintern waren sie nun aktiviert, alles wurde großgeschrieben, manche Buchstaben gaben nur noch Zahlen aus und gängige Tastaturkurzbefehle funktionierten gar nicht mehr.</p>
 <p>Nach einem Neustart war das Problem zum Glück behoben, aber nichtsdestotrotz ist mir mein Computer seit dem Update auf OS X 10.5 fremd geworden. Ich habe nicht viel Ahnung von der Computermaterie und benutze das Gerät zum arbeiten, aber mein subjektiver Eindruck von "Leopard" ist folgender:</p>
 <p>Das Betriebssystem ist ein Haufen Scheiße, sowie eine gefährliche Annäherung an Windows. In diesem Sinne wünsche ich ein schönes Wochenende und einen erholsamen 4. Advent. Ich werde jetzt noch im Stillen ein wenig weiterjammern.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -355,7 +333,16 @@ herschelbalsam ist jedoch ordentlich vorhanden - sowohl in schokoladenform, als 
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

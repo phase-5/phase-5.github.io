@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1453">
 					<h2>Molwanien ist überall, Teil 2</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Nachdem ich <a title="Molwanien ist überall, Teil 2" href="../../../aus-dem-leben/molwanien-ist-ueberall-teil-1/" target="_blank">vor zwei Wochen</a> in das Konzept des <em>embedded travel-journalism</em> eingeführt habe - frei nach dem Großen Vorsitzenden <a title="Mao in der bourgeois-konterrevolutionären deutschen Wikipedia" href="http://de.wikipedia.org/wiki/Mao_Zedong" target="_self">Mao</a>: Der Reisende muss im Volk schwimmen wie die Sardine in Öl - möchte ich euch heute eine weitere Botschaft des Molwanischen Volkes vorstellen. Zur Erinnerung: <a title="Molwanien verlinkt" href="http://molwanien.de/" target="_self">Molwanien</a> ist dieses fiktive Ostblockland, wo nur ein lebensmüder oder masochistischer Rucksacktourist hinfahren würde. (Danke, Jasper).</p>
 <p>Ich fand sie unversehens in der Altstadt der mazedonischen Stadt <a title="Ohrid (Artikel in der dt. Wikipedia)" href="http://de.wikipedia.org/wiki/Ohrid" target="_self">Ohrid</a>, welche am Ufer des Ohridsee an der Grenze zwischen <a title="Albanien in der dt. Wikipedia" href="http://de.wikipedia.org/wiki/Albanien" target="_self">Albanien</a> und der <a title="FYROM in de.wikipedia.org" href="http://de.wikipedia.org/wiki/Mazedonien" target="_blank">Ehemaligen Jugoslawischen Republik Mazedonien (FYROM)</a> liegt. Ohrid ist erste Adresse für amerikanische und deutsche Touristen und hat mehr Kirchen als Fastfoodläden. Das gibt es in der westlichen Welt nicht mehr.</p>
 <p>Auf dem Rundweg, zwischen dem Genuss von Espresso, einem Regenschauer und dem Besuch der Kirche des Heiligen Johannes von Kaneo, trafen mein Freund <a title="ole-parole auf murdochs spielwiese" href="http://www.myspace.com/oleparole" target="_self">O</a>. und ich auf dieses wohnliche Haus, das in Sachen Statik sicherlich ein Wunder der Baukunst zu nennen ist.</p>
@@ -137,18 +126,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von J.K. Simpson.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -339,7 +317,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

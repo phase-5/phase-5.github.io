@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-891">
 					<h2>Theme: "Silent Sky 0.1"</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://test.phase-5.net/index.php?wptheme=silent_sky" target="_blank"><img src="../../wp-content/uploads/2008/01/silent_sky.png" alt="Silent Sky - Screenshot"></a></p>
 <p>Es ist mal wieder so weit: Ein neues Theme ist draußen - "Silent Sky". Die Versionsnummer ist wie gehabt 0.1, das ganze Ding ist zweispaltig, Widget-Ready, und besticht durch einen bunten Header und einen sehr schlichten, schwarz-weißen Inhaltsbereich.</p>
 <p>Wer wegen des Namens mosern möchte: Ich hatte keine Lust mir etwas Vernünftiges auszudenken. Ansonsten steht das Theme natürlich wieder unter einer <a href="http://creativecommons.org/licenses/by-nc/2.0/de/" target="_blank">Creative Commons - Attribution-NonCommercial 2.0</a>-Lizenz und kann <a href="../../wp-content/uploads/2008/01/silent_sky.zip" title="Silent Sky - Theme">hier</a> heruntergeladen werden.</p>
 <p>Des weiteren die obligatorische Bitte: Bei etwaigen Fragen nicht scheuen die Kommentarfunktion zu benutzen. Ich bin sicherlich kein Profi auf dem Gebiet des Theme-Buildings, und es soll mich nach wie vor der Teufel holen, wenn "Silent Sky" fehlerfrei wäre.</p>
 <p><a href="http://test.phase-5.net/index.php?wptheme=silent_sky" target="_blank">Demo</a><br>
 <a href="../../wp-content/uploads/2008/01/silent_sky.zip" title="Silent Sky - Theme">Download</a></p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -375,7 +353,16 @@ allerdings müsste ich mir dann noch genauer anschauen, wie das überhaupt geht 
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

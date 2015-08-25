@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-386">
 					<h2>Visitenkarten</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wer steckt nicht noch voller Bewunderung für knochenfarbene Visitenkarten mit geprägter, ebenholzfarbener Schrift. Oder war die Schrift silber und die Visitenkarte elfenbeinfarben??</p>
 <p>Egal, sowohl die Achtziger als auch das letzte Jahrtausend sind vorbei. Wer heutzutage mit seinen Visitenkarten was reißen will, bspw. Küken auf, muss sich nach etwas <em>fresherem</em> umgucken.</p>
 <p>Mein Vorschlag zur Güte:</p>
 <p><a href="http://www.moo.com" target="_blank"><img src="../../../wp-content/uploads/2008/01/moo_com_screenshot.png" alt="Moo.Com - Screenshot - Visitenkarten und mehr"></a></p>
 <p>Hier kann der geneigte Web 2.0-Junkie aus seinen Fotos bei <a href="http://www.flickr.com" target="_blank">Flickr</a>, <a href="http://www.bebo.com" target="_blank">Bebo</a>, <a href="http://www.fotolog.com" target="_blank">Fotolog</a>, <a href="http://www.habbo.com" target="_blank">Habbo</a> oder <a href="http://www.secondlife.com" target="_blank">Second Life</a> seine 100 Favoriten aussuchen. Danach wird der passende Ausschnitt des Bildes gewählt, der Text festgelegt - man ist heutzutage  ja nicht mehr nur auf Name, Anschrift, Telefonnummer festgelegt -, und schon geht der ganze Spaß für lockere 15 Tacken in den Druck.</p>
 <p>Die Qualität ist übrigens ganz ausgezeichnet. Hätte Patrick Bateman seinerzeit die Möglichkeit gehabt bei <a href="http://www.moo.com" target="_blank">Moo.com</a> zu kaufen, er hätte beim Visitenkartenbattle gegen Paul Allen sicherlich nicht so alt ausgesehen.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -316,7 +294,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,33 +117,11 @@
 	<div id="right">
 									<div class="single_post" id="post-1228">
 					<h2>Ein Hoch auf die Verpackungsrücknahme</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Seit einigen Jahren sind Supermärkte ja verpflichtet den Verpackungsmüll, der mit dem Kunden rausgeht, wieder anzunehmen und zu entsorgen. Dadurch hat man zum Beispiel die Möglichkeit sperrige Tiefkühlpizza-Kartons gleich im Laden zu lassen. Man muss sich nur merken, wie heiß der Ofen sein muss und wie lange die Pizza braucht. Aus Erfahrung kann ich jedoch sagen, dass das schaffbar ist.</p>
 <p>Nun habe ich mir neulich mal wieder eine American Style Western-Pizza beim Rewe geholt, hole das Teil aus der Packung und denke mir noch so: "Hui, die ist aber schön fluffig". Nur hat eine Tiefkühlpizza nicht fluffig zu sein, sondern tiefgekühlt und somit steinhart. Die verdammte Pizza war einfach nicht gefroren. Wahrscheinlich hatte sich schon ein dicker Belag aus Salmonellen und Chlamydien über den Reibekäse gelegt.</p>
 <p>Natürlich habe ich als mündiger Kunde sofort Satisfaktion gefordert und eine neue Pizza bekommen, die dann auch gefroren war. Und was lernen wir daraus? Tiefkühlpizzaverpackungen immer im Laden lassen. Dann hat man weniger Müll und man weiß, ob das Teil auch wirklich gefroren ist.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -298,7 +276,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2087">
 					<h2>Hansi</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/10/drunkard.jpg" alt="drunkard" title="drunkard" width="500" height="238" class="alignnone size-full wp-image-2096"></p>
 <p>Hansi ist ja eigentlich ein Klischee-Wellensittich-Name. Doch gibt es auch Menschen, die so heißen, zum Beispiel einen Säufer in Stuttgart. Einen von der Sorte, die man vornehmlich auf Parkbänken antrifft, wo sie sich schon morgens um zehn einen Halben reindrücken. Für das samstägliche Fußballspiel VfB Stuttgart gegen den <del datetime="2008-10-09T07:01:50+00:00">FC</del> SV Werder Bremen haben sich Hansi und vier Kumpels ähnlicher Provinienz allerdings in eine Kneipe begeben.</p>
 <p><span id="more-2087"></span></p>
@@ -144,18 +133,7 @@
 <p>Wer sich das Erlebnis ebenfalls geben möchte, fährt einfach nach Stuttgart bzw. genauer gesagt nach Bad Cannstatt. Dort geht man aus dem Bahnhof raus Richtung Fußgängerzone, hält sich leicht links und geht in die Kneipe rechts neben der kleinen Crêpes-Schmiede, <del datetime="2008-10-07T18:06:00+00:00">deren Namen mir leider entfallen ist</del> die auf den munteren Namen PFIFF hört. In dieser Kneipe geht man ganz nach hinten durch die Tür, auf der Toiletten steht, in den Raucherraum, in dem man nicht rauchen darf.</p>
 <p>Dort wird - mit etwas Glück - Hansi mit seinen Spießgesellen sitzen und sich bei einem gepflegten Weizen für das Spiel warm machen. Viel Spaß dort!</p>
 <p class="lizenz">(Bild: <a href="http://flickr.com/photos/digitalgrace/94180997/">Hey You</a> von <a href="http://flickr.com/photos/digitalgrace/">danny.hammontree</a> unter <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en">CC</a>-Lizenz)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -430,7 +408,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

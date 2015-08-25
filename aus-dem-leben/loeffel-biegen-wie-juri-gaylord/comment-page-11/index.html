@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-875">
 					<h2>Löffel biegen wie Juri Gaylord</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Man kann ja von Pro Sieben und seinem Gossenspektakel rund ums Löffelbiegen halten was man will, aber prinzipiell würde ich es durchaus als erstrebenswert erachten, Löffel mithilfe meiner Gedanken biegen und brechen zu können. Wer das ähnlich sieht, hat im folgenden eine 12-Punkte-Anleitung:</p>
 <ol>
 <li>Man nehme sich etwa 10 Löffel aus dem Schubfach, lege sie vor sich auf dem Tisch aus und lasse sie auf sich wirken. Nach einiger Zeit wird einem der richtige Löffel "sagen", dass er sich biegen lässt.</li>
@@ -147,18 +136,7 @@
 <p>So, ich selbst halte mich mental noch nicht bereit dafür, aber wer es erfolgreich ausprobiert hat, kann es mich gerne wissen lassen. Fotos oder Videos sind übrigens auch gerne gesehen. Viel Spaß beim Löffelbiegen.</p>
 <p><a href="../../../nuetzliches/nachtrag-strategien-fuer-ein-besseres-loeffelbiegen/index.html"><strong>Weiterführende Strategien...</strong></a></p>
 <p>(<a href="http://www.mind-energy.net/archives/167-Spoon-bending-instructions-and-pictures.html" target="_blank">Original</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -516,7 +494,16 @@ mfg pestro</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

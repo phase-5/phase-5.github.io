@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-1115">
 					<h2>Hulk in Rente</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://donaldsoffritti.blogspot.com/2006/07/hulk-decadence.html"><img src="../../../wp-content/uploads/2008/05/hulk-decadence.jpg" alt="hulk - decadence" title="hulk - decadence" width="500" height="336" class="alignnone size-full wp-image-1651"></a></p>
 <p>Ich möchte hier nichts beschönigen - <a href="http://de.wikipedia.org/wiki/Hulk_%28Comic%29">Hulk</a> hatte immer schon ein kleines <em>Anger Management</em>-Problem, und sein relativ grüner Teint ['Tän~g;] entspricht sicherlich nicht unbedingt den irdischen Schönheitsidealen.</p>
 <p>Nichtsdestotrotz ist er im Grunde seines Herzens ein ausgeglichener, freundlicher Typ. Einer, der der alten Oma Erna aus dem ersten Stock hilft die Einkäufe nach hause zu tragen. Oder dem kleinen Justin von nebenan bei den Mathe-Hausaufgaben unter die Arme greift. Und wenn man mal jemanden zum Quatschen braucht, kann man sicher sein, dass Hulk einem ein offenes Ohr leiht und wenn es sein muss auch eine leckere Limo spendiert. Mit oder ohne Zucker.</p>
 <p>Und sollte so ein sympathischer Superheld nicht in Würde altern dürfen? Mit grauen Schläfen, einer Pfeife im Mundwickel, morgenbemantelt im Ohrensessel sitzend, der Dinge harrend, die da kommen? Ich denke schon. Aber stattdessen bekommt er von <a href="http://donaldsoffritti.blogspot.com/">Donald Soffritti</a> einen Old School-Schulranzen verpasst, bekleckert sich infantilerweise mit Eis und kriegt seine grünen Testiklen nicht mehr in die Jeans-Hotpant gestopft. Fehlt nur noch die Schirmmütze mit Propeller...</p>
 <p>Aber was heule ich rum, Donald Soffrittis Zeichnungen von Superhelden auf Altersteilzeit sind ganz ausgezeichnet und lustig anzusehen.</p>
 <p>(<a href="http://www.plockhead.com/?p=1705">via</a>, <a href="http://www.nerdcore.de/wp/2008/05/14/illustration-donald-soffritti-malt-superhelden-als-rentner/">via</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -336,7 +314,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

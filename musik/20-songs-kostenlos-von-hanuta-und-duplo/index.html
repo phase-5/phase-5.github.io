@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-2556">
 					<h2>20 Songs kostenlos von Hanuta und Duplo</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2009/01/20-songs-kostenlos-duplo-hanuta.png" alt="20 songs kostenlos von duplo und hanuta" title="20 songs kostenlos von duplo und hanuta" width="500" height="141" class="alignnone size-full wp-image-2557"></p>
 <p>Was für ein Schmankerl, welches mir da mit der Packung Duplo zugeflogen kam: 20 Songs kostenlos bei <a href="http://www.20songsgratis.de/" rel="nofollow">www.20songsgratis.de</a> runterladen, gesponsert von Hanuta und Duplo. Man muss sich nur registrieren und eine Client-Software installieren, und schon kann es losgehen. Der Startseite nach zu urteilen, dürfte man auch das neueste kriegen, was der Bereich Top40 zu bieten hat.</p>
 <p>Die Frage ist nur, was soll ich mit der Scheiße? Und so eine verrotzte Software installieren (falls es die überhaupt für Mac gibt), nur damit Flatster mir auf den Sack gehen kann? So weich im Kopf bin ich auch 2009 noch nicht. </p>
 <p>Allerdings möchte ich es nicht grundsätzlich verurteilen, diesen Service zu nutzen. Deshalb werfe ich den Gutschein-Code mal in einem Anfall exorbitanter Generösität in die Runde: <strong>PGVWGSGF</strong>. Und denkt dran, wer zuerst kommt, mahlt zuerst.</p>
 <p>Falls jemand das wirklich macht, kann die- oder derjenige seine Erfahrungen ja kurz in den Kommentaren festhalten. Möglicherweise tue ich dem Service ja Unrecht…</p>
 <p>PS: Um den Gratis-Musik-Bogen noch ein bißchen zu überspannen, sei hier kurz auf <a href="http://www.nerdcore.de/wp/2009/01/06/jaydiohead-%e2%80%93-jayzradiohead-mashup-album/">Jaydiohead</a> hingewiesen. Und damit soll es auch genügen. </p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -412,7 +390,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

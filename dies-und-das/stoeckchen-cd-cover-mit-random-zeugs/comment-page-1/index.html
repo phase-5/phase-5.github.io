@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-919">
 					<h2>Stöckchen: CD-Cover mit “Random Zeugs”</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Ein wunderbares Stöckchen kam mir da vom <a href="http://axel-scherm.de/cgi-bin/weblog_basic/index.php?p=101">Axel</a> geflogen: Ein CD-Cover (CD's sind diese silbernen Scheiben mit Musik drauf, die so riesengroß sind, weil unbedingt Beethovens 9. draufpassen musste...) soll erstellt werden. Und zwar mit folgenden Angaben:</p>
 <blockquote><p>First, get the name of your band: this will be the first article title on <a href="http://en.wikipedia.org/wiki/Special:Random" target="_blank">http://en.wikipedia.org/wiki/Special:Random</a></p>
 <p>Get the title of your album: the last four words of the very last quote: <a href="http://www.quotationspage.com/random.php3" target="_blank">http://www.quotationspage.com/random.php3</a></p>
@@ -142,18 +131,7 @@
 <p>"Arden Theatre Company" ist sicher ein Name den man sich merken sollte.</p>
 <p>Ansonsten werfe ich das Stöckchen mal weiter zum <a href="http://www.generator-x.de/" target="_blank">Crucible</a>. Viel Spaß!</p>
 <p class="lizenz"><a href="http://www.flickr.com/photos/12475656@N04/2208736365/" target="_blank">Cagliari,via Corte d'Appello</a> von <a href="http://www.flickr.com/photos/12475656@N04/" target="_blank">barmoni28</a></p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -488,7 +466,16 @@ ihr Legosammler</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -116,34 +116,12 @@
 	<div id="right">
 									<div class="single_post" id="post-380">
 					<h2>Musicovery</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Seit den Tagen des Volksempfängers hat das Radio als solches einen ziemlich traurigen Abstieg hinter sich. Der herkömmliche Apperat ist mit seinem Top40-Dauergedudel und der einfallslosesten Werbung, die heutzutage produziert wird (nur das Kino kommt nah ran), keinem mehr wirklich zumutbar. Die extrem kurze Wiederholrate erfordert eine ausgeprägte Demenz, wie sie unter den Fans des gepflegten Poppes &amp; Rockes einfach sehr selten anzutreffen ist. Da offenbart sich ein veritables Zielgruppenproblem.</p>
 <p>Einzig brauchbare Alternative ist das Internetradio. Diese schossen und schießen denn auch wie Pilze aus dem Boden, so dass es schwer ist sich einen Überblick zu verschaffen. Eine interessante Variante ist jedoch Musicovery:</p>
 <p><a href="http://www.musicovery.com" title="musicovery"><img src="../../wp-content/uploads/2007/03/musicovery.jpg" alt="musicovery"></a></p>
 <p>Hier kann man sich das Genre und/oder die Geschwindigkeit und die Stimmung der Musik aussuchen, und schon geht es los. Des weiteren - möchte ich behaupten - kommt auch das Auge nicht zu kurz. Wem also die eigene Musiksammlung zu schnöde ist, oder wer dringend einen musikalischen Tapetenwechsel benötigt, dem sei dieses Radio wärmstens ans Herz gelegt.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -371,7 +349,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

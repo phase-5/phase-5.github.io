@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-559">
 					<h2>Deutschland ist Dritter</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://wm.ntb-infoline.de/cms/index.php?id=2" target="_blank"><img src="../../wp-content/uploads/2007/08/faustball.jpg" alt="faustball wm"></a></p>
 <p>Ich krich die Motten - Deutschland ist Dritter bei der Faustball-WM. Nachdem Klinsis Mannen es im letzten Jahr vorgemacht haben, ließen sich unsere Faustballer nicht lumpen und machten ihrerseits das Sommermärchen wahr.</p>
 <p>Das ist wirklich ein großer Tag für alle Freunde und Verehrer des gediegenen <a href?"http:="" de.wikipedia.org="" wiki="" faustball"="" target="_blank">Faustballs</a>!</p>
 <p>...vermute ich jedenfalls. Ich selbst bin kein Fan dieses Sports und habe dessen Existenz immer für eine sog. <em>Urban Myth</em> gehalten. Auch kenne ich niemanden, der sich öffentlich zu diesem Zeitvertreib bekennt.</p>
 <p>Aber das wird jetzt anders - mehr Faustball für alle!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -357,7 +335,16 @@ Aber kennst Du ja selbst. Dir ist vermutlich das Fotografieren völlig zu wider 
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

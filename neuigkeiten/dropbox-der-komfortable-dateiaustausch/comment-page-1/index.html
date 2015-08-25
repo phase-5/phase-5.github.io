@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1864">
 					<h2>Dropbox: Der komfortable Dateiaustausch</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/09/dropbox.png" alt="" title="dropbox" width="500" height="72" class="alignnone size-full wp-image-1865"></p>
 <p>Für alle, die größere Datenmengen austauschen wollen und keine Lust haben mit ihrer externen Festplatte von A nach B zu rennen, gibt es jetzt den Dienst <a href="http://www.getdropbox.com/">Dropbox</a>. Dort kriegt man nach der Anmeldung einen Online-Speicherplatz von 2GB zugewiesen. Dieser hat sein Äquivalent auf dem heimischen PC.</p>
 <p>Packe ich also eine Datei auf meinem Rechner in den Dropbox-Ordner, wird dieser mit dem Online-Ordner synchronisiert, d.h. die Datei steht nun auch online zur Verfügung. Weitere Nutzer, die auf diesen Ordner zugreifen dürfen, bekommen die Datei auf ihren Computer geladen im Zuge der Synchronisierung. So kann man schnell mal Fotos vom letzten Urlaub austauschen oder Musik bzw. Filme hin- und herschieben. Letzteres natürlich unter Beachtung der Urheberrechte, das versteht sich von selbst.</p>
 <p>Außerdem kann man zwei Computer - bspw. den privaten und den auf der Arbeit - synchronisieren und Dateien, die man abends zu hause nochmal braucht, in die Dropbox werfen. Inwiefern es da aber ausgereiftere Möglichkeiten gibt, kann ich nicht sagen. Laut <a href="http://www.golem.de/0809/62400.html">Golem</a> gibt es aber auf jeden Fall Vorkehrungen um die Sicherheit zu gewährleisten, also SSL-Übertragung und Verschlüsselung der Daten vor dem Speichern.</p>
 <p>Ich persönlich bin gerade dabei den Service zu testen und finde die Idee auf jeden Fall großartig.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -316,7 +294,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

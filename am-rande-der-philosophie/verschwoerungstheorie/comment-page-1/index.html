@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-2854">
 					<h2>Ich studiere Verschwörungstheorie im 8. Semester</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Ein britischer Journalist hat kürzlich eine Liste der <a title="top 10most ridiculous conspiracy theories" href="http://blogs.sundaymercury.net/thegrassyknoll/2008/12/top-10-most-ridiculous-conspir.html#more" target="_blank">zehn dämlichsten Verschwörungstheorien</a> aufgestellt. Ganz oben steht das weitverbreitete Gerücht, dass der Genuss von Produkten der Fast-Food-Kette <a title="katholischer fanfarenchor" href="http://www.kfc.de/" target="_blank">Kentucky Fried Chicken</a> afro-amerikanische Männer impotent machen würde.&nbsp; Auf Platz 2 steht die Mondlandung durch die Nazis, (die übrigens in der im Dreh befindlichen Independent-Film-Komödie "<a title="Iron Sky Website" href="http://www.ironsky.net/site/" target="_blank">Iron Sky</a>"&nbsp; aufgenommen wird). Der Tod bzw. das Weiterleben diverser Promis von Paul McCartney über Lady Di bis hin zu Elvis haben es ebenfalls in die Liste geschafft, wobei man hier ja nur das Gähnen unterdrücken kann. Einfallsreicher (und glaubwürdiger) finde ich ja die Theorie, nach der LaToya (oder wahlweise Janet) und Michael Jackson <a title="La Toya und Michael Jackson sind eine Person" href="http://www.thevoiceofreason.com/2009/01/LaToyaMichaelConspiracy.htm" target="_blank">die gleiche Person sind</a>.</p>
 <p>Dann gibt es da noch die Theorie, dass entweder die <a title="Barcodes in Wikipedia (dt.)" href="http://de.wikipedia.org/wiki/Barcodes" target="_blank">Barcodes</a> oder die Schriftart <a title="Artikel über Wingdings in Dt. Wikipedia" href="http://de.wikipedia.org/wiki/Wingdings" target="_self">Wingdings</a> satanische Botschaften enthalten, mit deren Hilfe wir kontrolliert werden sollen. Durch die <a title="Die Reptiloiden kontrollieren auch Wikipedia." href="http://de.wikipedia.org/wiki/David_Icke" target="_blank">Echsenmenschen</a>, versteht sich.</p>
 <p>Leider wird eine Theorie in der Liste nicht erwähnt, die sich seit Jahren hartnäckig hält, wohl aber auch vor allem für den deutschsprachigen Raum interessant ist: Die absurde und völlig haltlose Theorie, <a title="Vorsichtig! Hier steht die Wahrheit." href="http://www.bielefeldverschwoerung.de/" target="_blank">dass Bielefeld wirklich existiert</a>.
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von J.K. Simpson.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -318,7 +296,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

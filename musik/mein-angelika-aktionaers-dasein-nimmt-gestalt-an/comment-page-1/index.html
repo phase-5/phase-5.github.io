@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-2273">
 					<h2>Mein "Angelika-Aktionärs"-Dasein nimmt Gestalt an</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/11/angelika_express_-_was_wollt_ihr_alle.jpg" alt="angelika express - was wollt ihr alle" title="angelika express - was wollt ihr alle" width="500" height="362" class="alignnone size-full wp-image-2274"></p>
 <p>Wie ich <a href="../../../musik/nennt-mich-tante-angelika-aktionaer/">unlängst schrub</a>, habe ich mich ungeachtet der Wirren auf den internationalen Finanzmärkten entschieden mein Geld für mich arbeiten zu lassen, anstatt dass es faul auf der Sparkasse rumlümmelt und darauf wartet, von mir verprasst zu werden. Zu diesem Zweck erstand ich einen 0,2%-Anteil am kommenden Angelika Express-Album.</p>
 <p>Letztes Wochenende kam endlich der Vertrag und die EP "Was wollt ihr alle?", quasi als Vertrauensvorschuss. Da ich mich jedoch zurzeit bei einem Praktikum ausbeuten lasse, bin ich noch nicht dazu gekommen mal reinzuhören. Werde ich allerdings bei Gelegenheit machen und vielleicht sogar ein paar Worte darüber hier verlieren.</p>
 <p><span id="manwirdsehen">Man wird sehen.</span></p>
 <p>Vielleicht lässt uns aber auch Daki an seiner Meinung über die EP teilhaben, schließlich konnte auch er einen Anteil ergattern. Aber wie gesagt: <a href="index.html#manwirdsehen">Man wird sehen.</a></p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -337,7 +315,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-668">
 					<h2>“Entartete Blogs”</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Das ist wohl zurzeit ein ganz heißes Thema - Blogs, die nur publizieren um der Verlinkung und der Besucherzahl willen. Natürlich gibt es noch andere Blogs, die Inhalt bieten und interessant sind, aber auf die kann man sich einfach nicht adäquat konzentrieren, wenn dazwischen immer wieder diese "SEO-Hurenblogs" rumschwirren.</p>
 <p>Außerdem kann es ja sein, dass man einen solchen Blog mal im Reader hatte und ihn regelmäßig gelesen hat, bis einem klar geworden ist, dass man sich einer ganz perfiden "SEO-Nutte" angedient hat. Das ist bitter und fordert dringend Satisfaktion.</p>
 <p>Mein Vorschlag, gegen die fortschreitende VerSEOung der Blogosphäre, und deren zunehmende Infiltration durch das Weltprobloggertum, vorzugehen, ist die Einrichtung eines virtuellen Prangers. Dort werden die betreffenden Blogs, die durch übermäßiges Linkbaiting auffällig geworden sind, mit einem Screenshot an den "Pranger gestellt".</p>
 <p>Dazu gibt es noch die Möglichkeit dem Blogger selbst eine Hassmail zu schreiben, dem Provider des Blogs eine Mail zu schicken mit der Aufforderung, den Blog abzuschalten - weil "entartet" -, und der Konsequenz halber einen PayPal-Button, über den man Geld in einen "Topf" einzahlen kann, aus dem rumänische Schlägertrupps bezahlt werden, die hartnäckigen SEO-Boggern mal ein wenig "ins Gewissen reden".</p>
 <p>Zusätzlich werden Blogs, die solche entarteten SEO-Blogs verlinken oder einen Pingback von derartigen Blogs akzeptieren an den "Pranger gestellt". Man könnte außerdem als Bestrafung über die Einblendung eines großflächigen "Ich bin ein dummes Bloggerschwein, lasse mich mit SEOlern ein"-Banners auf den betreffenden Blogs nachdenken.</p>
 <p>Soweit meine Vorschläge für die Schaffung einer sauberen Blogosphäre. Bis der virtuelle Pranger allerdings in Betrieb ist, sind weiterhin die selbsternannten Blogsheriffs gefragt, ein Auge auf "SEO-Huren" zu haben. Oberstes Gebot ist das fleißige Anpöbeln "entarteter" Blogs, und das gleichzeitige Rumheulen, dass die Blogosphäre total langweilig geworden ist, weil alle nur noch über "SEO-Huren" schreiben.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -395,7 +373,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

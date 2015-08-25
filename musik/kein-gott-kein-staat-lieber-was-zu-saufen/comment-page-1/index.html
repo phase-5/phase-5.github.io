@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2370">
 					<h2>“Kein Gott – Kein Staat – Lieber was zu saufen”</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Am Freitag war <a href="http://www.deichkind.de/">Deichkind</a> im Capitol in Hannover. (Im Capitol war ich davor seit hundert Jahren nicht mehr, hat sich aber auch nix verändert. Lohnt sich also eigentlich nicht.)</p>
 <p>Ausverkaufte Show, und das zu Recht: Super Spektakel. Super Musik. Super Neonfarben im Schwarzlicht. Super Bass. Ihre Proben müssen zu 50% aus Fitnesstraining bestehen. Hüpfburgen, Trampoline, Schlauchboote, Kissenschlacht.</p>
 <p>Aber: Nix ist anstrengender als besoffene Oberstufenschüler_innen. Die machen wiederum ca. 80% des Publikums aus. Gröhlen "auf dem Foto in der Küche sieht sie aus wie Katja Ebstein" und wissen nicht, wer diese Frau Ebstein sein könnte. Schreien "Arbeit nervt" und haben noch nie gearbeitet. Aber das ist schon okay, man will ja nicht überheblich sein. Nur ein bisschen hasspredigen.</p>
@@ -142,18 +131,7 @@ Der ist schon seit zwei Jahren langweilig.<br>
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von Klaus.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -363,7 +341,16 @@ Der ist schon seit zwei Jahren langweilig.<br>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

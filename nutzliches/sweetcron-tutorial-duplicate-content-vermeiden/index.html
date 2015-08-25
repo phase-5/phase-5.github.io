@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1762">
 					<h2>Sweetcron-Tutorial: Duplicate Content vermeiden</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://www.sweetcron.com/"><img src="../../wp-content/uploads/2008/09/sweetcron_screenshot.png" alt="" title="sweetcron - screenshot" width="500" height="96" class="alignnone size-full wp-image-1763"></a></p>
 <p>Wie die eine oder der andere vielleicht mitbekommen hat, bin ich zurzeit schwer im Lifestreamfieber und bastele Tag und Nacht an meinem eigenen <a href="http://www.herschel-rubinstein.de/">Lifestream</a> rum. Rein zum Selbstzweck versteht sich. Und relativ bald, wenn man den Feed seines eigenen Blogs in seinen Stream einbindet, kommt das leidige Problem des <a href="http://www.goldmann.de/google-duplicate-content-ist-ein-problem_tipp_198.html">Duplicate Contents</a> auf einen zu.</p>
 <p>Dafür gibt es jedoch eine simple Lösung: </p>
@@ -150,18 +139,7 @@
 	&lt;meta name="robots" content="index,follow" /&gt;<br>
 	&lt;?php endif;?&gt;</code></p>
 <p>Anstelle von <em>blog.tld</em> packt ihr natürlich die Adresse eures Blogs. Jedes mal, wenn nun diese URL im ausgelesenen Feed auftaucht, wird das robot-Tag auf <em>noindex</em> gestellt. Andernfalls steht es auf <em>index</em>. Auf diese Weise wird die Unterseite mit dem kompletten Blog-Beitrag immer auf <em>noindex</em> gesetzt und macht euch keinen Ärger mehr mit Duplicate Content.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -393,7 +371,16 @@ ich versuche gerade, das bei mir umzusetzen. das abschneiden klappt ja auch mit 
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

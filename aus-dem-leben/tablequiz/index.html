@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-370">
 					<h2>TableQuiz</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Wer macht das nicht gern - einen gemütlichen Kneipenabend mit einem kleinen Quiz verbinden? Das ist, habe ich mir sagen lassen, besonders bei Iren, bei Rentnern und ganz besonders - man staune - bei irischen Rentnern beliebt.</p>
 <p>Jedoch erfreut es sich auch bei uns wachsender Beliebtheit, was nicht zuletzt wohl auch an der Tatsache liegt, dass als attraktive Preise Alkohol und Gutscheine für Alkohol winken. So kommen sowohl Hirn als auch die Leber auf ihre Kosten.</p>
 <p>Die Konkurrenz ist jedoch hart, denn trotz großer Koalition und Trendwende auf dem Arbeitsmarkt, sind die Zeiten alles andere als rosig und ein Korn oder ein Eierlikörchen hier und da  versprechen der gepeinigten Seele zumindest kurzfristig wohlige Wärme.  So strömen denn  allabendlich, ausgelaugt von Praktikum oder/und dem 26. außeruniversitären SoftSkills-Tuning-Engagement, die Ratefüchse in die kargen - "aber ziemlich gutes Preisleistungsverhältnis" - Suffstuben. Nur wer sein Team breit genug aufstellt hat eine Chance. Man braucht also jemanden für Sport, für Musik, für Kultur, für Boulevard, für Biologie, für Geschichte, für Chemie, für Literatur,........</p>
@@ -135,18 +124,7 @@
 <p>So geschehen gestern, in meiner bevorzugten Discount-Kneipe www.cant-stop.de .  Nach jeder Runde ist der arme Bengel mit Tränen in den Augen zur Tür gerannt, hat sie aufgerissen und keuchend nach Luft geschnappt, wie ein Karpfen auf Landgang. Nun war der November zwar der wärmste aller Zeiten, aber der Lufthauch, der uns da entgegenpfiff, mit einer samtigen Sommerbrise nun wirklich nicht zu vergleichen.</p>
 <p>So bleibt mir denn nur der Hinweis an alle angehenden Saufquizzer, die Kneipenluft für "eine Zumutung" halten - schnappt euch eine Flasche Klaren, haut euch aufs Sofa und guckt "Wer wird Millionär". Da könnt ihr in Ruhe quizzen, wenns sein muss auch im tiefsten Winter spontan mal alle Fenster und Türen sperrangelweit aufreißen, und den Preis für eine richtige Antwort bestimmt ihr selbst.</p>
 <p>Den Trostpreis für eine falsche übrigens auch...</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -337,7 +315,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

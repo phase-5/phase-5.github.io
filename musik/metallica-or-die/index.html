@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1924">
 					<h2>Metallica. Or Die.</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Es gibt Dinge, die kann man extrem schlecht erklären. Zum Beispiel: <a title="Metallica official website" href="http://www.metallica.com" target="_blank">Metallica</a> und ich.</p>
 <p>Das hat mit Pubertät in den verfluchten 80ern zu tun. Damit, die längsten Haare aller Jungen der Schule zu haben. Damit, dass 1991 zuerst <a title="Guns'N'Roses bei last.fm" href="http://www.last.fm/music/gunsnroses" target="_blank">Guns'N'Roses</a>, dann <a title="Metallica bei Last.fm" href="http://last.fm/music/Metallica" target="_blank">Metallica</a> und schließlich <a title="Nirvana bei Last.fm" href="http://last.fm/music/Nirvana" target="_blank">Nirvana</a> Alben veröffentlichten, die die Rockgitarre wieder auf die musikalische Landkarte brachten. Mit einem großartigen Konzert im Niedersachsenstadion (heißt jetzt, glaube ich, AhWehDeh-Arehna) hat es auch zu tun; irgendwer soll gezählt haben, wie oft <a title="James Hetfield, Wikipedia (engl.)" href="http://en.wikipedia.org/wiki/James_Hetfield" target="_blank">James</a> das obligatorische "Fuck" benutzt hat (who fucking cares?). Dann bei einer Party im M.A.D. in der Mehlstraße: Solange zu <a title="Seek and Destroy bei Last.fm" href="http://www.last.fm/music/Metallica/_/Seek+and+Destroy" target="_blank">"Seek and Destroy"</a> moschen, bis man brechen muss. Coool. <a title="BEavis Youtube Moscht zu Metallica" href="http://www.youtube.com/watch?v=lPXtudPlVEg" target="_blank">Beavis</a> und Butthead fanden Metallica auch gut.</p>
 <div style="width: 510px" class="wp-caption alignnone"><img title="Metallica: Enter Sandman" src="http://farm1.static.flickr.com/46/170240759_dab4eb9b23.jpg" alt="HJF 2006 - Metallica von Marvin (PA)" width="500" height="375"><p class="wp-caption-text">HJF 2006 - Metallica von Marvin (PA)</p></div>
@@ -142,18 +131,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von J.K. Simpson.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -402,7 +380,16 @@ BTW2: Sie haben Post. Beacoup.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

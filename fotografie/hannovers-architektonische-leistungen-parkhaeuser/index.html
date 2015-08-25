@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-3154">
 					<h2>Hannovers architektonische Leistungen: Parkhäuser!??</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2009/04/hannover_neues-rathaus_und_nord-lb.jpg" alt="hannover: neues rathaus und nord/lb" title="hannover: neues rathaus und nord/lb" width="500" height="222" class="alignnone size-full wp-image-3155"></p>
 <p>Ein Freund hat mich auf den interessanten Artikel <a href="http://www.sueddeutsche.de/computer/23/466603/bilder/">"Hannover, mon amour"</a> in der <a href="http://www.sueddeutsche.de/">SZ</a> aufmerksam gemacht. Es geht darum, dass Forscher mithilfe von Flickr die meist fotografierte Stadt der Welt ermittelt haben, sowie die meist fotografierten Sehenswürdigkeiten. Dafür haben sie Geo-Tags und die Verstichtwortung analysiert.</p>
 <p>Soweit, so gut. Kann man machen. New York hat das Rennen als Stadt gewonnen. Ansonsten gehen natürlich der Eiffelturm, das Taj Mahal, das Brandenburger Tor, bla bla blub. Die viel interessantere Erkenntnis ist jene, dass es aus Hannover nur Fotos von Parkhäusern gibt. Der Schluss, den die "Querdenker" der Süddeutschen daraus ziehen, ist folgender: Hannover hat keine schönen Gebäude.</p>
 <p>Das ist hart. Und ich meine, Hannover ist schon hässlich. Ich möchte mich hier auch nicht in übertriebenem Lokalpatriotismus versteigen. Aber wenn ich den Kopf vom Bildschirm hebe, sehe ich bspw. das Neue Rathaus und die Nord/LB (s. Foto). Beides ansehnliche Gebäude, die sicher auch von Touristen festgehalten werden. Des weiteren fallen mir da die <a href="http://www.flickr.com/photos/blende32/3264604796/">Oper</a> ein, das <a href="http://www.flickr.com/photos/leifsinger/2479481382/">Anzeiger Hochhaus</a>, der <a href="http://www.flickr.com/photos/50306760@N00/2486786213/">Gehry-Tower</a> (der wahrscheinlich nicht den "Bilbao-Effekt" hatte, falls das überhaupt geplant war), die <a href="http://www.flickr.com/photos/mount_otz/2070853948/">Hauptuni</a>, etc. pp.</p>
 <p>Wenn all diese Gebäude nicht bei Flickr zu finden sind (was einfach nicht stimmt), kann der Schluss daraus doch nicht der sein, dass sie nicht existieren, bzw. dass in Hannover generell keine schönen, touristisch wertvollen Gebäude existieren. Vielmehr scheint das touristische Potenzial noch nicht ausgereizt. Vielleicht spricht Hannover auch nur ältere, weniger Web2.0-affine Generationen an. Vielleicht suchen Hannover-Touris auch einfach nur Ruhe, Entspannung und Ausgleich, anstatt den ganzen Tag wild fotografierend durch die Gegend zu rennen um ihre Freunde und Verwandten zu hause mit Dia-Shows zu Tode zu langweilen.</p>
 <p>Naja, ich möchte auch gar nicht anfangen mir Hannover schön zu reden. Fakt ist aber, was die SZ da behauptet ist wenig wert.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -378,7 +356,16 @@ von klassischeren vertretern, wie dem parkhaus an der u-bahn-station "parkhaus" 
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

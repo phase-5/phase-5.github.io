@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-1095">
 					<h2>WordPress 2.5.1 unter der Haube</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/04/wordpress_update.jpg" alt="Wordpress 2.5.1" title="Wordpress 2.5.1"></p>
 <p>Kaum ist WordPress 2.5 draußen und versaut mir den Blogspaß, folgt auch schon das erste Update. Mit der Version 2.5.1 wird die Performance teilweise verbessert, es werden Sicherheitslücken geschlossen und der Uploader optimiert.</p>
 <p>Das merke ich auch am eigenen Leib: Die Fehlermeldung, die man beim kläglichen Versuch ein Bild hochzuladen, hingerotzt bekommt, ist viel höflicher geworden und so weitschweifig, dass sie unter dem "Ablehnen"-Button verschwindet. Eine echte Bereicherung für meinen schnöden Blog-Alltag.</p>
 <p>Übrigens habe ich das Update das erste mal so gemacht, wie empfohlen: Zuerst den ganzen alten Kappes gelöscht, und dann den ganzen neuen Kappes hochgeladen. Deshalb war hier heute nacht eine Zeit lang das Pausenbild zu sehen und Phase 5 ansonsten nicht weiter erreichbar.</p>
 <p>Natürlich hätte ich es auch wie vom <a href="http://www.admartinator.de/2008/04/12/wordpress-update-leicht-und-schnell-gemacht/">Admartinator</a> beschrieben machen können, aber ich fand mein Pausenbild einfach zu schön.</p>
 <p>(<a href="http://www.perun.net/2008/04/25/wordpress-251-ist-da/">via</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -279,7 +257,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1316">
 					<h2>Großeltern – Pflegetips und günstige Heimunterbringung</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Laut ist das Medienecho zur aktuellen Untersuchung über die Qualität der Versorgung bei Pflegebedürftigen. Überall regen sich die Menschen darüber auf, dass es diesen armen Geschöpfen so schlecht ginge. Egal ob ein teures oder ein billiges Pflegeheim, überall seien die Defizite gleich groß. Über 10 % der Pflegebedürftigen hätten Gesundheitschäden davongetragen.</p>
 <p>Allerorts gibt es erhitzte Gemüter - aber seien wir mal ehrlich, für die Zustände, die in Pflegeheimen herrschen, ist die Versorgung überraschend gut. Mich würde man jedenfalls niemals freiwillig dazu bewegen können für einen solchen Hungerlohn, wie ihn die Pflegekräfte bekommen, solch aufreibende Akkordarbeit zu leisten, und selbst wenn es soweit kommen würde: Ein freundliches Wort würde mir wohl angesichts der ständigen Windelwechselei, der Kathethertauscherei und den ganzen anderen Dingen, die wohl nur die wenigsten machen wollen, kaum über die Lippen kommen.</p>
 <p>Die Pflegequalität ließe sich nur verbessern, wenn man die Arbeitsbedingungen verbessert - nicht durch drakonische Sanktionen, oder das Veröffentlichen von Qualitätsberichten. Gute Pflege kostet Geld - denn nur so kann man genügend Personal einstellen. Das Argument, dass teurere Heime nicht besser sind ist vollkommen fadenscheinig, denn dort herrschen die gleichen Arbeitsbedingungen.</p>
@@ -140,18 +129,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von <a href="http://web2.0du.de">Robert Curth</a>.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -363,7 +341,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

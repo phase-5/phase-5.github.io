@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-3385">
 					<h2>Onion News: 9/11 ist masturbationsfreier Tag</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><object width="480" height="430"><param name="allowfullscreen" value="true"><param name="allowscriptaccess" value="always"><param name="movie" value="http://www.theonion.com/content/themes/common/assets/onn_embed/embedded_player.swf?image=http%3A%2F%2Fwww.theonion.com%2Fcontent%2Ffiles%2Fimages%2F9_11_MASTURBATION_WIDE_9_10_09.jpg&amp;videoid=97860&amp;title=Americans%20Observing%209%2F11%20By%20Trying%20Not%20To%20Masturbate"><param name="wmode" value="transparent"><embed src="http://www.theonion.com/content/themes/common/assets/onn_embed/embedded_player.swf" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" wmode="transparent" width="480" height="430" flashvars="image=http%3A%2F%2Fwww.theonion.com%2Fcontent%2Ffiles%2Fimages%2F9_11_MASTURBATION_WIDE_9_10_09.jpg&amp;videoid=97860&amp;title=Americans%20Observing%209%2F11%20By%20Trying%20Not%20To%20Masturbate"></object></p>
 <p>(<a href="http://www.theonion.com/content/video/americans_observing_9_11_by">direkt9/11</a>)</p>
 <p>Heute vor 8 Jahren habe ich meinen Autoführerschein gemacht und in New York haben Terroristen das World Trade Center mithilfe von zwei Passagierflugzeugen geplättet. In Gedenken an die Opfer dieser Tat, verzichten US-Amerikaner heute auf das Masturbieren, da es pietätlos erscheint.</p>
 <p>Morgen - 9/12 - ist dagegen der internationale Masturbationstag der US-Amerikaner und es wird nachgeholt, was man am Vortag verpasst hat. Opfer hin oder her. In meinen Augen eine vernünftige und angebrachte Vorgehensweise.</p>
 <p>(via <a href="http://www.nerdcore.de/wp/2009/09/11/the-onions-911-gedenkvideo/">Nerdcore</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -277,7 +255,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

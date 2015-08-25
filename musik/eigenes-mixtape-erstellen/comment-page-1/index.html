@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1909">
 					<h2>Eigenes Mixtape erstellen</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/09/muxtape.png" alt="muxtape" title="muxtape" width="500" height="151" class="alignnone size-full wp-image-1910"></p>
 <p>Muxtape.com ist zur Zeit immernoch dabei Probleme mit der RIAA auszu<em>sorten</em> und ein Ende ist scheinbar auch nicht in Sicht. Das ist jedoch kein Problem, da es mit <a href="http://opentape.fm/">Opentape.fm</a> die Möglichkeit für jedermann gibt sein eigenes Mixtape zu hosten. Dafür braucht man als erstes Webspace.</p>
 <p>Diesen gibt es kostenlos bei <a href="http://kilu.de">Kilu</a>. Einen Gigabyte für lau, das sollte für 14 Songs reichen. Einziger Wermutstropfen ist die werbung, die man in Kauf nehmen muss. Entweder ein Layer-Ad, welches nervigerweise ins Browserfenster geflogen kommt, oder eine Leiste am oberen Bildschirmrand. Dauerpräsent aber erträglich.</p>
@@ -136,18 +125,7 @@
 <p>Den Inhalt des Opentape-Ordners werfen wir in den www-Ordner des Kilu-Webspaces. Dafür braucht man ein geeignetes FTP-Programm wie bspw. <a href="http://www.filezilla.de/">Filezilla</a>. Sind die Dateien hochgeladen, kann man direkt die Lieder seiner Wahl in den Songs-Ordner schmeißen.</p>
 <p>Ist das erledigt, besuchen wir unser Mixtape im Browser, geben ein Admin-Kennwort ein, geben dem ganzen einen Namen, suchen uns eine schöne Farbe aus und fertig ist die Laube. Des weiteren kann man die Reihenfolge per Drag&amp;Drop ändern und einzelne Lieder im Browser hochladen.</p>
 <p>Zum Schluss noch der kleine Hinweis von Onkel Herschel: Immer schön die Urheberrechte achten. Brave Kinder machen das.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -300,7 +278,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-878">
 					<h2>Schäuble is watching you</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="http://phase-5.github.io/wp-content/plugins/watching/head.gif" alt="Schäuble is watching you" style="margin: 0px 10px 15px 0px; float: left"></p>
 <p>Wie jeder weiß, findet seit dem 1.1.2008 eine 6-monatige Vorratsdatenspeicherung statt, für den Fall, dass der durchgeknallte Typ von nebenan mit dem verschlagenen Blick eines Serienvergewaltigers Bock auf sinnstiftende Religion bekommt und den Tante Emma-Laden um die Ecke in die Luft sprengt. Das mag krude klingen, ist aber in Zeiten von Doom, Quake und Duke Nukem nicht unwahrscheinlich.</p>
 <p>Als kleine Erinnerung schaut deshalb nun unser geschätzter Innenminister gelegentlich persönlich auf Phase 5 vorbei, um zu überprüfen, dass hier alles mit rechten Dingen zugeht und keiner Bombenbastelanleitungen postet. Das gibt mir persönlich ein wahrhaft sicheres Gefühl - auch an den stärkeren Tagen.</p>
 <p>Wer auch Besuch von InMiSchä auf seinem Blog haben möchte, kann den entsprechenden Code-Fetzen bzw. ein passendes Worpress-PlugIn vom <a href="http://es-de-we.net/schaeuble-is-watching-you/" target="_blank">es-de-WE.BLOG</a> herunterladen, und schon kennt der Spaß keine Grenzen mehr. Initiiert wurde der rastlose Minister übrigens vom <a href="http://www.vorratsdatenspeicherung.de/content/blogsection/9/77/lang,de" target="_blank">AK VDS</a>.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -471,7 +449,16 @@ aber wäre eigentlich ne geile idee, so'n blogleser-treffen in der eckkneipe...<
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

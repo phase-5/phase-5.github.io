@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-435">
 					<h2>posterXXL</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://shop.posterxxl.com" target="_blank"><img src="../../wp-content/uploads/2007/05/posterxxl.png" alt="posterXXL" border="0"></a></p>
 <p>PosterXXL.com, ein Online-Postershop aus München, bietet die Möglichkeit, einen eigenen Postershop mit selbst hochgeladenen Bildern aufzumachen. Dies macht ihn sozusagen zum Spreadshirt unter den Posterdruckern. Auch ich nutze die Möglichkeit, um meine Bilder unters Volk zu bringen.</p>
 <p>Allerdings verstehe ich nicht ganz, wozu sie diesen Service anbieten. Man sollte meinen, sie wollen einen anständigen Anteil an jedem verkauften Bild. Allerdings tauchen die Poster aus den privaten Shops nicht in den Suchergebnissen des Hauptshops auf. Sie führen somit ein Schattendasein, da es weder eine Liste aller existierenden Shops, noch eine Suche für selbige gibt. Folglich werden sie auch weniger gefunden, und verkaufen entsprechend weniger.</p>
@@ -137,18 +126,7 @@
 <p>So viel zum marketing-technischen Aspekt. Über die Zahlungsmoral kann ich leider noch nichts berichten, da ich noch nicht genug Poster verkauft habe, um mich ausbezahlen lassen zu können.</p>
 <p><strong>Nachtrag:</strong></p>
 <p>Auf dem <a href="http://www.interview-blog.de/ebusiness/es-ist-eine-spannende-zeit-im-gesprach-mit-christian-schnagl-posterxxl/" target="_blank">interview-blog</a>  gibt es ein Interview mit dem Managing Director der PosterXXL GmbH, Christian Schnagl. Er spricht bezüglich der letzten Provisionsausschüttung für private Shopbetreiber zumindestens von einem 5-stelligen Gesamtbetrag.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -281,7 +259,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

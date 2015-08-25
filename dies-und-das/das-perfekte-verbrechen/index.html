@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-759">
 					<h2>Das perfekte Verbrechen</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2007/10/eisenstange.jpg" alt="Glühende Eisenstange"></p>
 <p>Hin und wieder baut sich ein zum Interview gedrängter Kriminaler vor der Kamera auf und behauptet naseweiß das perfekte Verbrechen gäbe es nicht. Ziemlich weit aus dem Fenster gelehnt, wenn man bedenkt, dass es in der Natur des perfekten Verbrechens liegt, dass Sicherheitsorgane keine Kenntnis über sie erlangen.</p>
 <p>Aber warum erzähle ich das? Nun, es gibt immer noch die fast perfekten Verbrechen. Geschickt ausbaldowerte Räubereien und Morde, die nur durch einen Zufall oder Verrat aufgeflogen sind. Dazu gehört u.a. der Mord an <a href="http://de.wikipedia.org/wiki/Edward_II." target="_blank">Eduard II.</a>, König von England und Wales zwischen 1307 und 1327. Diesem wurde der Legende nach vom Gefängniswärter und zwei Gehilfen eine glühende Eisenstange durch ein an der Spitze abgesägtes Kuhhorn in die Gedärme getrieben.</p>
 <p>Dies dürfte wohl der archaische Vorläufer der mit Luft gefüllten Spritze sein.</p>
 <p class="lizenz"><a href="http://flickr.com/photos/purduenila/237241172/" target="_blank">37 Blacksmith - rod iron for nail</a> von <a href="http://flickr.com/photos/purduenila/" target="_blank">purduenila</a> unter <a href="http://creativecommons.org/licenses/by-nc-nd/2.0/deed.en" target="_blank">CC</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -342,7 +320,16 @@ und wenn ein fetisch zur ausrottung der menschheit führt, dann möchte ich auch
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

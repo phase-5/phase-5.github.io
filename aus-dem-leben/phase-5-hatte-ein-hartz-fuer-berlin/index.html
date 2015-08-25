@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-3311">
 					<h2>Phase 5 hatte ein Hartz für Berlin</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://twitpic.com/awdc3"><img src="../../wp-content/uploads/2009/07/hartz-fuer-berlin-2009.jpg" alt="hartz fuer berlin 2009" title="hartz fuer berlin 2009" width="500" height="375" class="alignnone size-full wp-image-3312"></a></p>
 <p>Am Wochenende hat sich eine Abordnung des Phase-5-Teams - namentlich TediousNilsen und Herschel Rubinstein - auf den weiten Weg in die Hauptstadt gemacht, um dem Charity-Festival "<a href="http://www.einhartzfuerberlin.de/">Ein Hartz für Berlin</a>" beizuwohnen.</p>
 <p>Dies fand am Sonntag statt und war eine gute Sache für einen guten Zweck. KIZ, T.Raumschniere, Die Schreck Pistols und Peter Fox haben die Bühne gereockt, SIDO ist als Showpraktikant gelegentlich über die Bühne gehüpft, Farid hat uns mit einem kleinen Zaubertrick gelangweilt, Michael Hirte mit Mundharmonikaschmalz zugeseiert, Bela B. hat in seinem Diskokugel-Anzug geglänzt und Ick&amp;Er waren sich auch nicht zu schade, noch einen zum besten zu geben.</p>
@@ -137,18 +126,7 @@
 <p><strong>1.</strong> Der gute Bela wirkte ein wenig gelangweilt und war schlecht vorbereitet. Das ist sogar bei ihm irgendwann nicht mehr cool.<br>
 <strong>2.</strong> Die Veranstaltung war zu kurz. Ich kann verstehen, dass man an einem Sonntag um 22Uhr mit dem Programm aufhört, um die Anwohner ringsum nicht zu ärgern, aber das muss einen nicht davon abhalten, einfach ein, zwei Stündchen früher anzufangen. Dann wäre auch Zeit für die obligatorische Zugabe gewesen.</p>
 <p>Ansonsten aber war es ein schöner Ausflug, allein die Hauptstadt ist ja immer eine Reise wert. Auch das Campieren in Spandau kann man getrost weiter empfehlen. Allerdings muss man, wenn man dies tut, etwas Zeit für die Fahrt nach Berlin mit dem ÖPNV einplanen. Spandau selbst ist nämlich nicht so der Hit und liegt wirklich am Arsch der Welt.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -339,7 +317,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

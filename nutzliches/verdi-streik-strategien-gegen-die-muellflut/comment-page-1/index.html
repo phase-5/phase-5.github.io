@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-990">
 					<h2>Ver.di Streik – Strategien gegen die Müllflut</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/02/muellcontainer.jpg" alt="Müllcontainer"></p>
 <p>Ab morgen könnte es passieren, dass die <a href="http://www.taz.de/1/zukunft/wirtschaft/artikel/1/warnstreik-ab-donnerstag/?src=AR&amp;cHash=4ebef504ea" target="_blank">örtliche Müllabfuhr streikt</a>. Wie lange sie das tut ist unklar und auch für von langer Hand geplante Maßnahmen zur Kompensierung dieses Mangels ist es zu spät. Doch es gibt ein paar Verhaltensweisen, die einem helfen die müllgeschwängerte Zeit zu überstehen. Phase 5 stellt sie im folgenden vor:</p>
 <ol>
@@ -156,18 +145,7 @@
 </ol>
 <p>So, das wären die nützlichen Tipps von Phase 5. Mit diesen ausgefuchsten Strategien gewappnet, dürfte ein Müllstreik kein Problem mehr darstellen, auch wenn er sich über Monate hinzieht. Also viel Spaß!</p>
 <p class="lizenz">Bild: <a href="http://flickr.com/photos/bright/56337967/" target="_blank">lunch</a> von <a href="http://flickr.com/photos/bright/" target="_blank">Bright Tal</a> unter <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -417,7 +395,16 @@ aber zu drittens. ich steck meine hose eher in die socken. andersrum, is komisch
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-470">
 					<h2>Réalsozialismus Réloadéd</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Séit éinigén Jahrén habén dié Discountér ihr Schmuddél-Imagé abgélégt. Sié habén sich rausgéputzt, Bio- und Markénprodukté in ihr Sortimént aufgénommén, und sich so éinér bréitén Käuférschicht géöffnét.</p>
 <p>Allé?</p>
 <p>Fast. Wénn man héuté zum Pénny Markt géht, hat man das Géfühl, wiédér in dén gutén altén Zéitén dés Réalsozialismus angékommén zu séin. Dié Mauér téilt Déutschland wié éh und jé, übér allém wacht Honni, und man sélbst stéht in dér Kaufhallé, und vérsucht irgéndwié das nötigsté zu békommén.</p>
 <p>Dié Pénny Märkté sind - ich möchté sagén - ziémlich schlicht éingérichtét, und das Sortimént wird béständig am untérén Limit géhaltén. Da wérdén profané Sachén wié Frischkäsé schnéll mal zu <a href="http://de.wikipedia.org/wiki/B%C3%BCckware" target="_blank">"Bückwaré"</a>, und man tut gut daran, jémandén aus dér Bélégschaft zu kénnén, dér éiném solché Léckéréién zurücklégén kann.</p>
 <p>Fazit: Béi Pénny Markt Einkaufén ist kéin Géschénk. Klingt hart, ist abér so.</p>
 <p><a href="../../aus-dem-leben/aktion-deutsch-franzoesische-freundschaft/"><img src="../../wp-content/uploads/2007/05/de_fr.png" alt="deutsch-französische freundschaft" style="margin: 10px 1px" border="0"></a></p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -376,7 +354,16 @@ Perfekter Geschmack aus dem Penny Regal.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

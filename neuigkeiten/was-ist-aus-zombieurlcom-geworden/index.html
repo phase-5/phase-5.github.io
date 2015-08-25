@@ -117,33 +117,11 @@
 	<div id="right">
 									<div class="single_post" id="post-1848">
 					<h2>Was ist aus ZombieURL.com geworden??</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Gerade wollte ich mal wieder eine URL verkürzen und - um einen Bogen um die Langweiler-Kniestrumpfträger-Dienste wie <a href="http://www.twiturl.com/">TwitURL.de</a> oder <a href="http://www.tinyurl.com/">TinyURL.com</a> zu machen - bei <a href="http://zombieurl.com/">ZombieURL.com</a> vorbeischauen, da wurde ich mit Schrecken gewahr, dass die Seite nicht mehr zu existieren scheint.</p>
 <p>Das ist ein herber Verlust, immerhin bekam man von ZombieURL.com nicht nur eine handliche Internet-Adresse, nein, auch ein freundlicher, kreischender Zombie guckte vorbei. Daran hatte jeder Spaß, außer die Leute, die den Link angeklickt haben. Diese wiederum waren nach der Zombie-Attacke auf jeden Fall wach. Das ist, wie jeder weiß, morgens im Büro Gold wert und sonst nur mit Unmengen Kaffee und einer außer Rand und Band geratenen Peristaltik zu "erkaufen".</p>
 <p>Deshalb hier mein Aufruf: Holt ZombieURL wieder. Ich bin auch bereit selbst so etwas aufzuziehen. Die Jungs von TwitURL haben nach eigener Aussage nur ein Wochenende für ihren Dienst gebraucht. Mir fehlt blöderweise nur das technische Know-How…</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -316,7 +294,16 @@ werde es dennoch leider nicht schaffen. wir sehen uns nächste woche, wenns dir 
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-3222">
 					<h2>Flickr kann jetzt Twitter</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Unglaublich! Man kann seine Fotos nun endlich auch direkt aus Flickr raus bei Twitter posten, so man denn einen entsprechenden Account hat. Damit haben unsere Yahoo!-Pappenheimer mal wieder grandios bewiesen, dass sie unheimlich flink und innovativ sind. Dienste, wie <a href="http://twitpic.com/">Twitpic</a> und <a href="http://yfrog.com/">yFrog</a> gibt es ja erst seit einer geschätzten Ewigkeit. Von daher ist der Zug kaum abgefahren.</p>
 <p>Auch das Konzept, Twitter bei der "Blog This"-Funktion unter zu bringen ist an Genialität kaum zu übertreffen. Miesepeter werfen Flickr da sicherlich Faulheit respektive Ideenlosigkeit respektive Unbedachtheit vor, aber ich denke, dass es schon so ist, dass User, die nicht möchten, dass man ihre Bilder auf irgendwelchen Blogs veröffentlicht, auch nicht wollen, dass man einen Link auf eines ihrer Bilder bei Twitter postet. Schließlich macht es keinen Unterschied, ob die eigenen Bilder irgendwo unauthorisiert im Netz verwendet werden, oder Traffic auf der eigenen Flickr-Seite durch Verlinkung im Netz erzeugt wird.</p>
 <p>Man kann beides nicht nur locker über einen Kamm scheren, nein, es ist bei näherem Betrachten sogar das gleiche paar Schuhe. In diesem Sinne: Hut ab, Flickr, für diesen Geniestreich. Ich wusste, dass ihr weit mehr drauf habt, als nur vollkommen verspätet und total konzeptionslos eine Videofunktion einzubauen.</p>
 <p>In unendlicher Hochachtung,</p>
 <p>Euer Herschel</p>
 <p>(<a href="http://www.emanuel-kluge.de/twitter/flickr2twitter-innovationen-von-gestern/">via</a> <a href="http://blog.flickr.net/en/2009/06/30/twitter-your-flickr/">Flickr Blog</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -379,7 +357,16 @@ Welche " neue" Site ist es???  <img src="../../../wp-includes/images/smilies/ico
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

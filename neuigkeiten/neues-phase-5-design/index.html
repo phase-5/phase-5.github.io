@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-1193">
 					<h2>Neues Phase 5-Design</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/07/phase_5_logo.png" alt="phase 5 - logo" title="phase 5 - logo" width="270" height="270" class="alignnone size-full wp-image-1934"></p>
 <p>Zugegeben, das alte Design hat sich nicht lange gehalten. Genau genommen war es länger in der Entwicklung, als im Einsatz. Aber es hat sich einfach sehr schnell als unbrauchbar erwiesen. Trotzdem habe ich einiges über WordPress gelernt, beim Erstellen des letzten Designs, und einige nützliche Komponenten sind denn auch in das neue Design mit eingeflossen.</p>
 <p>Dafür gibt es jetzt wieder alle Beiträge direkt und komfortabel aneinander gereiht, und die Platzausnutzung ist auch besser.</p>
 <p>Bitte verzeiht mir diesen ständigen Wechsel, ich verspreche das aktuelle Theme jetzt wenigstens einen Monat draufzulassen. Und wie immer: Wenn ihr Fehler seht, bitte mitteilen. Vielen Dank und viel Spaß weiterhin mit Phase 5!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -439,7 +417,16 @@ jetzt ists zu überladen/unübersichtlich</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

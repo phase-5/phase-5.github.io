@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1314">
 					<h2>Apple-Manie</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://shop.posterxxl.com/cgi-bin/xps_shop_poster_details.cgi?pn=1761f011381994b5afa07cf73f3515de&amp;xps_shop_session=31b8440b6ff53fa9b1c11e355fb5b6d9" target="_blank"><img src="../../../wp-content/uploads/2007/08/powerbook.jpg" alt="powerbook"></a></p>
 <p>Mac-Anwender schwärmen oft von der Stabilität ihres Betriebssystems. Sie finden es trendy, schick und geben damit an. Windows Rechner hingegen werden meistens "Kiste" genannt und Microsoft ist ja sowieso der Teufel in Person. Überhaupt - die bei Microsoft kopieren ja schon seit Jahren. Alles nur geklaut da!</p>
 <p>Zugegeben, man muss Mac OS X ja auch einfach mögen - es hat einfach einige Vorzüge, die ich nicht mehr missen möchte. Was ich aber nicht nachvollziehen kann ist der Hype, der um jedes neue Apple-Produkt entsteht? Warum muss es unbedingt immer der neue iMac sein? Warum ausgerechnet die neuste Version vom MacBook Pro? Ist es so einfach Apple-Usern das Geld aus der Tasche zu ziehen? Offensichtlich schon.</p>
@@ -140,18 +129,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von <a href="http://web2.0du.de">Robert Curth</a>.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -448,7 +426,16 @@ Phase 5 als Web 2.0 Speerspitze? Oder nicht doch besser als Flaschenöffner? Bes
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

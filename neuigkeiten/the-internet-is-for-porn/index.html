@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-429">
 					<h2>“The Internet is for Porn,…</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><strong style="font-size: 14px; font-family: arial">…und auf <a href="http://www.flickr.com" target="_blank">Flickr</a> gibts mehr als idyllische Landschaftsaufnahmen!</strong></p>
 <p><a href="http://www.flickrotica.de" title="flickrotica" target="_blank"><img src="../../wp-content/uploads/2007/05/flickrotica.png" alt="flickrotica" border="0" style="margin: 10px auto"></a></p>
 <p>Dies sind zwei Wahrheiten, derer ich mich nicht länger erwehren konnte. Deshalb habe ich mich dazu durchgerungen die Flickr'sphere nach anspruchsvoller Aktfotografie zu durchkämmen, und selbige auf meinen Blog mit dem illustren Namen "<a href="http://www.flickrotica.de" target="_blank">Flickrotica.de</a>" zu posten.</p>
 <p>Nun mag mancher einwerfen, dass Flickr mehr bietet als das. Zum Beispiel aufgedunsene Ladies, die - falls sie so etwas wie "gute Jahre" überhaupt erlebt haben, diese auf jeden Fall schon lange hinter sich haben - ihre blassen Zellulitestampfer, welche notdürftig von einem geschmacklosen, speckigen Stringtanga zusammengehalten werden, in irgend eine nicht zu beneidene Kompaktkameralinse halten. Ganz zu schweigen von Aufnahmen, denen das Stabilisierungsmoment "Stringtanga" gänzlich abhanden gekommen ist.</p>
 <p>Natürlich gibt es das. Aber Bloggen soll Spaß machen, und der geht flöten, wenn ich bei jedem zweiten Beitrag meine gute Apple-Tastatur bekotze!</p>
 <p>Naja, wie dem auch sei - ich wünsche viel Spaß auf Flickrotica.de! Und wer Fotos (gefunden) hat, die sie/er unbedingt auf Flickrotica.de gebloggt sehen will, soll mir Bescheid geben. Ich werde sie/ihn mit Dankbarkeit überhäufen.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -376,7 +354,16 @@ allerdings wäre ein homo-flickrotica-blog sicherlich auch eine gute idee.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

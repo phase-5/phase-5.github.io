@@ -117,34 +117,12 @@
 	<div id="right">
 									<div class="single_post" id="post-979">
 					<h2>Schicke Gravouren für erhöhten Hipness-Faktor von engrave</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Jeder kennt das: Man kommt in das Szene-Café an der Ecke um ein bißchen zu <em>Free-Lancen</em> (nicht verwechseln mit Faulenzen), doch dieses ist voll von urbanen Pennern, die alle ein flimmerndes MacBook (Pro) vor sich stehen haben. Mit einem Schlag flattern Individualität und Hipness davon wie ein Mückenfurz am Ostermorgen.</p>
 <p><img src="../../wp-content/uploads/2008/02/macbook_pro_graviert_engrave.png" alt="MacBook Pro - mit Gravour von engrave"></p>
 <p>Doch das muss nicht sein, wenn man seinem portablen Rechner eine <em>fancy</em> Gravour von <a href="http://www.engraveyourtech.com/" target="_blank">engrave</a> gönnt. Für lockere $100 ist man dem Hipster-Volk wieder eine Nasenlänge voraus, und kann sich besten Gewissens, Latte schlürfend im Café breit machen.</p>
 <p>Super!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -411,7 +389,16 @@ Sieht aber gut aus! <img src="../../wp-includes/images/smilies/icon_smile.gif" a
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

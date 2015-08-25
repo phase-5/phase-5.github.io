@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-410">
 					<h2>Le Schpeidermann</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2007/05/spiderman.png" alt="spiderman" style="margin:10px auto"></p>
 <p>Ob man von einem Film enttäuscht wird oder ihn ohne Ende tofte findet, hängt nicht zuletzt auch davon ab, mit welcher Erwartungshaltung man an ihn ran geht.</p>
 <p>Bei 'Spiderman 3' habe ich erwartet, dass er sich wild durch die Lüfte schwingt, groteske Bösewichte windelweich prügelt und sich mit zutiefst menschlichen Problemen rumplagt.</p>
 <p>Heute habe ich mir den Film angeguckt, und was hat man mir "serviert"? Spiderman hat sich wild durch die Lüfte geschwungen, groteske Bösewichte windelweich geprügelt und sich mit zutiefst menschlichen Problemen rumgeplagt. Obendrein hat er auch noch ein kleines Intermezzo als Styler geliefert.</p>
 <p>Meine Erwartungen wurden also mehr als erfüllt, so dass mir auch die Überlänge nur einmal unangenehm aufgestoßen ist - und zwar an der Kasse, als ich 50 Cent extra abdrücken durfte! Wer also mal Pause vom turkmenischen Autorenkino machen und sich einfach ein wenig mit Action berieseln lassen will, sollte diesen Film antesten.</p>
 <p><strong>PS</strong>: <em>Ein Fotoreporter mit einer Nikon D50?? Okay, jeder fängt mal klein an, aber eine D200 sollte wohl drin sein, wenn man es ernst meint.</em></p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -354,7 +332,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,33 +117,11 @@
 	<div id="right">
 									<div class="single_post" id="post-651">
 					<h2>Google Top-Suchworte</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Bei <a href="http://www.google.de/press/intl-zeitgeist.html#de" target="_blank">Google Zeitgeist</a> werden die 15 Top-Suchworte des letztens Monats angezeigt, u.a. für den deutschen Raum.</p>
 <p><img src="../../wp-content/uploads/2007/09/google_zeitgeist.jpg" alt="google zeitgeist"></p>
 <p>Das ist einerseits recht interessant, da man sehen kann, was die/den deutsche/n Internetnutzer/in so interessiert, und man sich andererseits mit seinen Blog-Artikeln daran orientieren kann. Also bitte nicht wundern, wenn auf Phase 5 in nächster Zeit vermehrt Artikel über einen Kurzurlaub an der Uni Frankfurt, den man mit seinem Ford Focus - musikalisch untermalt von KIZZ (welche sich korrekterweise K.I.Z. schreiben) - antreten wollte, aber dann doch auf Fahrräder umgestiegen ist, da man den Kredit nicht bekommen hat und einem das Autoradio sowieso ständig "Boom Chicka Wah Wah" um die Ohren schleudern würde, und man auch viel angenehmer den neuen P!nk Shoutcast auf dem MP3-Player hören kann, um - geleitet vom Stadtplan Berlin - zum nächsten Cinedom zu fahren, wo man allerdings hochkant rausgeworfen wird, da das Entzünden von Kerzen während der Vorstellung nicht gestattet ist, weshalb man zum nächsten Schwimmbad gurkt, und sich unter den "Spiel mit"-Rufen des Animateurs ein Stern Tattooo vom nächsbesten Punker auf den Arsch stechen lässt, erscheinen werden.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -334,7 +312,16 @@ Give the Answer!!!!!!!!!!!</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

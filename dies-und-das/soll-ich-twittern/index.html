@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1083">
 					<h2>Soll ich Twittern???</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://twitter.com/" target="_blank"><img src="../../wp-content/uploads/2008/04/twitter.png" title="Twitter" alt="Twitter"></a></p>
 <p>Manchmal denke ich schon darüber nach das Twittern anzufangen. Zum Beispiel wenn StudiVZ mal wieder vollmundig und eingekeilt von Werbung konstatiert, dass sie "<strong>Gegen Regen</strong>" sind. Es lohnt eigentlich nicht einen Blog-Eintrag zu starten, nur um mitzuteilen, dass man die StudiVZ-Leute wegen solcher Kleinigkeiten für Oberspacken hält.</p>
 <p>Andererseits erschließt sich mir der Sinn des Twitterns nicht vollständig. Ich muss nicht jedem mitteilen, was ich genau in diesem Moment mache. Angenommen ich sitze, während ich diesen Beitrag verfasse, zugekokst vor dem Laptop, nur bekleidet mit einer Duschhaube, höre <a href="http://www.biermoesl-blosn.de/" target="_blank">Biermös'l Blos'n</a> und parke meine Käsemauken in einem kleinen Aquarium, in welchem kleine Putzfische sich an dem Grind unter meinen Zehennägeln delektieren.</p>
 <p>Das möchte kein Mensch wissen. Und ich habe wiederum nicht das Bedürfnis es anderen auf die Nase zu binden. Es ist meine Sache, ob ich Biermös'l Blos'n höre oder nicht. Zudem habe ich auch die Zeitanzeige bei Beiträgen und Kommentaren aus dem Blog genommen, weil es meiner Meinung nach zu weit geht. Ich möchte nicht den Tagesablauf meiner Leser anhand ihrer Kommentare rekonstruieren können. Und ich möchte auch nicht, dass es andere können.</p>
 <p>Bleibt also als Fazit nur zu sagen: Twittern und ich sind nicht <em>down</em> miteinander. Und wenn ich mal wieder einen Pöbeleinzeiler starten möchte, werde ich dafür einen Blog-Eintrag verschwenden. Schöne neue Welt.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -357,7 +335,16 @@ Und übrigens ist Twittern auch nur was für Leute, die ernsthaft WAYWT-Fotos im
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-1837">
 					<h2>Ulmen.tv</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2008/09/ulmen-tv.png" alt="" title="ulmen.tv" width="500" height="199" class="alignnone size-full wp-image-1838"></p>
 <p>Nachdem mit seiner Sendung "Mein neuer Freund" Schluss war, hat Christian Ulmen sich die beiden Charaktere Knut Hansen und Alexander von Eich geschnappt, den Teilzeitautisten Uwe Wöllner als neue Figur dazu gepackt, und macht nun bei MySpass.de mit <a href="http://www.myspass.de/de/ulmentv/index.html">Ulmen.tv</a> weiter.</p>
 <p>Knut Hansen zieht dabei durchs bajuwarische Hinterland und feilt an seiner Karriere als Liedermacher, Alexander von Eich hilft auf äußerst menschenverachtende Art und Weise einer Prekariatsfamilie sich aus dem "Hartz IV-Sumpf" zu befreien und Uwe Wöllner lässt sich dabei helfen etwas aus seinem eigenen Leben zu machen.</p>
 <p>Alles recht unterhaltsam. Zusätzlich gibt es für jeden Charakter noch einen eigenen Blog, in dem sie von ihrem Machen und Tun berichten. Leider kann man in den Blogs nur kommentieren, wenn man angemeldet ist. Außerdem verlinken die Namen der Kommentar-Autoren nicht auf Webseiten, sondern auf deren eMail-Adressen. Etwas dämlicheres ist mir noch nicht untergekommen. Falls einer der Macher der Ulmen.tv-Blogs hier rumgeistert: Warum ist das so?</p>
 <p>Naja, aber ansonsten lohnt es sich dort gelegentlich mal vorbei zu schauen, wenn man auf den Ulmen'schen Humor steht.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -316,7 +294,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

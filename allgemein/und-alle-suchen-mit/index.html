@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-3369">
 					<h2>und alle suchen mit…</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Das Atomkraftthema ist ja gerade wieder hochaktuell. Insbesondere auch die Frage mit dem Müll. Weinflaschen ins Altglas, Zeitungen ins Altpapier, Kunststoffe in den Gelben Sack und Atommüll? Hmm... Es fehlt an Endlagern. Momentan lagern die Castorbehälter in einer Leichtbauhalle in Gorleben. An der Eignung des Salzstocks darunter gibt es auch ernstzunehmende Zweifel, wurde er doch wohl auch wegen der Nähe zur damaligen DDR <a href="http://de.news.yahoo.com/17/20090807/tde-geologe-lager-gorleben-war-aus-fachl-d511a8e_2.html">gewählt</a>.</p>
 <p>Aber es ist ja auch wirklich schwierig, für Millionen Jahre im Voraus zu denken. Eine Aufgabe, die man keinesfalls Politiker_innen überlassen sollte. Deswegen haben sich ein paar findige <a href="http://www.atomtour.de/atom2/tour09/tourinfo">Umweltschützer_innen </a>überlegt, die Bürger_innen mit ein zu beziehen. Schließlich sehen vier Augen mehr als zwei etc. In einer ergebnisoffenen Erkundung soll bundesweit nach geeigneten Endlager gesucht werden. Damit das ganze koordiniert passiert, haben sie dazu eingeladen, dies morgen in Hannover ab 14.30 Uhr vom Klagesmarkt aus zu tun. Ich kann leider nicht, hätte aber ein paar Vorschläge. Wie wär's mit einem Endlager</p>
 <p>- in dem dritten Versorgungstunnel der MHH?</p>
@@ -136,18 +125,7 @@
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von Klaus.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -280,7 +258,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

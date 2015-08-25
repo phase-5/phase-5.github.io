@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-2388">
 					<h2>Checkbox mit klickbarem Label</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Heute wirds mal wieder <em>nerdig</em> auf Phase 5, aber es gibt da etwas, was mich regelmäßig nervt: Online-Formulare mit <a href="http://de.selfhtml.org/html/formulare/auswahl.htm#checkboxen">Checkboxen</a> bzw. <a href="http://de.selfhtml.org/html/formulare/auswahl.htm#radiobuttons">Radiobuttons</a>, deren Bezeichnungen (<em>Labels</em>) nicht klickbar sind, so dass man die stecknadelkopfgroßen Boxen bzw. Buttons direkt klicken muss.</p>
 <p>Beispiel:</p>
 <div style="padding: 10px; margin-bottom: 10px; border: 1px solid #CCC; background-color: #FFF;">
@@ -141,18 +130,7 @@
 <p>Oder — falls man das Formular mit einer <a href="http://de.selfhtml.org/html/tabellen/">Tabelle</a> oder einer <a href="http://de.selfhtml.org/html/text/listen.htm#definition">Definition List</a> strukturiert — man vergibt der Checkbox bzw. dem Radiobutton eine ID und spricht diese mit dem label-Attribut 'for' an:</p>
 <p><code>&lt;label for="checkbox_id"&gt;Klickbares Label&lt;/label&gt; &lt;input type="checkbox" id="checkbox_id" /&gt;</code></p>
 <p>Mehr ist es nicht. Also an alle da draußen, die Online-Formulare erstellen, oder vorhaben dies zu tun - macht das Label klickbar. Für mehr <em>Usability</em> und meinen Seelenfrieden. Danke!</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -323,7 +301,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

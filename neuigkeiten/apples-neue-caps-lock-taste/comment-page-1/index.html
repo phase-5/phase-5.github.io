@@ -116,36 +116,14 @@
 	<div id="right">
 									<div class="single_post" id="post-713">
 					<h2>Apples neue Caps Lock-Taste</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="http://www.spiegel.de/netzwelt/tech/0,1518,509992,00.html" target="_blank">Wie sich nun herausstellt</a>, hat Apple seiner neuen Tastatur zwar den Apfel geklaut, aber dafür ein interessantes Gimmick hinzugefügt: Die Umschalt-Taste fürs Großschreiben reagiert nicht mehr auf kurze versehentliche Antipper, sondern muss etwas länger, doller und mit voller Absicht gedrückt werden, um sie zu aktivieren.</p>
 <p>Dazu gibt es auch ein lehrreiches YouTube-Video:</p>
 <p><object width="425" height="350"><param name="movie" value="http://www.youtube.com/v/jSEu47D3G5o"><param name="wmode" value="transparent"><embed src="http://www.youtube.com/v/jSEu47D3G5o" type="application/x-shockwave-flash" wmode="transparent" width="425" height="350"></object></p>
 <p>Ich persönlich finde das sehr praktisch, da meine Caps Lock-Taste nur aktiv ist, wenn ich sie anstatt des 'a' erwischt habe und daraufhin Blödsinn schreibe, wie ein totLER ANFÄNGER. Andere hingegen finden die Neuerung nicht so prickelnd, wobei am meisten bemängelt wird, dass sich diese Funktion nicht deaktivieren lässt und man sich von Apple faktisch bevormunden lassen muss.</p>
 <p>Obwohl ich wie geschrieben Nutznießer dieser Neuerung bin, kann ich den Einwand nachvollziehen. Es zeigt sich mal wieder, dass das Gegenteil von 'gut' oft 'gut gemeint' ist.</p>
 <p>(<a href="http://www.youtube.com/watch?v=jSEu47D3G5o" target="_blank">direktCapsLock</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -374,7 +352,16 @@ Oder von mir aus einen anderen Druckpunkt und ne coole Einrastfunktion, die "kli
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

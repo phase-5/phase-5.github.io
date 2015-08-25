@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-1011">
 					<h2>SEO Friday: Hardcore Pron Revisited</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2008/02/pron.jpg" alt="Pron"></p>
 <p>Okay, es ist wieder Freitag. Genauer gesagt: SEO Friday. Dieses mal geht es um eines meiner Lieblingswörter - Pron. Wollen wir doch mal sehen, ob wir das Wörtchen nicht ein paar Stufen im GoogleRank nach oben schubsen können.</p>
 <p>Also: Pron, oder auch Hardcore Pron, erfreut sich großer Beliebtheit und birgt Spaß für jung und alt. Man kann Pron im Internet suchen und die tollsten Sachen finden. Mitunter sogar explizites Material, je nachdem wie ausgeprägt die orthografischen Fähigkeiten der Anbieter sind.</p>
 <p>Auf jeden Fall macht Pron eine Menge Spaß. Besonders hervorzuheben ist übrigens Black Pron, das zwar so klingt wie <a href="http://guide.lugnet.com/set/?qc=lego/system/space/blacktroni&amp;v=b" target="_blank">Blacktron</a>, aber mit LEGO nicht viel zu tun hat. Vielmehr handelt es sich dabei um eine Spielart des <a href="http://de.wikipedia.org/wiki/Blaxploitation" target="_blank">Blaxploitation-Kinos</a>, bei der neben kernigen Sprüchen und exzessiver Gewaltdarstellung auch eine Prise Pron in den Film gestreut wird.</p>
 <p>Ich hoffe mein kleiner Beitrag hat bei Euch die Lust auf Pron geweckt. Falls ja, wünsche ich Euch ein lustiges Wochenende voller Pron, und verbleibe mit pronnigen Grüßen. Bis zum nächsten SEO-Friday.</p>
 <p class="lizenz">Bild: <a href="http://flickr.com/photos/g1000/137670344/in/photostream" target="_blank">G1000 - Pron</a> von <a href="http://flickr.com/photos/g1000/" target="_blank">g-1000</a> unter <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/deed.en" target="_blank">CC</a>-Lizenz</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -357,7 +335,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

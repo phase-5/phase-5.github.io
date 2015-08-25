@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1693">
 					<h2>Transplantation eines Blogs</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Im Moment geistert die Idee des Blogverkaufs durchs Netz, ausgehend von einem gewissen Yannick E., der seinen Blog <a href="http://www.blogschrott.net/1164/blogschrottnet-wird-verkauft/">Blogschrott.net</a> verkaufen möchte. Diese Meldung hat mich sofort stutzig gemacht. Allerdings nicht dieses "Unkonventionell, aber warum eigentlich nicht?!"-stutzig, sondern das unangenehme "Irgendwie verkehrt"-stutzig.</p>
 <p>Beim <a href="http://blogbeutel.de/2008/08/25/warum-blogverkaufen-stinkt/">Blogbeutel</a> wird direkt ein interessanter Aspekt angesprochen, der zeigt, warum ein solches Unterfangen äußerst heikel ist: Blogs sind Web 2.0. Und Web 2.0 ist bekanntlich das Mitmach-Netz. So stammt nur ein Teil des Bloginhalts vom Betreiber selbst. Der Rest wurde von den Kommentatoren verfasst, die dabei auch ihre Daten wie Name und Email hinterlassen haben, welche in der Datenbank des Blogs schlummern.</p>
 <p>Wem gehören die Kommentare? Darf ein einzelner sie verkaufen?</p>
@@ -136,18 +125,7 @@
 <p>Entscheidet sich der Betreiber nun den Blog so wie er ist wegzugeben, kommt das einer Transplantation gleich. Und wie jeder weiß, ist es alles andere als sicher, dass das Transplantat vom neuen Besitzer angenommen wird. Ganz im Gegenteil - es ist widernatürlich und in der Medizin nur mit viel Aufwand und starker Medikation zu bewerkstelligen.</p>
 <p>Ähnlich wird es bei einem Blog laufen: Alles was diesen lebendig gemacht bleibt beim "Spender" und selbst wenn der "Empfänger" die gleiche Blutgruppe hat - also bspw. thematisch auf dem gleichen Gebiet unterwegs ist -, garantiert das noch lange nicht, dass das "Organ nicht abgestoßen wird und stirbt"</p>
 <p>Deshalb meine Prognose: Das wird schief gehen. Und entschuldigt meinen Pessimismus. Ansonsten wird es mir aber ein Vergnügen sein die Sache weiter zu verfolgen.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -360,7 +338,16 @@ Wobei man oft echt nicht vergessen durfte und weiterhin sollte, dass der Junge n
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

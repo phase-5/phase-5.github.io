@@ -116,18 +116,7 @@
 	<div id="right">
 									<div class="single_post" id="post-409">
 					<h2>Tiefen/Lichter</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../wp-content/uploads/2007/05/tiefenlichter.png" alt="tiefen/lichter"></p>
 <p>Sollte ein Foto mal zu dunkel gelungen sein, nutzt es wenig am Helligkeitsregler zu drehen. Alternativ kann man mit der Gradiationskurve zwar in einem gewissen Rahmen etwas retten, aber ideal ist das auch nicht.</p>
 <p>Sollte man stolzer Photoshop-Besitzer sein, greift man auf jeden Fall auf die "Tiefen/Lichter"-Funktion zurück ("Bild =&gt; Anpassen =&gt; Tiefen/Lichter").</p>
@@ -146,18 +135,7 @@ Wählt man den Radius zu klein, kann es zu sog. Halos kommen, die Objekte bekomm
 </div>
 <p>Schlussendlich bleibt zu sagen, dass mit der Funktion dezente aber auch krasse Eingriffe in das Bild möglich sind, so dass es künstlich und mitunter wie ein HDR wirkt. Aufgrund der "Halo-Gefahr" sollte man vorsichtig an die Regler gehen.</p>
 <p>Des weiteren empfiehlt es sich nach einen harten Korrektur zusätzlich zum Mittelton-Kontrast noch einmal die Gradiationskurve zu bearbeiten,  um den Bild die Kontraste wieder zurück zu geben.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -328,7 +306,16 @@ Wählt man den Radius zu klein, kann es zu sog. Halos kommen, die Objekte bekomm
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

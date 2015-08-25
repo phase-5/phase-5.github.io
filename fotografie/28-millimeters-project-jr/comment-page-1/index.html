@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1389">
 					<h2>28 Millimeters Project – JR.</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><a href="../../../wp-content/uploads/2007/09/28mm.jpeg" title="28 mm Project."><img src="../../../wp-content/uploads/2007/09/28mm.jpeg" alt="28 mm Project."></a></p>
 <p>Vor einiger Zeit bin ich über die Streetart Seite <a href="http://www.wooster-collective.com">Wooster Collective</a> auf ein ziemlich imposantes Video auf Youtube gestoßen.<br>
 Das Video stammt von einem französischen Fotografen Namens<a href="http://www.jr-art.net/"> JR</a>, der seine Fotos in vielen Großstädten dieser Erde plakatiert und somit ständig "Ausstellungen" in freien "Gallerien", der Straße, am Laufen hat.</p>
@@ -142,18 +131,7 @@ Mit dem relativ großen Weitwinkel von 28 mm gelingt es ihm, die verschiedenen P
 </p><div class="author_info">
 <p>Dies ist ein Gastbeitrag von jasper.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -346,7 +324,16 @@ auch der film sehr ästhetisch umgesetzt.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

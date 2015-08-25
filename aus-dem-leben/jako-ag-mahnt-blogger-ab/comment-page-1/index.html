@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-3372">
 					<h2>JAKO AG mahnt Blogger ab</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Ich gehöre nicht zu den Menschen, die sich begeistert Sport angucken, ich lese nicht <a href="http://www.trainer-baade.de/">den Blog von "Trainer" Baade</a> und ich kannte bis vor einer Stunde die <a href="http://www.jako.de/" rel="nofollow">JAKO AG</a> nicht. Doch dann bin ich <a href="http://www.allesaussersport.de/archiv/2009/09/01/wie-jako-anderen-leuten-das-letzte-trikot-auszieht/">über diesen Blog-Beitrag</a> zufällig auf letztere und die Geschichte der Abmahnung von "Trainer" Baade gestoßen.</p>
 <p>Und zwar geht das ganze so: Besagter "Trainer" Baade hat sich auf seinem Blog kritisch über das neue Logo der JAKO AG geäußert. Wie sachlich er dies getan hat, lässt sich nicht genau nachprüfen, da er schon bald Post von der Kanzlei Horn &amp; Kollegen im Briefkasten hatte mit einer Abmahnung bezüglich des Beitrags. Es ging unter anderem um Vergleiche mit Aldi und Lidl und die JAKO AG fürchtete eine möglichen Image-Schaden dadurch. "Trainer" Baade zeigte sich kooperativ und löschte den Beitrag, hat die Rechnung aber ohne den tschechischen Newsaggregator newstin.de gemacht.</p>
 <p>Dieser hat den Beitrag in Google-News-Manier eingelesen, gespeichert und verweist nun mit einem Auszug des Original-Beitrags auf selbigen. "Trainer" Baade steht also wieder ganz am Anfang, da ihm vorgeworfen wird, der Löschung des Artikels nicht gewissenhaft nachgekommen zu sein. Des weiteren droht eine Vertragsstrafe über 5.100 €.</p>
@@ -139,18 +128,7 @@
 <p><a href="http://www.allesaussersport.de/archiv/2009/09/01/wie-jako-anderen-leuten-das-letzte-trikot-auszieht/">Kommentar auf allesaußersport</a></p>
 <p><a href="http://www.nerdcore.de/wp/2009/09/01/jako-ag-und-seine-anwalte-bullshitten-blogger-wegen-newsaggregator/">Kommentar auf Nerdcore</a></p>
 <p><a href="http://netzpolitik.org/2009/jako-neue-social-media-kampagne/">Kommentar auf netzpolitik</a></p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -302,7 +280,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

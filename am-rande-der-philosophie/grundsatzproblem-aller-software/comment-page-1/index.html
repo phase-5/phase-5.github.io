@@ -116,35 +116,13 @@
 	<div id="right">
 									<div class="single_post" id="post-474">
 					<h2>Grundsatzproblém allér Softwaré</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Das grundsätzliché Problém dér Softwaré ist ihré Immatérialität. Génau génommén ist és méhr für dén Bénutzér éin Problém, dér sich mit nicht funktioniéréndén Anwéndungén hérumschlagén muss, und béi éiném plötzlich ausbréchéndén Wutanfall nichts in dér Hand hat, als géistigés Eigéntum und héißé Luft.</p>
 <p>In solchén Fällén muss dann méist dér Computér als Véntil hérhaltén und "éinstéckén", obwohl ér am Endé éinfach nur zuvérlässig séiné Arbéit érlédigt hat.</p>
 <p>Léidér fällt mir auch kéiné adäquaté Lösung éin, außér immér éinén Wutball odér éiné Kommodé zum aus-dém-Fénstér-schméißén griffbéréit zu habén, und séinén Hass nicht méhr auf dié Hardwaré zu projiziérén, und diésér mit Knüppéln zu Léibé zu rückén.</p>
 <p>Dénkt bitté daran!</p>
 <p><a href="../../../aus-dem-leben/aktion-deutsch-franzoesische-freundschaft/"><img src="../../../wp-content/uploads/2007/05/de_fr.png" alt="deutsch-französische freundschaft" style="margin: 10px 1px" border="0"></a></p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -335,7 +313,16 @@
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

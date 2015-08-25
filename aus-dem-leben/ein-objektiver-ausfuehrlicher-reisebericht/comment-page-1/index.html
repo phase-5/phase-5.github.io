@@ -117,18 +117,7 @@
 	<div id="right">
 									<div class="single_post" id="post-1806">
 					<h2>Ein objektiver, ausführlicher Reisebericht</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>In Schweden blinken Autofahrer_innen nie. In Norwegen ist Bier sauteuer. Essen auch. In Frankfurt ist Fahrradfahren ein Suizidversuch. Auto fahren eigentlich auch. Wenn Männer draußen pinkeln wollen, brauchen sie irgendein Ziel, Baum, Busch oder so. Freies Feld tuts nicht. Dann drehen sie sich um und ziehen sich wieder an. Festival-Besucher sind Sexisten. Auf Campingplätzen ist es genau so, wie es im Fernsehen dargestellt wird. Lauter dicke, alte Deutsche.</p>
 <p>Dabei sind die Männer prinzipiell immer oben rum frei, egal was sie tun. Ab 20.00 Uhr hat man dann den See, das Meer, was auch immer, für sich, weil alles vor dem Fernseher hängt. In Wittenberg wird der Bierlikör "Nonnenfurz" verkauft. In Stuttgart gibt es genauso Faschos wie in Hoyerswerda. Es ist unmöglich, in weniger als in einer Viertelstunde das Preissystem der Öffis in einer fremden Stadt zu verstehen.</p>
 <p>In Friedrichshain kann man den ganzen Tag lang gut und günstig essen. "Jannys Eis" ist das beste. Wenn man das erste Mal klettert, sollte man mit dem nach unten gucken warten, bis man oben ist. Mit dickem Hintern sollte man nicht klettern, weil alle drauf starren. Klettegurte und männliche Gemächte ergeben ein extrem witziges Bild. Internetsucht ist in ganz Europa verbreitet. 1,20m sind für zwei Personen zum Schlafen mehr als ausreichend. Der Bus ist wie ein Duracell-Hase: Läuft und läuft und läuft…</p>
@@ -149,18 +138,7 @@
 <div class="author_info">
 <p>Dies ist ein Gastbeitrag von Klaus.</p>
 </div>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -372,7 +350,16 @@ Vom Ur-KROSTITZER(bitte ändern im Artikel   =)) wäre den Äußerungen von Jupp
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

@@ -117,36 +117,14 @@
 	<div id="right">
 									<div class="single_post" id="post-2732">
 					<h2>Baggern will gelernt sein</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p>Ich weiß, das ist mal wieder eine ziemlich abgedroschene Weisheit. Genau genommen geht es auch darum, dass wir uns in der Agentur überlegt haben, ein audiovisuelles Machwerk zu erstellen, welches wir im Netz publizieren können, um so auf unser inHouse-Projekt <a href="http://www.bb-motel.de/">BB Motel</a> aufmerksam zu machen.</p>
 <p>Also sind wir zu viert ins <a href="http://www.cafelohengrin.de/">Café Lohengrin</a> gegangen und haben uns mithilfe einiger Biere zwei Stunden lang in einen Zustand vollkommener Kreativität befördert. Danach musste der erste Kollege auch schon nach hause. Aber kein Problem, wir sind die Sache zu dritt angegangen. Thema war "Erfolgloses Baggern", ich habe den sehr verantwortungsvollen Posten hinter der Kamera besetzt.</p>
 <p>Wir haben also ein paar Szenen durchgespielt, aber es hat sich schnell herauskristallisiert, dass meine Kollegin zu zaghaft mit der Speisekarte wedelte, anstatt richtig Fratzengeballer zu verteilen. Zum Glück hat sich die Wirtin bereit erklärt, den Part zu übernehmen. Wie man im Video sehen kann, hat sie meinem Kollegen richtig eine gezwiebelt. Das tat selbst hinter Kamera noch weh.</p>
 <p>Aber egal — wichtig ist nicht, was man vorne reinsteckt, sondern was hinten rauskommt. Und hier ist das Ergebnis:</p>
 <p><object width="425" height="344"><param name="movie" value="http://www.youtube.com/v/Ue93SkIHzqQ&amp;hl=de&amp;fs=1"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><embed src="http://www.youtube.com/v/Ue93SkIHzqQ&amp;hl=de&amp;fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="344"></object></p>
 <p>(<a href="http://de.youtube.com/watch?v=Ue93SkIHzqQ">direktBackenfutter</a>)</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -483,7 +461,16 @@ Wobei ich mir immer die Frage stelle, kann man volljährigen Frauen heutzutage �
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}

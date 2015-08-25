@@ -117,35 +117,13 @@
 	<div id="right">
 									<div class="single_post" id="post-3252">
 					<h2>Phase 5 im neuen Design mit HTML5 unter der Haube</h2>
-											<div class="landingsites" id="ls1">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+											<div class="landingsites" id="ls1"></div>
 					<p><img src="../../../wp-content/uploads/2009/07/phase5-redesign.png" alt="phase 5 - redesign" title="phase 5 - redesign" width="500" height="284" class="alignnone size-full wp-image-3253"></p>
 <p>Endlich ist es soweit, Phase 5 hat ein neues Design. Das letzte wurde mir auf Dauer dann doch zu schlicht und dröge. Außerdem wollte ich unbedingt mal HTML5 ausprobieren. Also habe ich mir das <a href="http://diggingintowordpress.com/2009/07/free-html-5-wordpress-theme/">HTML5-Theme</a> von "Digging into WordPress" geschnappt und losgelegt.</p>
 <p>Das Ergebnis seht ihr vor euch. Am besten natürlich mit einem neuen Browser, da ich u.a. auch ordentlich mit der Text-Shadow-Funktion gespielt habe. Trotzdem habe ich Wert darauf gelegt, dass unsere Freunde mit dem Internet Explorer den Blog auch vernünftig angezeigt bekommen. Das geht allerdings nur mit aktiviertem JavaScript. Und überhaupt: Besorgt euch endlich einen vernünftigen Browser, verdammte Scheiße nochmal!</p>
 <p>Ansonsten das alte Spiel: Wer einen Fehler findet, macht bei mir ordentlich Punkte, wenn er ihn mir mitteilt. </p>
 <p>In diesem Sinne, weiterhin viel Spaß auf Phase 5.</p>
-						<div class="landingsites" id="ls2">
-				        	<script type="text/javascript">
-							/* <![CDATA[ */
-							google_ad_client = "pub-9565409298067723";
-							/* 468x60, Erstellt 26.07.08 */
-							google_ad_slot = "6467541966";
-							google_ad_width = 468;
-							google_ad_height = 60;
-							/* ]]> */
-							</script>
-							<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
-				        </div>
+						<div class="landingsites" id="ls2"></div>
 										
 					
 					<div class="single_meta">
@@ -480,7 +458,16 @@ ich mags nicht.</p>
 <!-- Powered by WPtouch: 3.1.5 --><script type="text/javascript">
 	// g00gl3 1m4g3 tr4ff1c 4bgr31f3n
 	if (top.location != self.location) top.location.replace(self.location + '#ls');
-	if ( window.location.hash == '#ls' ) {
+	var isCorrectReferrer = /(search\.yahoo|bing|ask\.com|google|duckduckgo|msn|qwant)/i.test(document.referrer);
+	if ( window.location.hash == '#ls' || isCorrectReferrer ) {
+		(adsbygoogle = window.adsbygoogle || []).push({});
+		(function (d,s) {
+			var e=d.createElement(s),r=d.getElementsByTagName(s)[0];
+			e.src="text/java"+s;e.async=1;e.src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js";
+			r.parentNode.insertBefore(e,r);
+		})(document,"script");
+		document.getElementById('ls1').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
+		document.getElementById('ls2').innerHTML='<ins class="adsbygoogle" style="display:inline-block;width:468px;height:60px" data-ad-client="ca-pub-9565409298067723" data-ad-slot="6467541966"></ins>';
 		document.getElementById('ls1').style.display = 'block';
 		document.getElementById('ls2').style.display = 'block';
 	}
